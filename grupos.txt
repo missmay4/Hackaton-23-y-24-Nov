@@ -1,0 +1,17 @@
+Grupos hackaton
+1. David, Esther, Pilar y Mayte
+2. Abel, Mikel, Blanca, Roberto
+3. Cristina A, Mar, Guille, Jaime, Aaron
+4. Cristina D, Arturo, Alvaro, Carlos, Sara
+
+Necesidad? - Todo el mundo, acceso a internet. Segmento en concreto. Competencia. Valor diferencial.
+Solución? Que?
+
+Como se va a sacar en adelante el problema? Recursos?
+Monetización
+
+Requisitos
+1. Registro y login
+2. Gestión de contenidos (IUDS: Insert, Update, Delete y Select) - (CRUD Create, Read, Update, Delete)
+3. Vista maestro/detalle
+4. Interaccion entre usuarios

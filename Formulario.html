@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <title>FORMULARIO ANDE ARTE</title>
+    <link rel="stylesheet" href="css/normalize.css" type="text/css" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+
+</head>
+<body>
+    
+   <header>
+       <div class="wrapper">
+           <div class="logo">
+               <a href="index.html"> <img src="img/logogaleria.png" alt="Logo
+               " /></a>
+           </div>
+           <div class="naming">
+               <h1>Ande Arte</h1>
+               <h2>Tu buscador de galerías</h2>
+               
+           </div>
+           <div class="fotouser">
+              <a href="perfil.html">
+                  <img src="img/userdefault.png" alt="usuario" />
+              </a>
+               </div>
+       </div>
+   </header>
+   
+   <main>
+       <div class="formreg">
+       
+       <div class="wrapper">
+        <form action="register.php" method="post" class="formularioreg">
+           
+           
+            <label for="nombre" class="etiq">Nombre</label>
+            
+            <input type="text" class="campo" id="nombre" name="nombre" maxlength="20" placeholder="Escribe aquí tu nombre" required />
+            
+            <label for="username" class="etiq">Nombre de usuario (sólo si no representas Galeria de Arte) </label>
+            
+            <input type="text" class="campo" id="username" name="username" maxlength="12" placeholder="Escribe aquí tu nombre de usuario" />
+            
+            <label for="username" class="etiq">Nombre de Galería de Arte</label>
+            
+            <input type="text" class="campo" id="galeria" name="galeria" maxlength="12" placeholder="Escribe el nombre de tu galería de arte" />
+            
+            <label for="email" class="etiq">Email</label>
+            
+            <input type="email" class="campo" id="email" name="email" maxlength="255" placeholder="Escribe tu email" required />
+            
+            <label for="birth" class="etiq">Fecha de nacimiento</label>
+            
+            <input type="date" class="campo" id="birth" name="birth">
+            
+            <label for="pass" class="etiq">Contraseña</label>
+            
+            <input type="password" class="campo" id="pass" name="pass" maxlength="15" placeholder="Escribe tu contraseña" required />
+            
+            <label for="pass2" class="etiq"> Repite Contraseña</label>
+            
+            <input type="password" class="campo" id="pass2" name="pass2" maxlength="15" placeholder="Repite tu contraseña" required />
+            
+            <label for="subirimg" class="etiq">Sube tu imagen de perfil</label>
+            
+            <input type="file" class="campo" id="subirimg" name="subirimg" accept="image/*">
+            
+            
+            <div class="botonesradio">
+               <p>Selecciona qué tipo de usuario eres</p>
+                <label class="container"> Soy un usuario
+              <input type="radio" name="radio" required>
+              <span class="checkmark"></span>
+            </label>
+            <label class="container"> Soy una galería de arte
+              <input type="radio" name="radio">
+              <span class="checkmark"></span>
+            </label>
+            
+            </div>
+            
+            <div class="botonescheck">
+               <p>¿Qué gustos tienes? (Opcional. Puedes seleccionar más de uno)</p>
+               
+               <label class="container">Impresionismo
+                  <input type="checkbox">
+                  <span class="checkmark"></span>
+                </label>
+
+                <label class="container">Cubismo
+                  <input type="checkbox">
+                  <span class="checkmark"></span>
+                </label>
+
+                <label class="container">Arte contemporáneo
+                  <input type="checkbox">
+                  <span class="checkmark"></span>
+                </label>
+
+                <label class="container">Expresionismo
+                  <input type="checkbox">
+                  <span class="checkmark"></span>
+                </label>
+
+            </div>
+            
+                <input type="submit" id="botonenviar" value="HECHO"/>
+            
+            
+        </form>
+        </div>
+    </div>
+    
+    
+    
+   </main>
+   
+   
+   <footer>
+       <div class="wrapper">
+          <div class="fondofooter">
+               <div class="legal">
+            
+               <h6>ANDE ARTE Corp</h6>
+               <p>Aviso legal</p>
+               <p>Privacidad</p>
+               <p>Contacto</p>
+               <p>Listado de Galerías</p>
+
+           </div>
+          </div>
+       </div>
+   </footer>
+    
+</body>
+</html>
