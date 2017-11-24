@@ -1,0 +1,102 @@
+.wrapper { width: 480px;
+margin: auto 0;
+}
+
+
+h1 { text-align: center; 
+    font-family: serif
+    
+}
+
+.titulocoment{
+    float: left;
+    width: 100%;
+    
+}
+
+.DP { float: left;
+    width: 76%;
+    margin-left:10%; 
+  
+    font-family: fantasy;
+    margin-top: 20px;   
+}
+
+.like{
+    width: 33%;
+    float: left;
+}
+.like img {
+    float: left;
+    width: 12%;
+    
+}
+
+
+h3{font-size:18px;
+    height: 1px;
+    
+    
+}
+
+.feedback {
+    
+    width: 100%;
+    float: left;
+    padding-bottom: 14%;
+}
+.dislike{ 
+    width: 33%;
+    float: left;
+}
+
+.dislike img {
+    width: 17%;
+    float: left;
+    
+}
+
+
+h5{
+    font-size: 10px;
+      
+
+}
+
+.logo {
+    float: left; 
+    width: 14%;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    
+}
+
+.coment{
+    width: 33%;
+    float: left;
+    
+}
+
+.coment img {
+    width: 50%;
+}
+
+.logo img{
+    width: 100%;
+}
+
+.center{
+    text-align: center;
+}
+
+.Strellitas {
+    max-width: 23%;
+  padding-bottom: 12%
+      padding
+    
+}
+
+p{ text-align: justify;
+
+font-size: 20px;}
