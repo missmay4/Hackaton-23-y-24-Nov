@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Vista Detalle</title>
+    <link rel="stylesheet" href="css/copy.css" type="text/css" />
+</head>
+<body>
+   
+   <!-- Header -->
+   <div class="header">
+   <p>header</p>
+   <div class="wrapper"></div>
+   </div>
+   <!-- Buscador -->
+   <div>
+       <div>
+           <input type="search" placeholder="Buscar Galería">
+       </div>
+   </div>
+   
+   <!-- Nombre Galería -->
+   <div>
+       <div>
+           <h2>Galería Margot</h2>
+       </div>
+   </div>
+   
+   <!-- Valoración -->
+   <div>
+       <div>
+           <img src="img/Eva5estrellas.png" alt="Valoración" width="50px" />
+       </div>
+   </div>
+   
+   <!-- Descripción -->
+   <div>
+       <p>Fundada en 1980, Galería Margot nace con el obejitvo de dar a conocer el arte en el corazón de la capital española. Especializado en pinturas de los siglos XIX y XX. </p>
+   </div>
+   
+   <!-- Foto -->
+   <div>
+       <div>
+           <img src="img/cuadrocirculo.jpg" alt="cuadro" width="50px">
+       </div>
+   </div>
+   
+   <!-- Localización -->
+   <div></div>
+   
+   <!-- Mapa-->
+   <div>
+       
+   </div>
+   
+   <!-- Comentarios -->
+   <div>
+    <div class="wrapper"> 
+     <div>
+      <h1>Comentarios de usuarios</h1>
+      </div>
+       <div class="center"><img class="Strellitas" src="img/Eva5estrellas.png" alt="">
+         </div> 
+    </div>
+     
+   </div>
+   
+   <!-- Com1 -->
+   <div class="wrapper">
+      
+       <div class="tituloComent">
+           <div class="logo"><img src="img/foto-carnet-Maria%20G.jpg" alt=""></div>
+           <div class="DP">
+               <p1>Maria G.</p1>
+               <p2>2 de Nov. 2017</p2>
+           </div>
+       </div>
+       <div><p3>Mi experiencia en la galeria fue extraordinaria. la atención fue magnifica y me asesoraron e informaron acerca de los artistas cuyas obras estaban expuestas. Al final, terminé comprando dos obras y quiero volver a por mas muy pronto!</p3></div>
+       <div>
+           <div class="like"></div>
+           
+           <div class="dislike"></div>
+           <div class="coment"></div>
+       </div>
+   </div>
+   
+   <!-- Com2 -->
+   <div></div>
+   
+   <!-- Próximos eventos -->
+   
+   <div></div>
+   
+   <!-- Event 1 -->
+   
+   <div></div>
+   
+   <!-- Event 2 -->
+   
+   <div></div>
+   
+   <!-- Footer -->
+   
+   <div></div>
+   
+   
+   
+   
+   
+    
+</body>
+</html>
