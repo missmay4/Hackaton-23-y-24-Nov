@@ -1,12 +1,45 @@
 a{
     text-decoration: none;
 }
+ul{
+    list-style-type: none;
+}
 .wrapper{
     width: 960px;
     margin:0 auto;
 }
 
+@font-face {
+	font-family: 'caviardreams';
+	src: url('../fonts/CaviarDreams.eot');
+	src: local('☺'), url('../fonts/CaviarDreams.woff') format('woff'), url('../fonts/CaviarDreams.ttf') format('truetype'), url('../fonts/CaviarDreams.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'geosans';
+	src: url('../fonts/GeosansLight.eot');
+	src: local('☺'), url('../fonts/GeosansLight.woff') format('woff'), url('../fonts/GeosansLight.ttf') format('truetype'), url('../fonts/GeosansLight.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'coolvetica';
+	src: url('../fonts/coolvetica rg.eot');
+	src: local('☺'), url('../fonts/coolvetica rg.woff') format('woff'), url('../fonts/coolvetica rg.ttf') format('truetype'), url('../fonts/coolvetica rg.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
 /* header______________________________________*/
+main{
+    font-family: 'coolvetica';
+}
+header, footer{
+    font-family: 'caviardreams';
+}
 header{
     width: 100%;
     float: left;
@@ -57,11 +90,6 @@ header{
 
 /* FIN HEADER_______________________*/
 
-/* BUSCADOR */
-
-
-
-/* FIN BUSCADOR */
 
 body {
     background-color: #ecf0f1;
@@ -137,13 +165,18 @@ body {
 .search{
     float: left;
     width: 100%;
-    padding-top: 2%;
+    padding-top: 5px;
+}
+.search input{
+    width: 100%;
+    height: 60px;
 }
 .nombreg{
-    font-size: 30px;
-    height: 60px;
-    
-    
+    font-size: 60px;
+     
+}
+.nombreg h2{
+    line-height: 0;
 }
 .valoracion {
     float: left;
@@ -161,7 +194,9 @@ body {
     margin-right: 20%;
     text-align: center;
 }
-
+.descripcion p{
+    font-size: 25px;
+}
 .cuadro {
     float: left;
     width: 100%;
@@ -198,8 +233,41 @@ body {
     width: 50%;
 }
 
-/* Comentarios */
+/* Comentarios ___________________________________*/
+.blockcom{
+    width: 100%;
+    float: left;
+}
 
+article{
+    width: 100%;
+    margin: 0 2%;
+    padding: 20px 0;
+    float: left;
+}
+
+.userpic{
+    width: 20%;
+    margin: 0 5%;
+    float: left;
+}
+
+.userpic img{
+    border-radius: 50%;
+    height: 250px;
+}
+.usercom{
+    width: 65%;
+    margin: 0 2.5%;
+    float: left;
+}
+.usercom p{
+    text-align: left;
+    font-size: 25px;
+    
+    
+}
+/* 
 .comentuse h1{
     text-align: center;
     font-family: serif;
@@ -262,15 +330,6 @@ body {
     
 }
 
-.logo {
-    float: left; 
-    width: 14%;
-    border-radius: 4px;
-    margin-bottom: 15px;
-    margin-top: 15px;
-    
-}
-
 .coment{
     width: 33%;
     float: left;
@@ -296,6 +355,30 @@ body {
     
 }
 
+/* --------------- EVENTOS HOVER ------------*/
+.desplegar{
+    font-size: 25px;
+}
+.textevent{
+    height: 70px;
+    background-color: lightslategrey;
+}
+.ordevent{
+    display: none;
+    
+}
+
+.texevent#evento:hover{
+    background-color: black;
+    color: white;
+}
+.texevent#evento:hover + .ordevent#lista{
+    display: inline-block;
+}
+
+/* --------------- FIN EVENTOS HOVER -----------*/
+
+ 
 /* --------------- FIN VISTA DETALLE --------------- */
 
 /* PERFIL USUARIO____________________________________*/
@@ -315,16 +398,40 @@ body {
 
 .descripcionuser{
     width: 100%;
-    float: left
+    float: left;
 
 }
-.bloquep{
-    width: 50%;
+.section{
+    width: 100%;
     float: left;
+}
+.bloquep{
+    width: 30%;
+    padding: 0 10%;
+    float: left;
+    text-align: left;
+    
 }
 .bloquep img{
     border-radius: 50%;
     max-width: 100%;
+    
+}
+
+.bloquep.dat{
+    text-align: left;
+    width: 30%;
+    float: left;
+    
+}
+.section h3{
+    text-align: center;
+    font-size: 30px;
+}
+
+.editargal{
+    width: 100%;
+    float: left;
 }
 
 /*
@@ -345,19 +452,6 @@ body {
 
 /* FIN PERFIL USUARIO____________________________________*/
 
-/* --------------- EVENTOS HOVER ------------*/
-
-.ordevent{
-    display: none;
-    list-style: none;
-}
-
-
-.texevent#evento:hover + .ordevent#lista{
-    display: inline-block;
-}
-
-/* --------------- FIN EVENTOS HOVER -----------*/
 
 /* PANTALLA SIGN IN____________________________________*/
 
@@ -421,13 +515,23 @@ body {
 }
 
 .registrate{
-    width: 100%;
+    width: 98%;
+    margin: 0 1%;
+    margin-top: 3px;
+    height: 60px;
     float: left;
     text-align: center;
     padding-top: 10px;
     padding-bottom: 10px;
-    
-    
+      
+}
+#botreg {
+    background-color: #0089ff;
+    font-size: 30px;
+    border-style: solid ;
+}
+#botreg a{
+    width: 100%;
 }
 /* FINALLLLLLLLLLLLLPANTALLA SIGN_____________________*/
 
@@ -498,19 +602,34 @@ footer p{
 }
 
 .fondofooter{
-    /* background-color: #2a2a2a; */
-    padding-bottom: 25px;
+    width: 60%;
+    margin: 0 20%;
+    float: left;
+    
 }
 .legal{
-    width: 40%;
-    margin-left: 30%;
-    margin-right: 30%;
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
      text-align: center;
     color: white;
     font-style: bold;   
 }
 .legal h6{
-    font-size: 20px;
+    font-size: 40px;
 }
-
+.legal p{
+    font-size: 26px;
+}
+.iconosocial{
+    width: 80%;
+    margin: 0 10%;
+    float: left;
+    text-align: center;
+}
+.iconosocial img{
+    width: 100%;
+    float: left;
+    padding: 50px 0;
+}
 /* ----------- FIN FOOTER ----------- */
