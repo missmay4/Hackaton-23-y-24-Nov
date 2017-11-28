@@ -264,15 +264,42 @@ article{
 .usercom p{
     text-align: left;
     font-size: 25px;
-    
-    
 }
-/* 
+
+.comentuse {
+    width: 100%;
+    float: left;
+    }
+ 
 .comentuse h1{
     text-align: center;
     font-family: serif;
 }
+.center {
+    width: 100%;
+    float: left;
+    align-content: center;
+    text-align: center;
+}
 
+.Strellitas{
+    max-width: 20%;
+    /*margin-left: 41%;*/
+    
+}
+
+/* Efecto Hover en Comentarios */
+
+.hovcom {
+    display: none;
+}
+
+.hovcomon#mascom:hover + .hovcom#restcom{
+    display: inline-block;
+}
+
+
+/*
 .DP h3{
     font-size: 18px;
     height: 1px;
