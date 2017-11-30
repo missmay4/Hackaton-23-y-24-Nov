@@ -1,0 +1,45 @@
+@media only screen 
+  and (max-device-width: 480px) {
+		.headerimagen img {
+
+      }
+
+}
+
+@media only screen 
+  and (min-device-width: 481px) and (max-device-width: 800px {
+	
+}
+
+@media only screen 
+  and (min-device-width: 801px) {
+
+}
+
+---------------------------------------------------------------------------
+
+1 titulares: 45px; ---------- Grande y iPad
+2 subtitulares: 25px; ---------- Grande y iPad
+3 subtitulo2: 20px; --------- Grande y iPad
+4 parrafo: 16px; -------- Grande y iPad
+
+---------------------------------------------------------------------------
+
+Header
+- Titular: 45px;
+- Subtitular: 25px;
+
+Body
+- Subtitular: 25px;
+- Subtitulo2: 20px;
+
+Fotter
+- Titular: 45px;
+- Subtitular: 25px;
+
+
+
+
+
+
+
