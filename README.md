@@ -1,2 +1,2 @@
-# Hackaton-23-y-24-Nov
+# AndeArte_Proyect
 Hackaton Curso Front End 2017
