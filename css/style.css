@@ -14,8 +14,12 @@ ul{
 .subtitulosM {
     width: 95%;
     margin: 0 2.5%;
-    font-size: 25px;
 }
+
+.funo{ font-size: 2.81em;}
+.fdos{font-size: 1.56em}
+.ftres{font-size:1.25em;}
+.fcuatro{font-size:1em;}
 
 @font-face {
 	font-family: 'caviardreams';
@@ -73,12 +77,6 @@ header{
     float: left;
 }
 
-.naming h1{
-    font-size: 45px; 
-}
-.naming h2{
-    font-size: 25px;
-}
 .fotouser{
    padding-top: 20px;
     text-align: center;
@@ -144,11 +142,6 @@ body {
     float: left;
     margin-left: 2%;
     margin-right 2%;
-    font-size: 25px;
-}
-
-.block h4 {
-    /*text-align: center;*/
 }
 
 .block img {
@@ -647,16 +640,11 @@ footer p{
     width: 60%;
     margin-left: 20%;
     margin-right: 20%;
-     text-align: center;
+    text-align: center;
     color: white;
     font-style: bold;   
 }
-.legal h6{
-    font-size: 45px;
-}
-.legal p{
-    font-size: 25px;
-}
+
 .iconosocial{
     width: 80%;
     margin: 0 10%;
