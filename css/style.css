@@ -146,6 +146,8 @@ body {
 
 .block img {
     max-width: 100%;
+    max-height: 100%;
+
 }
 
 
@@ -663,10 +665,6 @@ footer p{
 
 @media only screen 
   and (max-device-width: 480px) {
-      .headerimagen img {
-          
-    
-      }
 
 }
 
@@ -675,9 +673,16 @@ footer p{
 	
 }
 
-@media only screen 
-  and (min-device-width: 801px) {
-
+@media only screen and (min-device-width: 801px) {
+      .block {
+          width: 49%;
+          margin-left: 0.5%;
+          margin-right: 0.5%;
+      }
+      
+      .imagenesgalerias {
+          width: 50%;  
+      }
 }
 
 /* MEDIA QUERIS */
