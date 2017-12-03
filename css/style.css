@@ -1,14 +1,18 @@
-a{
+a {
     text-decoration: none;
 }
-ul{
+ul {
     list-style-type: none;
 }
-.wrapper{
+.wrapper {
     width: 95%;
     margin: 0 2.5%;
     /* width: 960px;
     margin:0 auto; */
+}
+
+body {
+    background-color: #ecf0f1;
 }
 
 .subtitulosM {
@@ -45,64 +49,58 @@ ul{
 	font-style: normal;
 }
 
-/* header______________________________________*/
-main{
+/* ---------------------------------------------- HEADER --------------------------------------------- */
+
+main {
     font-family: 'coolvetica';
 }
-header, footer{
+
+header, footer {
     font-family: 'caviardreams';
 }
-header{
+
+header {
     width: 100%;
     float: left;
     background-color: #ffffff;
     margin-bottom: 15px;
 }
 
-.logo{
-
+.logo {
     width: 20%;
     margin-left: 2%;
     padding-top: 20px;
     height: 100px;
     float: left;
-    
 }
-.logo img{
+
+.logo img {
     width: 85%;
 }
-.naming{
+
+.naming {
     width: 54%;
     padding-top: 20px;
     float: left;
 }
 
-.fotouser{
-   padding-top: 20px;
+.fotouser {
+    padding-top: 20px;
     text-align: center;
     width: 21%;
-    float: left;
-        
-   margin-right: 1%;
-    
-    
+    float: left; 
+    margin-right: 1%;
 }
-.fotouser img{
+
+.fotouser img {
     border-radius: 50%;
-    width: 83%;
-    
-    
+    width: 83%;    
 }
 
-/* FIN HEADER_______________________*/
+/* -------------------------------------------- FIN HEADER ------------------------------------------- */
 
 
-body {
-    background-color: #ecf0f1;
-
-}
-
-/* INICIO VISTA DE IMAGEN PRINCIPAL */
+/* ---------------------------------- INICIO VISTA DE IMAGEN PRINCIPAL ------------------------------- */
 
 .headerimagen {
     float: left;
@@ -116,25 +114,24 @@ body {
 }
 
 
-.main{ /* centrar */
+.main { /* centrar */
     width: 50%;
     margin-left: 20%;
     
 }
 
-/* FIN DE VISTA IMAGEN PRINCIPAL */
+/* ------------------------------------ FIN DE VISTA IMAGEN PRINCIPAL -------------------------------- */
 
 
-
-/* INICIO VISTA DE TODAS LAS GALERIAS */
-
+/* -------------------------------- INICIO VISTA DE TODAS LAS GALERIAS --------------------------------*/
 
 
 .imagenesgalerias {
-    width: 100%;
+    /*width: 100%; Esta propiedad no se aplica con el media query de pantalla de ordenador */
     float: left;
     margin-bottom: 25px;
     margin-top: 25px;
+    min-height: 400px;
 }
 
 .block {
@@ -147,18 +144,19 @@ body {
 .block img {
     max-width: 100%;
     max-height: 100%;
-
 }
 
 
-/* ----------- FIN DE VISTA DE TODAS LAS GALERIAS ----------- */
+/* ------------------------------- FIN DE VISTA DE TODAS LAS GALERIAS -------------------------------- */
 
-/* ----------- ESTILO VISTA DETALLE ------------- */
+
+/* -------------------------------------- INICIO VISTA DETALLE --------------------------------------- */
 
 
 .fondocolor {
     background-color: #ecf0f1;
 }
+
 .centrar {
     float: left;
     width: 100%;
@@ -166,29 +164,32 @@ body {
     margin-bottom: 0%;
 }
 
-.search{
+.search {
     float: left;
     width: 100%;
     padding-top: 5px;
 }
-.search input{
+
+.search input {
     width: 100%;
     height: 60px;
 }
-.nombreg{
+
+.nombreg {
     font-size: 60px;
-     
 }
-.nombreg h2{
+
+.nombreg h2 {
     line-height: 0;
 }
+
 .valoracion {
     float: left;
     width: 100%;
 }
+
 .valoracion img {
-   max-width: 20%;
-    
+   max-width: 20%;    
 }
 
 .descripcion {
@@ -198,6 +199,7 @@ body {
     margin-right: 20%;
     text-align: center;
 }
+
 .descripcion p{
     font-size: 25px;
 }
@@ -207,27 +209,15 @@ body {
 }
 
 .cuadro img {
-    width: 100%;
-   
+    width: 100%;   
 }
 
-/*
-.mapa img{
-    width: 50%;
-    transition: transform 10s;
-}
-
-.mapa#map:hover {
-    transform: scale(1.5)
-}
-*/
-
-.evento1{
+.evento1 {
     float: left;
     width: 100%;
-    }
+}
 
-.col-izda{
+.col-izda {
     float: left;
     width: 50%;
 }
@@ -237,35 +227,38 @@ body {
     width: 50%;
 }
 
-/* Comentarios ___________________________________*/
-.blockcom{
+/* ------------------------------------------ INICIO COMENTARIOS --------------------------------------*/
+
+.blockcom {
     width: 100%;
     float: left;
 }
 
-article{
+article {
     width: 100%;
     margin: 0 2%;
     padding: 20px 0;
     float: left;
 }
 
-.userpic{
+.userpic {
     width: 20%;
     margin: 0 5%;
     float: left;
 }
 
-.userpic img{
+.userpic img {
     border-radius: 50%;
     height: 250px;
 }
-.usercom{
+
+.usercom {
     width: 65%;
     margin: 0 2.5%;
     float: left;
 }
-.usercom p{
+
+.usercom p {
     text-align: left;
     font-size: 25px;
 }
@@ -273,12 +266,13 @@ article{
 .comentuse {
     width: 100%;
     float: left;
-    }
+}
  
-.comentuse h1{
+.comentuse h1 {
     text-align: center;
     font-family: serif;
 }
+
 .center {
     width: 100%;
     float: left;
@@ -286,13 +280,12 @@ article{
     text-align: center;
 }
 
-.Strellitas{
+.Strellitas {
     max-width: 20%;
     /*margin-left: 41%;*/
-    
 }
 
-/* Efecto Hover en Comentarios */
+/* ---------------------------------------- EFECTO HOVER EN 'COMENTARIOS' ---------------------------- */
 
 .hovcom {
     display: none;
@@ -302,250 +295,157 @@ article{
     display: inline-block;
 }
 
+/* ------------------------------------------ EVENTOS HOVER -------------------------------------------*/
 
-/*
-.DP h3{
-    font-size: 18px;
-    height: 1px;
-    
-}
-
-.DP h5{
-    font-size: 10px; 
-    
-}
-
-.comenttext p {
-    text-align: justify;
-    font-size: 20px;
-}
-
-.titulocoment{
-    float: left;
-    width: 100%;
-    
-}
-
-.DP { float: left;
-    width: 76%;
-    margin-left:10%; 
-  
-    font-family: fantasy;
-    margin-top: 20px;   
-}
-
-.like{
-    width: 33%;
-    float: left;
-}
-.like img {
-    float: left;
-    width: 12%;
-    
-}
-
-.feedback {
-    
-    width: 100%;
-    float: left;
-    padding-bottom: 14%;
-}
-.dislike{ 
-    width: 33%;
-    float: left;
-}
-
-.dislike img {
-    width: 17%;
-    float: left;
-    
-}
-
-.coment{
-    width: 33%;
-    float: left;
-    
-}
-
-.coment img {
-    width: 50%;
-}
-
-.logo img{
-    width: 100%;
-}
-
-.center{
-    text-align: center;
-}
-
-.Strellitas {
-    max-width: 23%;
-  padding-bottom: 12%
-      padding
-    
-}
-
-/* --------------- EVENTOS HOVER ------------*/
-.desplegar{
+.desplegar {
     font-size: 25px;
 }
-.textevent{
+
+.textevent {
     height: 70px;
     background-color: lightslategrey;
 }
+
 .ordevent{
-    display: none;
-    
+    display: none;    
 }
 
-.texevent#evento:hover{
+.texevent#evento:hover {
     background-color: black;
     color: white;
 }
-.texevent#evento:hover + .ordevent#lista{
+
+.texevent#evento:hover + .ordevent#lista {
     display: inline-block;
 }
 
-/* --------------- FIN EVENTOS HOVER -----------*/
+/* --------------------------------------------- FIN EVENTOS HOVER ------------------------------------*/
 
- 
-/* --------------- FIN VISTA DETALLE --------------- */
+/* ---------------------------------------------- FIN VISTA DETALLE ---------------------------------- */
 
-/* PERFIL USUARIO____________________________________*/
 
-#atrasperfil{
+/* ----------------------------------------- PERFIL USUARIO ------------------------------------------ */
+
+#atrasperfil {
     padding-top: 20px;
     padding-left: 3%;
     width: 21%;
-    float: left;
-    
+    float: left;   
 }
 
-#atrasperfil img{
+#atrasperfil img {
     width: 80%;
     text-align: center;
 }
 
-.descripcionuser{
+.descripcionuser {
     width: 100%;
     float: left;
+}
 
-}
-.section{
+.section {
     width: 100%;
     float: left;
 }
-.bloquep{
+
+.bloquep {
     width: 30%;
     padding: 0 10%;
     float: left;
     text-align: left;
-    
-}
-.bloquep img{
-    border-radius: 50%;
-    max-width: 100%;
-    
 }
 
-.bloquep.dat{
+.bloquep img {
+    border-radius: 50%;
+    max-width: 100%;
+}
+
+.bloquep.dat {
     text-align: left;
     width: 30%;
     float: left;
-    
 }
-.section h3{
+
+.section h3 {
     text-align: center;
     font-size: 30px;
 }
 
-.editargal{
+.editargal {
     width: 100%;
     float: left;
 }
 
-/*
-.fotouser{
-   padding-top: 20px;
-    text-align: center;
-    width: 21%;
-    float: left;
-        
-   margin-right: 1%;
-    
-    
-}
-.fotouser img{
-    border-radius: 50%;
-    width: 83%;
-*/
-
-/* FIN PERFIL USUARIO____________________________________*/
+/* --------------------------------------------- FIN PERFIL -------------------------------------------*/
 
 
-/* PANTALLA SIGN IN____________________________________*/
+/* ---------------------------------------- INICIO PANTALLA SIGN IN ----------------------------------*/
 
-.vidgal{
+.vidgal {
     width: 100%;
     padding-top: 50px;
     float: left;
 }
 
-.vidgal video{
+.vidgal video {
     width: 95%;
     float: left;
     margin: 0 2.5%;
 }
-.formsign{
+
+.formsign {
     width: 90%;
     padding-left: 5%;
     padding-right: 5%;
     padding-top: 100px;
     padding-bottom: 50px;
-        
     float: left;
 }
-.etiq{
+
+.etiq {
     width: 100%;
     height: 40px;
     float: left;
 }
-.etiq label{
+
+.etiq label {
     padding-left: 1.5%;
     padding-right: 1.5%;
 }
-.campoformulario{
+
+.campoformulario {
     width: 100%;
     float: left;
     padding-bottom: 50px;
 }
-#username{
-    width: 98%;
-    margin: 0 1%;
-    margin-top: 3px;
-    height: 40px;
-}
-#userpass{
+
+#username {
     width: 98%;
     margin: 0 1%;
     margin-top: 3px;
     height: 40px;
 }
 
-.botonsign{
+#userpass {
+    width: 98%;
+    margin: 0 1%;
+    margin-top: 3px;
+    height: 40px;
+}
+
+.botonsign {
     width: 100%;
     float: left;
-    
 }
-.botonsign input{
+
+.botonsign input {
     width: 98%;
     margin: 0 1%;
     margin-top: 3px;
     height: 40px;
 }
 
-.registrate{
+.registrate {
     width: 98%;
     margin: 0 1%;
     margin-top: 3px;
@@ -554,56 +454,61 @@ article{
     text-align: center;
     padding-top: 10px;
     padding-bottom: 10px;
-      
 }
+
 #botreg {
     background-color: #0089ff;
     font-size: 30px;
     border-style: solid ;
 }
-#botreg a{
+
+#botreg a {
     width: 100%;
 }
-/* FINALLLLLLLLLLLLLPANTALLA SIGN_____________________*/
 
-/* FORMULARIO FORMULARIO_____________________________*/
+/* --------------------------------------------- FINAL PANTALLA ---------------------------------------*/
 
-.campo{
+
+/* --------------------------------------------- INICIO FORMULARIO ------------------------------------*/
+
+.campo {
     width: 98%;
     margin: 0 1%;
     margin-top: 3px;
     height: 40px;
 }
 
-#birth{
+#birth {
     width: 20%;
     margin: 0 1%;
     margin-top: 3px;
     height: 40px;
 }
 
-.botonesradio{
+.botonesradio {
     width: 100%;
     padding: 0 5%;
     float: left;
 }
 
-.botonesradio p{
+.botonesradio p {
     font-style: bold;
 }
-.container{
+
+.container {
     width: 100%;
     float: left;
     height: 20px;
     padding-bottom: 5px;
 }
 
-.botonescheck{
+.botonescheck {
      width: 100%;
     padding: 0 5%;
     float: left;
 }
-#botonenviar{
+
+#botonenviar {
     width: 98%;
     margin: 0 1%;
     margin-top: 30px;
@@ -611,34 +516,31 @@ article{
     height: 40px;
 }
 
+/* ------------------------------------------ FIN FORMULARIO ------------------------------------------*/
 
 
+/* ---------------------------------------------- FOOTER --------------------------------------------- */
 
-
-/* FINALLLLLLLLLLL FORMULARIO_________________________*/
-
-/* ----------- FOOTER ----------- */
-
-footer{
+footer {
     width: 100%;
     float: left;
     padding-top: 15px;
     background-color: #2a2a2a;
 }
 
-footer p{
+footer p {
     width: 100%;
     float: left;
     margin:5px 0;
 }
 
-.fondofooter{
+.fondofooter {
     width: 60%;
     margin: 0 20%;
     float: left;
     
 }
-.legal{
+.legal {
     width: 60%;
     margin-left: 20%;
     margin-right: 20%;
@@ -647,21 +549,22 @@ footer p{
     font-style: bold;   
 }
 
-.iconosocial{
+.iconosocial {
     width: 80%;
     margin: 0 10%;
     float: left;
     text-align: center;
 }
-.iconosocial img{
+.iconosocial img {
     width: 100%;
     float: left;
     padding: 50px 0;
 }
 
-/* ----------- FIN FOOTER ----------- */
+/* --------------------------------------------- FIN FOOTER ------------------------------------------ */
 
-/* MEDIA QUERIS */
+
+/* ------------------------------------------- MEDIA QUERIS ------------------------------------------ */
 
 @media only screen 
   and (max-device-width: 480px) {
@@ -674,15 +577,36 @@ footer p{
 }
 
 @media only screen and (min-device-width: 801px) {
-      .block {
-          width: 49%;
-          margin-left: 0.5%;
-          margin-right: 0.5%;
+    .block {
+        width: 49%;
+        margin-left: 0.5%;
+        margin-right: 0.5%;
       }
       
-      .imagenesgalerias {
-          width: 50%;  
+    .imagenesgalerias {
+        width: 50%;  
       }
+    
+    .headerimagen img {
+        max-height: 250px;
+        width: 100%;
+    }
+    
+    header {
+        max-height: 250px;
+        width: 100%;
+    }
+    
+    header img {
+        max-height: 200px;
+        width: 100%;
+    }
+    
+    footer {
+        max-height: 300px;
+        width: 100%;
+    }
+
 }
 
-/* MEDIA QUERIS */
+/* --------------------------------------- FIN MEDIA QUERIS ------------------------------------------ */
