@@ -378,8 +378,7 @@ article {
 
 /* --------------------------------------------- FIN PERFIL -------------------------------------------*/
 
-
-/* ---------------------------------------- INICIO PANTALLA SIGN IN ----------------------------------*/
+/* ---------------------------------------- INICIO SIGN IN ----------------------------------*/
 
 .vidgal {
     width: 100%;
@@ -577,16 +576,8 @@ footer p {
 }
 
 @media only screen and (min-device-width: 801px) {
-    .block {
-        width: 49%;
-        margin-left: 0.5%;
-        margin-right: 0.5%;
-      }
-      
-    .imagenesgalerias {
-        width: 50%;  
-      }
     
+    /*  HEADER Y FOOTER */
     .headerimagen img {
         max-height: 250px;
         width: 100%;
@@ -606,7 +597,55 @@ footer p {
         max-height: 300px;
         width: 100%;
     }
+    
+    
+    /* INDEX -------- */
+    .block {
+        width: 49%;
+        margin-left: 0.5%;
+        margin-right: 0.5%;
+      }
+      
+    .imagenesgalerias {
+        width: 50%;  
+      }
+   
+    
+    /* SIGN IN---------- */
+    
+    .vidgal {
+    width: 50%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    float: left;
+}
 
+   .vidgal video {
+    width: 95%;
+    float: left;
+    margin: 0 2.5%;
+    
+}
+    .formsign {
+    width: 40%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    float: left;
+}
+    .registrate {
+    width: 40%;
+    margin: 0 5%;
+    margin-top: 3px;
+    height: 60px;
+    float: left;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+    
+    
 }
 
 /* --------------------------------------- FIN MEDIA QUERIS ------------------------------------------ */
