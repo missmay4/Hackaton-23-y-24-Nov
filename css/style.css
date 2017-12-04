@@ -600,8 +600,7 @@ footer p {
 
     }
 
-@media only screen 
-  and (min-device-width: 481px) and (max-device-width: 800px) {
+@media only screen and (min-device-width: 481px) and (max-device-width: 800px) {
 	
 }
 
@@ -631,6 +630,7 @@ footer p {
      */
     
     /* INDEX -------- */
+    
     .block {
         width: 49%;
         margin-left: 0.5%;
@@ -691,4 +691,4 @@ footer p {
     }  */
 }
 
-/* --------------------------------------- FIN MEDIA QUERIS ------------------------------------------ */
+/* ----------------- FIN MEDIA QUERIS --------------------- */
