@@ -458,12 +458,12 @@ article {
 }
 
 #botreg {
-    background-color: #0089ff;
-    font-size: 30px;
+    background-color: #242020;
     border-style: solid ;
 }
 
 #botreg a {
+    color: white;
     width: 100%;
 }
 
