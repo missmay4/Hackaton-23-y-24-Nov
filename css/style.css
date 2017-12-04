@@ -175,9 +175,15 @@ header {
     width: 100%;
     height: 60px;
 }
+<<<<<<< HEAD
 
 .nombreg {
     font-size: 60px;
+=======
+.nombreg{
+    font-size: 2.81em;
+     
+>>>>>>> responsiveVistaDetalle
 }
 
 .nombreg h2 {
@@ -210,7 +216,50 @@ header {
 }
 
 .cuadro img {
+<<<<<<< HEAD
     width: 100%;   
+=======
+    width: 100%;
+   
+}
+
+/*    tipografia   */
+
+.desplegar > h3{ 
+    font-size: 25px;
+    
+}
+
+.comentuse > h1 { 
+font-size: 1.25em;
+}
+
+.usercom > .infoN {
+    font-size: 1.25em;
+
+}
+
+
+.usercom > .infoF  {
+    font-size: 1em;
+    font-weight: 300;
+
+}
+
+
+.usercom > .textoC {
+    font-size: 1em;
+
+}
+ /* ----------- responsive ------------- */
+
+
+    
+/*
+.mapa img{
+    width: 50%;
+    transition: transform 10s;
+>>>>>>> responsiveVistaDetalle
 }
 
 .evento1 {
@@ -242,16 +291,23 @@ article {
     float: left;
 }
 
+<<<<<<< HEAD
 .userpic {
     width: 20%;
+=======
+.userpic{
+    width: 10%;
+>>>>>>> responsiveVistaDetalle
     margin: 0 5%;
     float: left;
 }
 
 .userpic img {
     border-radius: 50%;
-    height: 250px;
+    height: 173px;
+    
 }
+<<<<<<< HEAD
 
 .usercom {
     width: 65%;
@@ -261,6 +317,15 @@ article {
 
 .usercom p {
     text-align: left;
+=======
+.usercom{
+    width: 75%;
+    margin: 0 2.5%;
+    float: left;
+}
+.usercom p{
+    text-align: justify;
+>>>>>>> responsiveVistaDetalle
     font-size: 25px;
 }
 
@@ -281,8 +346,13 @@ article {
     text-align: center;
 }
 
+<<<<<<< HEAD
 .Strellitas {
     max-width: 20%;
+=======
+.Strellitas{
+    max-width: 15%;
+>>>>>>> responsiveVistaDetalle
     /*margin-left: 41%;*/
 }
 
@@ -668,5 +738,12 @@ footer p {
         margin-right: 2%;    
     }  */
 }
+<<<<<<< HEAD
 
 /* --------------------------------------- FIN MEDIA QUERIS ------------------------------------------ */
+=======
+/* ----------- FIN FOOTER ----------- */
+
+/* ------ vista detalle @media -------- */
+
+>>>>>>> responsiveVistaDetalle
