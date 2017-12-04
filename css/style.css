@@ -567,13 +567,36 @@ footer p {
 
 /* ------------------------------------------- MEDIA QUERIS ------------------------------------------ */
 
-@media only screen 
-  and (max-device-width: 480px) {
+@media only screen and (max-device-width: 480px) {
+      /* HEADER */
+      .naming {
+      padding-top: 20px;
+      }
+      
+    /* FOOTER */
+    .fondofooter {
+        width: 60%;
+        margin: 0 20%;
+        float: left;
+    }
+    
+      .legal p{
+          width: 100%;
+      }
+      
+    .iconosocial {
+    width: 70%;
+    margin: 0 15%;
+      }
+      
+    /* FORMULARIO */
+    .deco-1{
+        display: none;
+    }
 
 }
 
-@media only screen 
-  and (min-device-width: 481px) and (max-device-width: 800px) {
+@media only screen and (min-device-width: 481px) and (max-device-width: 800px) {
 	
 }
 
@@ -602,6 +625,7 @@ footer p {
     
     
     /* INDEX -------- */
+    
     .block {
         width: 49%;
         margin-left: 0.5%;
@@ -646,8 +670,21 @@ footer p {
     padding-top: 10px;
     padding-bottom: 10px;
 }
+    /* FORMULARIO */
     
+    .formularioreg{
+        padding: 20px 0 50px 0;
+        width: 45%;
+        margin: 0 5%;
+        float: left;
+    }
+    
+   /* .medio{
+        width: 48%;
+        float:left;
+        margin-right: 2%;    
+    }  */
     
 }
 
-/* --------------------------------------- FIN MEDIA QUERIS ------------------------------------------ */
+/* ----------------- FIN MEDIA QUERIS --------------------- */
