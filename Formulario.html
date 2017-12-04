@@ -31,32 +31,25 @@
    </header>
    
    <main>
-      
-      
-       <div class="hojaform">
+       <div class="formreg">
        
        <div class="wrapper">
-       
-       <div class="title-1">
-           <h1 class="funo">Formulario de Registro</h1>
-       </div>
-       
         <form action="register.php" method="post" class="formularioreg">
            
            
-            <label for="nombre" class="etiq fcuatro">Nombre*</label>
+            <label for="nombre" class="etiq fcuatro">Nombre</label>
             
             <input type="text" class="campo" id="nombre" name="nombre" maxlength="20" placeholder="Escribe aquí tu nombre" required />
             
-           <label for="fusername" class="etiq fcuatro medio">Nombre de usuario (sólo si no representas Galeria de Arte) </label>
+            <label for="username" class="etiq fcuatro">Nombre de usuario (sólo si no representas Galeria de Arte) </label>
             
-            <input type="text" class="campo medio" id="username" name="username" maxlength="12" placeholder="Escribe aquí tu nombre de usuario" />
-
-            <label for="fusername" class="etiq fcuatro medio">Nombre de Galería de Arte</label>
-
-            <input type="text" class="campo medio" id="ngaleria" name="ngaleria" maxlength="12" placeholder="Escribe el nombre de tu galería de arte" />
-
-            <label for="email" class="etiq fcuatro">Email*</label>
+            <input type="text" class="campo" id="username" name="username" maxlength="12" placeholder="Escribe aquí tu nombre de usuario" />
+            
+            <label for="username" class="etiq fcuatro">Nombre de Galería de Arte</label>
+            
+            <input type="text" class="campo" id="galeria" name="galeria" maxlength="12" placeholder="Escribe el nombre de tu galería de arte" />
+            
+            <label for="email" class="etiq fcuatro">Email</label>
             
             <input type="email" class="campo" id="email" name="email" maxlength="255" placeholder="Escribe tu email" required />
             
@@ -64,11 +57,11 @@
             
             <input type="date" class="campo" id="birth" name="birth">
             
-            <label for="pass" class="etiq fcuatro">Contraseña*</label>
+            <label for="pass" class="etiq fcuatro">Contraseña</label>
             
             <input type="password" class="campo" id="pass" name="pass" maxlength="15" placeholder="Escribe tu contraseña" required />
             
-            <label for="pass2" class="etiq fcuatro"> Repite Contraseña*</label>
+            <label for="pass2" class="etiq fcuatro"> Repite Contraseña</label>
             
             <input type="password" class="campo" id="pass2" name="pass2" maxlength="15" placeholder="Repite tu contraseña" required />
             
@@ -78,12 +71,12 @@
             
             
             <div class="botonesradio">
-               <p class="etiq1 fcuatro">Selecciona qué tipo de usuario eres*</p>
-                <label class="fcontainer fcuatro"> Soy un usuario
+               <p class="etiq1 fcuatro">Selecciona qué tipo de usuario eres</p>
+                <label class="container fcuatro"> Soy un usuario
               <input type="radio" name="radio" required>
               <span class="checkmark"></span>
             </label>
-            <label class="fcontainer fcuatro"> Soy una galería de arte
+            <label class="container fcuatro"> Soy una galería de arte
               <input type="radio" name="radio">
               <span class="checkmark"></span>
             </label>
@@ -93,22 +86,22 @@
             <div class="botonescheck">
                <p class="fcuatro">¿Qué gustos tienes? (Opcional. Puedes seleccionar más de uno)</p>
                
-               <label class="fcontainer fcuatro">Impresionismo
+               <label class="container fcuatro">Impresionismo
                   <input type="checkbox">
                   <span class="checkmark"></span>
                 </label>
 
-                <label class="fcontainer fcuatro">Cubismo
+                <label class="container fcuatro">Cubismo
                   <input type="checkbox">
                   <span class="checkmark"></span>
                 </label>
 
-                <label class="fcontainer fcuatro">Arte contemporáneo
+                <label class="container fcuatro">Arte contemporáneo
                   <input type="checkbox">
                   <span class="checkmark"></span>
                 </label>
 
-                <label class="fcontainer fcuatro">Expresionismo
+                <label class="container fcuatro">Expresionismo
                   <input type="checkbox">
                   <span class="checkmark"></span>
                 </label>
@@ -119,11 +112,6 @@
             
             
         </form>
-        
-        <div class="deco-1">
-            <img src="img/mirar.png" alt="Hombre mirando">
-        </div>
-        
         </div>
     </div>
     
