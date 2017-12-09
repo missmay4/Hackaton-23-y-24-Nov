@@ -560,7 +560,7 @@ article {
 }
 
 .botonesradio {
-    width: 100%;
+    width: 90%;
     padding: 0 5%;
     float: left;
 }
@@ -573,7 +573,7 @@ article {
 }
 
 .botonescheck {
-     width: 100%;
+     width: 90%;
     padding: 0 5%;
     float: left;
 }
