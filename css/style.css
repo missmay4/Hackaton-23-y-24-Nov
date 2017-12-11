@@ -179,6 +179,9 @@ header {
 .nombreg {
     font-size: 60px;
 }
+    width: 100%;
+    float: left;
+   }
 
 .nombreg h2 {
     line-height: 0;
@@ -204,6 +207,7 @@ header {
 .descripcion p{
     font-size: 25px;
 }
+
 .cuadro {
     float: left;
     width: 100%;
@@ -211,6 +215,17 @@ header {
 
 .cuadro img {
     width: 100%;   
+}
+
+.mapa {
+    width: 100%;
+    float: left;
+
+}
+
+.mapa iframe {
+    width: 100%;
+    height: 400px;
 }
 
 .evento1 {
@@ -236,14 +251,17 @@ header {
 }
 
 article {
+/* article {
     width: 100%;
     margin: 0 2%;
     padding: 20px 0;
     float: left;
 }
+} */
 
 .userpic {
     width: 20%;
+    width: 10%;
     margin: 0 5%;
     float: left;
 }
@@ -251,16 +269,20 @@ article {
 .userpic img {
     border-radius: 50%;
     height: 250px;
+    height: 173px;
 }
 
 .usercom {
     width: 65%;
     margin: 0 2.5%;
+    width: 75%;
+    margin: 0 0%;
     float: left;
 }
 
 .usercom p {
     text-align: left;
+    text-align: justify;
     font-size: 25px;
 }
 
@@ -270,8 +292,16 @@ article {
 }
  
 .comentuse h1 {
+.comentuse h3 {
     text-align: center;
     font-family: serif;
+    
+}
+
+.ultcommierda {
+    width: 100%;
+    float: left;
+    margin-top: 1%;
 }
 
 .center {
@@ -283,10 +313,33 @@ article {
 
 .Strellitas {
     max-width: 20%;
+    max-width: 15%;
     /*margin-left: 41%;*/
 }
 
-/* ---------------------------------------- EFECTO HOVER EN 'COMENTARIOS' ---------------------------- */
+
+ 
+.comentuse > .fdos { 
+    font-size: 1.56em; 
+} 
+ 
+.usercom > .ftres { 
+    font-size: 1.25em; 
+} 
+ 
+.usercom > .fcuatro { 
+    font-size: 1em; 
+} 
+ 
+.center > .fdos { 
+    font-size: 1.56em 
+} 
+ 
+.desplegar > .fdos { 
+    font-size: 1.56em; 
+} 
+
+/* ---------------------------------------- EFECTO HOVER EN 'COMENTARIOS' ---------------------------- 
 
 .hovcom {
     display: none;
@@ -296,6 +349,7 @@ article {
     display: inline-block;
 }
 
+*/
 /* ------------------------------------------ EVENTOS HOVER -------------------------------------------*/
 
 .desplegar {
