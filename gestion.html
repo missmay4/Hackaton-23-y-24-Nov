@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="utf-8">
@@ -62,49 +62,54 @@
    </header>
 
   <main>
+    <!-- Formulario gestion galeria -->
     <div class="hojaform">
       <div class="wrapper">
         <div class="title-1">
            <h1 class="funo">Panel de edición</h1>
          </div>
 
-       <form action="gestion.php" method="post" class="formularioreg">
-         <label for="nombre" class="gestcentrado">Nombre</label>
-           <div class="gestcentrado"><input type="text" /></div>
-         <label for="descr" class="gestcentrado">Descripción</label>
-           <div class="gestcentrado">
-             <textarea name="descr" id="descr" cols="30" rows="10" placholder="Define tú Galería"></textarea>
-           </div>
-        <label for="gestfotos" class="gestcentrado" >Añadir imagenes</label>
-            <div class="gestcentrado"><input type="file"  id="gestfotos" name="gestfotos">
-            </div>
-            <div class="gestcentrado"><input type="file"  id="gestfotos" name="gestfotos">
-            </div>
-            <div class="gestcentrado"><input type="file"  id="gestfotos" name="gestfotos">
-            </div>
-            <div class="gestcentrado"><input type="file"  id="gestfotos" name="gestfotos" >
-            </div>
-            <label for="nombre" class="gestcentrado">Dirección</label>
-              <div class="gestcentrado"><input type="text" /></div>
-            <label for="nombre" class="gestcentrado">Horario</label>
-              <div class="gestcentrado"><input type="text" /></div>
-            <label for="nombre" class="gestcentrado">Teléfono</label>
-              <div class="gestcentrado"><input type="number" /></div>
-            <label for="nombre" class="gestcentrado">E-mail</label>
-              <div class="gestcentrado"><input type="text" /></div>
-            <label for="gesteventos" class="gestcentrado">Añadir próximos eventos:
-            </label>
-            <div class="gestmedio">Nombre: <input type="text" /></div>
-            <div class="gestmedio">Fecha: <input type="date" name="date"/></div>
-            <div class="gestmedio">Nombre: <input type="text" /></div>
-            <div class="gestmedio">Fecha: <input type="date" name="date"/></div>
-            <div class="gestmedio">Nombre: <input type="text" /></div>
-            <div class="gestmedio">Fecha: <input type="date" name="date"/></div>
-            <div class="gestcentrado"><input type="submit" name="guarcambios" value="Guardar cambios">
+       <form id="myForm" action="gestion.php" method="post" class="formularioreg">
+         <!-- Nombre galeria -->
+         <label for="nombre" class="etiq fcuatro">Nombre</label>
+         <input type="text" class="campo" id="nombre" name="nombre" maxlength="20" placeholder="Escriba aquí el nombre de su galería" />
+         <!-- Descripcion galeria -->
+         <label for="nombre" class="etiq fcuatro">Descripción</label>
+         <input type="text" class="campo" id="description" name="description" cols= "30" rows="10" placeholder="Describa aquí su galería" />
+         <!-- Añadir imagenes -->
+         <label for="gestfotos" class="etiq fcuatro" >Añadir imagenes</label>
+          <input type="file" class="campo" id="gestfotos" name="gestfotos">
+          <input type="file" class="campo" id="gestfotos" name="gestfotos">
+          <input type="file" class="campo" id="gestfotos" name="gestfotos">
+          <input type="file" class="campo" id="gestfotos" name="gestfotos">
+        <!-- Contacto galeria -->
+        <!-- Dirección -->
+        <label for="address" class="etiq fcuatro">Dirección</label>
+        <input type="text" class="campo" id="address" name="address" maxlength="20" placeholder="Escriba aquí la dirección de su galería" />
+        <!-- Horario -->
+        <label for="openingTimes" class="etiq fcuatro">Horario</label>
+        <input type="text" class="campo" id="openingTimes" name="openingTimes" maxlength="60" placeholder="Escriba aquí el horario de su galería" />
+        <!-- Telefono -->
+        <label for="phone" class="etiq fcuatro">Horario</label>
+        <input type="number" class="campo" id="phone" name="phone" maxlength="9" placeholder="Escriba aquí el teléfono de su galería" />
+        <!-- E-mail -->
+        <label for="mail" class="etiq fcuatro">Correo electrónico</label>
+        <input type="text" class="campo" id="mail" name="mail" maxlength="60" placeholder="Escriba aquí la dirección de correo de su galería" />
+        <!-- Eventos galeria -->
+        <label for="gesteventos" class="etiq fcuatro">Añadir próximos eventos:</label>
+          <div class="campo">Nombre: <input type="text" /></div>
+          <div class="campo">Fecha: <input type="date" name="date"/></div>
+          <div class="campo">Nombre: <input type="text" /></div>
+          <div class="campo">Fecha: <input type="date" name="date"/></div>
+          <div class="campo">Nombre: <input type="text" /></div>
+          <div class="campo">Fecha: <input type="date" name="date"/></div>
+          <div class="campo"><input type="submit" name="guarcambios" value="Guardar cambios">
             </div>
       </form>
       </div>
     </div>
+    <!-- Fin formulario gestion galeria -->
+
   </main>
 
    <footer>
