@@ -7,9 +7,48 @@
     <link rel="stylesheet" href="css/normalize.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <!--    links BOOTSTRAP-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
 </head>
 <body>
    
+  <!--   menu de navegacion-->
+   <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="index.html">Home</a></li>
+        
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Galerías más populares <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Madrid</a></li>
+            <li><a href="#">Barcelona</a></li>
+          </ul>
+        </li>
+        
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="Formulario.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href="signin.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+ 
+<!--  fin menu de navegacion-->
+
     <header>
        <div class="wrapper">
            <div class="logo">
@@ -34,7 +73,7 @@
          <!-- Body -->
       <!-- Buscador -->
       
-   <div class="centrar fondocolor ">
+   <div class="fondocolor centrargr">
        <div class="wrapper">
           <div class="search">
            <input type="search" placeholder="Buscar por nombre de galería o localización">
@@ -43,20 +82,20 @@
    </div>
    
    <!-- Nombre Galería -->
-   <div class="centrar fondocolor">
+   <div class="centrargr fondocolor">
        <div class="wrapper">
           <div class="nombreg">
            
            <h1 class="funo">Galería Magda Bellotti</h1>
            </div>
+
+            
+           </div>
        </div>
    </div>
    
    <!-- Valoración -->
-   <div class="centrar fondocolor valoracion">
-       <div class="wrapper">
-           <img src="img/Eva5estrellas.png" alt="Valoración" />
-       </div>
+   <div>
    </div>
    
    <!-- Descripción -->
@@ -65,7 +104,30 @@
          <div class="descripcion">
        
        <p class="fdos">Fundada en 1980, Galería Magda Bellotti nace con el objetivo de dar a conocer el arte en el corazón de la capital española. Especializada en pinturas de los siglos XIX y XX. </p>
-       <p class="ftres">Situada en la céntrica calle Fúcar nº22 (entre Metros Atocha y Antón Martín), estamos abiertos de L-V de 9:00-18:00. Para cualquier duda contacatar al 6251424253 o ejemplo@mail.com</p>
+       <div class="ftres">
+          <table>
+            <tr>
+              <td>Dirección:</td>
+              <td>Calle X nºx</td>
+            </tr>
+            <tr>
+              <td>Horario:</td>
+              <td>L-V 10:00-18:00</td>
+            </tr>
+             <tr>
+              <td>Teléfono</td>
+              <td>652254875</td>
+            </tr>
+             <tr>
+              <td>Mail:</td>
+              <td>ejemplo@mail.com</td>
+            </tr>
+             <tr>
+              <td>Web:</td>
+              <td>ejemplo.com</td>
+            </tr>
+          </table>
+        </div>
          </div>
        </div>
    </div>
@@ -80,7 +142,7 @@
    </div>
    
    <!-- Localización -->
-   <div class="centrar fondocolor">
+   <div class="centrargr fondocolor">
       <div class="wrapper">
        
        <h3 class="fdos">¿DÓNDE ESTAMOS?</h3>
@@ -88,7 +150,7 @@
    </div>
    
    <!-- Mapa-->
-   <div class="centrar fondocolor">
+   <div class="centrargr fondocolor">
       <div class="wrapper">
           <div class="mapa" id="map">
               
@@ -104,45 +166,64 @@
       
       <h3 class="fdos">Comentarios de usuarios (3)</h3>
       </div>
-       <div class="center"><img class="Strellitas" src="img/Eva5estrellas.png" alt="valoracion estrellas">
-         </div> 
+       
     </div>
      
    </div>
    
-   <!-- Com1 -->
+   <!-- ComPC -->
    
    <div class="blockcom">
        <div class="wrapper"> 
+
+        <div>
+         <form action="" method="post" class="">
+           
+           <textarea name="comm" id="comm" cols="100" rows="3"></textarea>
+
+           <input type="submit" name="comentar" value="Comentar">
+
+         </form>
+
+
+       </div>
+
+
                 <article>
+
+              
                 <div class="userpic">
                <img src="img/carnet1.jpg" alt="foto">
                </div>
                 <div class="usercom">
                     
+                    <div >
                     <p class="ftres">Maria G.</p>
                     <p class="fcuatro">2 de Noviembre 2017</p> 
+
+                    </div>
+                
+                      <div >
                     <p class="ftres">Mi experiencia en la galeria fue extraordinaria. la atención fue magnifica y me asesoraron e informaron acerca de los artistas cuyas obras estaban expuestas. Al final, terminé comprando dos obras y quiero volver a por mas muy pronto!.</p>
+                      </div>
+
                 </div>
 
                 </article>
                 
-                <div class="hovcomon" id="mascom">
+                <!-- <div class="hovcomon" id="mascom">
                    <div class="center">
                        
                        <h4 class="fdos">Más Comentarios</h4>
                    </div>
-                   </div>
+                   </div> -->
                 
                 <div class="hovcom" id="restcom">
                
-                  
-                  
-                   
-                   
+                
+             <article> 
 
-
-               <article>                 
+             <div class="segcommierda">                
             <div class="userpic">
                <img src="img/carnet3.png" alt="foto">
                </div>
@@ -151,6 +232,8 @@
                    <p class="ftres">Marta K.</p>
                    <p class="fcuatro"> 3 de Enero 2017</p>
                     <p class="ftres">Creo que la galería merece buena puntuación, sin embargo la zona no es muy buena, por eso ten cuidado cuando vayas porque suelen robar en los alrededores.</p>
+                </div>
+
                 </div>
 
                </article>
@@ -173,6 +256,112 @@
                </div>
        </div>
     
+   </div>
+
+
+   <!-- Com movil -->
+
+   <div class="blockcomMovil">
+     <div class="wrapper">
+       <div>
+         <form action="" method="post" class="">
+           
+           <textarea name="comm" id="comm" cols="45" rows="5"></textarea>
+
+           <input type="submit" name="comentar" value="Comentar">
+
+         </form>
+
+       </div>
+
+        <div>
+          <div class="mvTop">
+
+            <div class="mvImg">
+              <img src="img/carnet1.jpg" alt="foto"/>
+              
+            </div>
+
+            <div class="mvNomb">
+              <p class="ftres">Maria G.</p>
+              <p class="fcuatro">2 de Noviembre 2017</p>
+
+            </div>
+            
+
+          </div>
+
+          <div class="mvDown">
+            
+            <div>
+              
+              <p class="ftres">Mi experiencia en la galeria fue extraordinaria. la atención fue magnifica y me asesoraron e informaron acerca de los artistas cuyas obras estaban expuestas. Al final, terminé comprando dos obras y quiero volver a por mas muy pronto!.</p>
+            </div>
+
+          </div>
+          </div>
+
+          <div>
+          <div class="mvTop">
+
+            <div class="mvImg">
+              <img src="img/carnet3.png" alt="foto"/>
+              
+            </div>
+
+            <div class="mvNomb">
+              <p class="ftres">Marta K.</p>
+              <p class="fcuatro">3 de Enero 2017</p>
+
+            </div>
+            
+
+          </div>
+
+          <div class="mvDown">
+            
+            <div>
+              
+              <p class="ftres">Creo que la galería merece buena puntuación, sin embargo la zona no es muy buena, por eso ten cuidado cuando vayas porque suelen robar en los alrededores.</p>
+            </div>
+
+          </div>
+          </div>
+
+          <div>
+          <div class="mvTop">
+
+            <div class="mvImg">
+              <img src="img/carnet2.png" alt="foto"/>
+              
+            </div>
+
+            <div class="mvNomb">
+              <p class="ftres">Alberto B</p>
+              <p class="fcuatro">6 de Febrero 2017</p>
+
+            </div>
+            
+
+          </div>
+
+          <div class="mvDown">
+            
+            <div>
+              
+              <p class="ftres">Es una magnífica galería. Sin duda volvería a ir y la recomiendo 100%. Además la atención es inmejorable.</p>
+            </div>
+
+          </div>
+          </div>
+
+       
+
+
+
+       </div>
+        
+
    </div>
    
    
