@@ -6,11 +6,10 @@
 
     <link rel="stylesheet" href="css/normalize.css" type="text/css" />
     <link rel="stylesheet" href="css/style.css" type="text/css" />
-    <link rel="stylesheet" href="css/font-awesome.css" type="text/css" />
+    <!--<link rel="stylesheet" href="css/font-awesome.css" type="text/css" /> -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 
 <body>
@@ -69,16 +68,15 @@
            <h1 class="funo">Panel de edición</h1>
          </div>
 
-       <form id="myForm" action="gestion.php" method="post" class="formularioreg">
+       <form id="myForm" action="gestion.php" method="post" class="formulariogestion">
          <!-- Nombre galeria -->
          <label for="nombre" class="etiq fcuatro">Nombre</label>
-         <input type="text" class="campo" id="nombre" name="nombre" maxlength="20" placeholder="Escriba aquí el nombre de su galería" />
+         <input data-validation="length alphanumeric" data-validation-length="min30" class="campo" id="nombre" name="nombre" placeholder="Escriba aquí el nombre de su galería" />
          <!-- Descripcion galeria -->
          <label for="nombre" class="etiq fcuatro">Descripción</label>
          <input type="text" class="campo" id="description" name="description" cols= "30" rows="10" placeholder="Describa aquí su galería" />
          <!-- Añadir imagenes -->
-         <label for="gestfotos" class="etiq fcuatro" >Añadir imagenes</label>
-          <input type="file" class="campo" id="gestfotos" name="gestfotos">
+         <label for="gestfotos" class="campo medio" >Añadir imagenes</label>
           <input type="file" class="campo" id="gestfotos" name="gestfotos">
           <input type="file" class="campo" id="gestfotos" name="gestfotos">
           <input type="file" class="campo" id="gestfotos" name="gestfotos">
@@ -92,19 +90,21 @@
         <!-- Telefono -->
         <label for="phone" class="etiq fcuatro">Horario</label>
         <input type="number" class="campo" id="phone" name="phone" maxlength="9" placeholder="Escriba aquí el teléfono de su galería" />
+        <!-- Web -->
+        <label for="web" class="etiq fcuatro">Sitio web</label>
+        <input data-validation="url" type="text" class="campo" id="web" name="web" maxlength="60" placeholder="Escriba aquí la dirección de la página web de su galería" />
         <!-- E-mail -->
         <label for="mail" class="etiq fcuatro">Correo electrónico</label>
         <input type="text" class="campo" id="mail" name="mail" maxlength="60" placeholder="Escriba aquí la dirección de correo de su galería" />
         <!-- Eventos galeria -->
         <label for="gesteventos" class="etiq fcuatro">Añadir próximos eventos:</label>
           <div class="campo">Nombre: <input type="text" /></div>
+          <div class="campo">Fecha: <input data-validation="date" data-validation-format="mm-dd-yyyy" type="date" name="date"/></div>
+          <div class="campo">Fecha: <input data-validation="date" data-validation-format="mm-dd-yyyy" type="date" name="date"/></div>
           <div class="campo">Fecha: <input type="date" name="date"/></div>
-          <div class="campo">Nombre: <input type="text" /></div>
-          <div class="campo">Fecha: <input type="date" name="date"/></div>
-          <div class="campo">Nombre: <input type="text" /></div>
-          <div class="campo">Fecha: <input type="date" name="date"/></div>
+          <!-- Submit -->
           <div class="campo"><input type="submit" name="guarcambios" value="Guardar cambios">
-            </div>
+          </div>
       </form>
       </div>
     </div>
@@ -112,327 +112,41 @@
 
   </main>
 
-   <footer>
-     <div class="wrapper">
-       <div class="fondofooter">
-         <div class="legal">
-           <h6 class="fdos">ANDE ARTE Corp</h6>
-             <p class="fcuatro">Aviso legal</p>
-             <p class="fcuatro">Privacidad</p>
-             <p class="fcuatro">Contacto</p>
-             <p class="fcuatro">Listado de Galerías</p>
-         </div>
-         <div class="iconosocial">
-           <a href=""><img src="img/iconosocial.png" alt="redes sociales" class="w3-opacity-max" /></a>
-         </div>
-      </div>
-    </div>
-   </footer>
+<!-- Footer en linea -->
+<footer>
+  <div class="footer-bottom">
+  	<div class="container">
+  		<div class="row">
+  			<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+  				<div class="copyright">
+  					© 2018, AndeArte Corp.
+            <ul class="social-icons social-icons-round ">
+              <li><a href="https://github.com/missmay4/AndeArte_Proyect"><i class="fa fa-github"></i></a></li>
+              <li><a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+							<li><a href="https://www.twitter.com/"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a></li>
+            </ul>
+  				</div>
+  			</div>
+  			<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+  				<div class="design">
+  					<a target="_blank" href="#">Aviso Legal </a> |
+            <a target="_blank" href="#">Privacidad</a> |
+            <a target="_blank" href="#">Contacto</a>
+  				</div>
+  			</div>
+  		</div>
+  	</div>
+  </div>
+</footer>
+
+<!-- Fin footer en linea -->
+
+  <!-- SCRIPTS -->
+   <script src="js/scripts.js" type="text/javascript"></script>
+   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+   <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
 </body>
 </html>
-=======
- 
-<html lang="es">
- 
-<head>
- 
-    <meta charset="utf-8">
- 
-    <title>Getión</title>
- 
-    
- 
-    
- 
-    <link rel="stylesheet" href="css/style.css" type="text/css" />
- 
-    
- 
-</head>
- 
-<body>
- 
-   
- 
-   <header>
- 
-       <div class="wrapper">
- 
-           <div class="logo">
- 
-               <a href="index.html"> <img src="img/logogaleria.png" alt="Logo
- 
-               " /></a>
- 
-           </div>
- 
-           <div class="naming">
- 
-               <h1 class="funo">Ande Arte</h1>
- 
-               <h2 class="fdos">Tu buscador de galerías</h2>
- 
-               
- 
-           </div>
- 
-           <div class="fotouser">
- 
-              <a href="perfiluser.html">
- 
-                  <img src="img/usuaria.jpg" alt="usuario" />
- 
-              </a>
- 
-               </div>
- 
-       </div>
- 
-       
- 
-   </header>
- 
-   
- 
-   <main>
- 
-    <div>
- 
-     <div class="wrapper">
- 
-            
- 
-            
- 
-            
- 
-            <form action="gestion.php"
- 
-               method="post">
- 
-                
- 
-                <label for="nombre"
- 
-            class="gestcentrado">
- 
-                    Nombre de la Galería
- 
-               </label>
- 
-                <div class="gestcentrado">
- 
-                    <input type="text" />
- 
-                </div>
- 
-                
- 
-                
- 
-                
- 
-                <label for="descr"
- 
-            class="gestcentrado">
- 
-                    Descripción de la Galería
- 
-               </label>
- 
-                <div class="gestcentrado">
- 
-                    <textarea name="descr" id="descr" cols="30" rows="10"
- 
-                 placholder="Define tú Galería"
- 
-                    ></textarea>
- 
-                </div>
- 
-                
- 
-                <label for="gestfotos"
- 
-                class="gestcentrado" >Subir imágenes cuadros</label>
- 
-            
- 
-            <div class="gestcentrado">
- 
-            <input type="file"  id="gestfotos" name="gestfotos" >
- 
-                </div>
- 
-                
- 
-                <div class="gestcentrado">
- 
-            <input type="file"  id="gestfotos" name="gestfotos" >
- 
-                </div>
- 
-                
- 
-                <div class="gestcentrado">
- 
-            <input type="file"  id="gestfotos" name="gestfotos" >
- 
-                </div>
- 
-                
- 
-                <div class="gestcentrado">
- 
-            <input type="file"  id="gestfotos" name="gestfotos" >
- 
-                </div>
- 
-                
- 
-                <div class="gestcentrado">
- 
-                   <p>Dirección, Horario, telefono contacto</p>
- 
-                    
- 
-                </div>
- 
-                
- 
-                <label for="gesteventos"
- 
-            class="gestcentrado">
- 
-                   Añadir próximos eventos:
- 
-               </label>
- 
-               
- 
-                <div class="gestmedio">
- 
-                    <input type="text" placeholder="fecha evento1"/>
- 
-                </div>
- 
-                   <div class="gestmedio">
- 
-                    <input type="text" placeholder="nombre evento1" />
- 
-                </div>
- 
-                
- 
-                
- 
-                
- 
-                <div class="gestmedio">
- 
-                    <input type="text" placeholder="fecha evento2"/>
- 
-                </div>
- 
-                   <div class="gestmedio">
- 
-                    <input type="text" placeholder="nombre evento2" />
- 
-                </div>
- 
-                
- 
-                <div class="gestcentrado">
- 
-                    <input type="submit"
- 
-                 name="guarcambios"
- 
-                    value="Guardar cambios">
- 
-                </div>
- 
-                
- 
-                
- 
-                
- 
-            </form>
- 
-            
- 
-            
- 
-            
- 
-            
- 
-            
- 
-     </div>    
- 
-    </div>
- 
-   </main>
- 
-   
- 
-   
- 
-   
- 
-   
- 
-   <footer>
- 
-       <div class="wrapper">
- 
-          <div class="fondofooter">
- 
-               <div class="legal">
- 
-            
- 
-               <h6 class="fdos">ANDE ARTE Corp</h6>
- 
-               <p class="fcuatro">Aviso legal</p>
- 
-               <p class="fcuatro">Privacidad</p>
- 
-               <p class="fcuatro">Contacto</p>
- 
-               <p class="fcuatro">Listado de Galerías</p>
- 
-
- 
-           </div>
- 
-           
- 
-           <div class="iconosocial">
- 
-               <a href=""><img src="img/iconosocial.png" alt="redes sociales" class="w3-opacity-max" /></a>
- 
-
- 
-           </div>
- 
-           
- 
-          </div>
- 
-       </div>
- 
-       
- 
-   </footer>
- 
-   
- 
-    
- 
-</body>
- 
-</html>
-

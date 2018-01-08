@@ -89,13 +89,13 @@ header {
     padding-top: 20px;
     text-align: center;
     width: 21%;
-    float: left; 
+    float: left;
     margin-right: 1%;
 }
 
 .fotouser img {
     border-radius: 50%;
-    width: 83%;    
+    width: 83%;
 }
 
 /* -------------------------------------------- FIN HEADER ------------------------------------------- */
@@ -118,7 +118,7 @@ header {
 .main { /* centrar */
     width: 50%;
     margin-left: 20%;
-    
+
 }
 
 /* ------------------------------------ FIN DE VISTA IMAGEN PRINCIPAL -------------------------------- */
@@ -188,6 +188,20 @@ header {
 .contacto {
     float: left;
     width: 100%;
+
+}
+
+.valoracion img {
+   max-width: 20%;
+}
+
+.descripcion {
+    float: left;
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+=======
+
     text-align: center;
     margin-left: 30%;
     margin-top: 10%;
@@ -198,6 +212,9 @@ header {
 }
 
 .cuadro img {
+
+    width: 100%;
+=======
     width: 100%; 
     margin-bottom: 50px;  
 }
@@ -206,6 +223,7 @@ header {
     width: 100%;
    
     margin-bottom: 20px;
+
 }
 
 .mapa {
@@ -276,14 +294,20 @@ header {
     width: 100%;
     float: left;
 }
- 
 
+
+.comentuse h3 {
+    text-align: center;
+    font-family: serif;
+
+=======
 
 
 .segcommierda {
     width: 100%;
     float: left;
     margin-top: 1%;
+
 }
 
 .ultcommierda {
@@ -299,6 +323,37 @@ header {
     text-align: center;
 }
 
+
+.Strellitas {
+    max-width: 20%;
+    max-width: 15%;
+    /*margin-left: 41%;*/
+}
+
+
+
+.comentuse > .fdos {
+    font-size: 1.56em;
+}
+
+.usercom > .ftres {
+    font-size: 1.25em;
+}
+
+.usercom > .fcuatro {
+    font-size: 1em;
+}
+
+.center > .fdos {
+    font-size: 1.56em
+}
+
+.desplegar > .fdos {
+    font-size: 1.56em;
+}
+
+/* ---------------------------------------- EFECTO HOVER EN 'COMENTARIOS' ----------------------------
+=======
 .comentuse > .fdos { 
     font-size: 1.56em; 
 } 
@@ -320,6 +375,7 @@ header {
 } 
 
 /* ---------------------------------------- EFECTO HOVER EN 'COMENTARIOS' ---------------------------- 
+
 
 .hovcom {
     display: none;
@@ -343,7 +399,7 @@ header {
 }
 
 .ordevent{
-    display: none;    
+    display: none;
 }
 
  .texevent#evento:hover {
@@ -366,7 +422,7 @@ header {
     padding-top: 20px;
     padding-left: 3%;
     width: 21%;
-    float: left;   
+    float: left;
 }
 
 #atrasperfil img {
@@ -411,8 +467,8 @@ header {
     width: 100%;
 }
 .dropdown-menu{
-    display: none;   
-    width: 100%;    
+    display: none;
+    width: 100%;
     height: 100px;
 }
 
@@ -560,21 +616,21 @@ header {
 .deco-1 img{
         max-width: 100%;
     }
-    
+
 
 /* ------------------------------------------ FIN FORMULARIO ------------------------------------------*/
-/* -------------------------------------- GESTION----------------------------------------------- */ 
- 
-.gestcentrado{ 
-    width: 100%; 
-    float: left; 
-    text-align: center; 
-} 
- 
-.gestmedio{ 
-    width: 50%; 
-    float:  left; 
-text-align: center;} 
+/* -------------------------------------- GESTION----------------------------------------------- */
+
+.gestcentrado{
+    width: 100%;
+    float: left;
+    text-align: center;
+}
+
+.gestmedio{
+    width: 50%;
+    float:  left;
+text-align: center;}
 
 /* ---------------------------------------------- FOOTER --------------------------------------------- */
 
@@ -582,7 +638,7 @@ footer {
     width: 100%;
     float: left;
     padding-top: 15px;
-    background-color: #2a2a2a;
+    /*background-color: #2a2a2a;*/
     color:white;
 }
 
@@ -599,7 +655,7 @@ footer p {
 
 .legal {
     text-align: center;
-   
+
 }
 
 .iconosocial {
@@ -607,18 +663,85 @@ footer p {
     margin: 0 40%;
     padding: 50px 0;
     float: left;
-    
+
 }
 .iconosocial img {
     width: 100%;
 }
+
+
+/* Footer en linea */
+.footer-bottom {
+    background-color: #333;
+    min-height: 30px;
+    width: 100%;
+}
+
+.copyright {
+    color: #fff;
+    line-height: 30px;
+    min-height: 30px;
+    padding: 7px 0;
+}
+
+.design {
+    color: #fff;
+    line-height: 30px;
+    min-height: 30px;
+    padding: 7px 0;
+    text-align: right;
+}
+
+.design a {
+    color: #fff;
+}
+
+.social-icons {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.social-icons > li {
+    display: inline-block;
+}
+
+.social-icons > li > a {
+    background: #f5f5f5;
+    display: block;
+    margin: 0 8px 8px 0;
+    text-align: center;
+    line-height: 32px;
+    font-size: 14px;
+    height: 32px;
+    width: 32px;
+    color: #777777;
+}
+
+.social-icons > li > a:hover,
+.social-icons > li > a:focus {
+    background: #7f8c8d;
+    color: #ffffff;
+}
+
+.social-icons-md > li > a {
+    line-height: 40px;
+    height: 40px;
+    width: 40px;
+}
+
+.social-icons-round > li > a {
+    border-radius: 2px;
+}
+/* Footer en linea */
+
 
 /* --------------------------------------------- FIN FOOTER ------------------------------------------ */
 
 
 /* ------------------------------------------- MEDIA QUERIS ------------------------------------------ */
 
-@media only screen 
+@media only screen
   and (max-device-width: 480px) {
     /* HEADER */
       .naming {
@@ -630,11 +753,11 @@ footer p {
         margin: 0 20%;
         float: left;
     }
-    
+
       .legal p{
           width: 100%;
       }
-      
+
     .iconosocial {
     width: 70%;
     margin: 0 15%;
@@ -686,28 +809,28 @@ footer p {
  
     }
 
-@media only screen 
+@media only screen
   and (min-device-width: 481px) and (max-device-width: 800px) {
-	
+
 }
 
 @media only screen and (min-device-width: 801px) {
-    
-    
+
+
     /* INDEX -------- */
     .block {
         width: 49%;
         margin-left: 0.5%;
         margin-right: 0.5%;
       }
-      
+
     .imagenesgalerias {
-        width: 50%;  
+        width: 50%;
       }
-   
-    
+
+
     /* SIGN IN---------- */
-    
+
     .vidgal {
     width: 50%;
     padding-top: 50px;
@@ -719,7 +842,7 @@ footer p {
     width: 95%;
     float: left;
     margin: 0 2.5%;
-    
+
 }
     .formsign {
     width: 40%;
@@ -739,19 +862,26 @@ footer p {
     padding-top: 10px;
     padding-bottom: 10px;
 }
-    /* FORMULARIO */
-    
+    /* FORMULARIOS */
+
     .formularioreg{
         padding: 20px 0 50px 0;
         width: 45%;
         margin: 0 5%;
         float: left;
     }
-    
+
+    .formulariogestion{
+        padding: 20px 0 50px 0;
+        width: 45%;
+        margin: 0 5%;
+        float: left;
+    }
+
    /* .medio{
         width: 48%;
         float:left;
-        margin-right: 2%;    
+        margin-right: 2%;
     }  */
 
  /* VISTA DETALLE */
