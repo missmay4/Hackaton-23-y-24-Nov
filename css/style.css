@@ -505,6 +505,9 @@ footer p {
     margin:5px 0;
 }
 
+footer a{
+    color: white ;
+}
 .fondofooter{
     width: 50%;
     margin: 0 25%;
