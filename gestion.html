@@ -96,20 +96,21 @@
 
         <!-- Telefono -->
         <label for="phone" class="etiq fcuatro">Teléfono</label>
-        <input type="number" class="campo" id="phone" name="galphone"  placeholder="Escriba aquí el teléfono de su galería" />
+        <input type="text" class="campo" id="phone" name="galphone"  placeholder="Escriba aquí el teléfono de su galería" />
 
         <!-- Web -->
         <label for="web" class="etiq fcuatro">Sitio web</label>
-        <input data-validation="url" type="text" class="campo" id="web" name="galweb" placeholder="Escriba aquí la dirección de la página web de su galería" />
+        <input type="text" class="campo" id="web" name="galweb" placeholder="Escriba aquí la dirección de la página web de su galería" />
 
 
         <!-- E-mail -->
         <label for="mail" class="etiq fcuatro">Correo electrónico</label>
-        <input type="text" class="campo" id="mailReg" name="mail" maxlength="60" placeholder="Escriba aquí la dirección de correo de su galería" />
+        <input type="text" class="campo" id="mailReg" name="galemail"  placeholder="Escriba aquí la dirección de correo de su galería" />
+
         <!-- Eventos galeria -->
         <label for="gesteventos" class="etiq fcuatro">Añadir próximos eventos:</label>
-          <div class="campo">Nombre del evento: <input type="text" /></div>
-          <div class="campo">Fecha: <input data-validation="date" data-validation-format="mm-dd-yyyy" type="date" name="date"/></div>
+          <div class="campo">Nombre del evento: <input type="text" name="evento" /></div>
+          <div class="campo">Fecha: <input type="date" name="date"/></div>
           
 
           <!-- Submit -->

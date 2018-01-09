@@ -32,16 +32,28 @@ $(function() {
       },
 
       galphone: {
-      	required: true,
+      	
       	digits: true,
       	rangelength:[9, 9]
 
       },
 
       galweb: {
-      	required: true,
       	url: true
       },
+
+      galemail{
+        required: true,
+        email: true
+      }
+
+      evento{
+        rangelength:[5, 25]
+      }
+
+      date{
+        digits: true,
+      }
 
     },
 
