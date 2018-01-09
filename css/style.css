@@ -175,12 +175,6 @@ header {
     margin-right: 8%;
 }
 
-.valoEstr {
-    position: relative;
-    top:305px;
-    left:38%;
-    
-}
 .search {
     float: left;
     width: 100%;
@@ -199,7 +193,6 @@ header {
     margin-left: 5%;
     margin-right: 5%;
     text-align: center;
-    margin-top: 6%;
 }
 
 .cuadro {
@@ -722,13 +715,6 @@ footer p {
 }
 .nombreg{
     max-width: 100%;
-}
-
-.valoEstr {
-    position: fixed;
-    top:320px;
-    left:42%;
-    
 }
 
 .colocarGal{
