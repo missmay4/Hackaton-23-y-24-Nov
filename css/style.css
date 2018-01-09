@@ -171,6 +171,12 @@ header {
     margin-left: 23%;
 }
 
+.valoEstr { 
+    position: relative; 
+    top:305px; 
+    left:38%; 
+     
+} 
 .centrar ul {
     margin-right: 8%;
 }
@@ -193,6 +199,7 @@ header {
     margin-left: 5%;
     margin-right: 5%;
     text-align: center;
+    margin-top: 6%;
 }
 
 .cuadro {
@@ -704,8 +711,16 @@ footer a{
         float: left;
     }
 
+
     /* VISTA DETALLE */
 
+
+.valoEstr { 
+    position: fixed; 
+    top:320px; 
+    left:42%; 
+     
+} 
 .mediovg {
     width: 50%;
     float: left;
