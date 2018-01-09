@@ -111,6 +111,8 @@ header {
 
 .headerimagen img {
     max-width: 100%;
+    height: 140px;
+    width: 4000px;
     margin-top: 25px;
 }
 
@@ -483,7 +485,8 @@ header {
 .gestmedio{
     width: 50%;
     float:  left;
-text-align: center;}
+    text-align: center;
+}
 
 /* ---------------------------------------------- FOOTER --------------------------------------------- */
 
