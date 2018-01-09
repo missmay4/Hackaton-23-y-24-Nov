@@ -89,13 +89,13 @@ header {
     padding-top: 20px;
     text-align: center;
     width: 21%;
-    float: left; 
+    float: left;
     margin-right: 1%;
 }
 
 .fotouser img {
     border-radius: 50%;
-    width: 83%;    
+    width: 83%;
 }
 
 /* -------------------------------------------- FIN HEADER ------------------------------------------- */
@@ -118,7 +118,7 @@ header {
 .main { /* centrar */
     width: 50%;
     margin-left: 20%;
-    
+
 }
 
 /* ------------------------------------ FIN DE VISTA IMAGEN PRINCIPAL -------------------------------- */
@@ -165,6 +165,14 @@ header {
     margin-bottom: 0%;
 }
 
+.centrar table {
+    margin-left: 23%;
+}
+
+.centrar ul {
+    margin-right: 8%;
+}
+
 .search {
     float: left;
     width: 100%;
@@ -176,41 +184,33 @@ header {
     height: 60px;
 }
 
-.nombreg {
-    font-size: 60px;
-}
-
-.nombreg h2 {
-    line-height: 0;
-}
-
-.valoracion {
-    float: left;
-    width: 100%;
-}
-
-.valoracion img {
-   max-width: 20%;    
-}
 
 .descripcion {
     float: left;
-    width: 60%;
-    margin-left: 20%;
-    margin-right: 20%;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
     text-align: center;
 }
 
-.descripcion p{
-    font-size: 25px;
-}
 .cuadro {
     float: left;
     width: 100%;
 }
 
 .cuadro img {
-    width: 100%;   
+    width: 100%;
+}
+
+.mapa {
+    width: 100%;
+    float: left;
+
+}
+
+.mapa iframe {
+    width: 100%;
+    height: 400px;
 }
 
 .evento1 {
@@ -230,48 +230,36 @@ header {
 
 /* ------------------------------------------ INICIO COMENTARIOS --------------------------------------*/
 
-.blockcom {
-    width: 100%;
-    float: left;
-}
-
-article {
-    width: 100%;
-    margin: 0 2%;
-    padding: 20px 0;
-    float: left;
-}
-
-.userpic {
-    width: 20%;
-    margin: 0 5%;
-    float: left;
-}
-
-.userpic img {
-    border-radius: 50%;
-    height: 250px;
-}
-
-.usercom {
-    width: 65%;
-    margin: 0 2.5%;
-    float: left;
-}
-
-.usercom p {
-    text-align: left;
-    font-size: 25px;
-}
-
 .comentuse {
     width: 100%;
     float: left;
 }
- 
-.comentuse h1 {
-    text-align: center;
-    font-family: serif;
+
+
+.blockcomMovil {
+    width: 100%;
+    float: left;
+}
+
+.mvTop {
+    width: 100%;
+    float: left;
+}
+
+.mvImg {
+    width: 20%;
+    float: left;
+}
+
+.mvImg img{
+    max-width: 100%;
+    border-radius: 50%;
+
+}
+
+.mvNomb {
+    width: 50%;
+    float: right;
 }
 
 .center {
@@ -281,46 +269,6 @@ article {
     text-align: center;
 }
 
-.Strellitas {
-    max-width: 20%;
-    /*margin-left: 41%;*/
-}
-
-/* ---------------------------------------- EFECTO HOVER EN 'COMENTARIOS' ---------------------------- */
-
-.hovcom {
-    display: none;
-}
-
-.hovcomon#mascom:hover + .hovcom#restcom{
-    display: inline-block;
-}
-
-/* ------------------------------------------ EVENTOS HOVER -------------------------------------------*/
-
-.desplegar {
-    font-size: 25px;
-}
-
-.textevent {
-    height: 70px;
-    background-color: lightslategrey;
-}
-
-.ordevent{
-    display: none;    
-}
-
-.texevent#evento:hover {
-    background-color: black;
-    color: white;
-}
-
-.texevent#evento:hover + .ordevent#lista {
-    display: inline-block;
-}
-
-/* --------------------------------------------- FIN EVENTOS HOVER ------------------------------------*/
 
 /* ---------------------------------------------- FIN VISTA DETALLE ---------------------------------- */
 
@@ -331,7 +279,7 @@ article {
     padding-top: 20px;
     padding-left: 3%;
     width: 21%;
-    float: left;   
+    float: left;
 }
 
 #atrasperfil img {
@@ -376,8 +324,8 @@ article {
     width: 100%;
 }
 .dropdown-menu{
-    display: none;   
-    width: 100%;    
+    display: none;
+    width: 100%;
     height: 100px;
 }
 
@@ -525,9 +473,11 @@ article {
 .deco-1 img{
         max-width: 100%;
     }
-    
+
 
 /* ------------------------------------------ FIN FORMULARIO ------------------------------------------*/
+/* -------------------------------------- GESTION----------------------------------------------- */
+
 
 /*--------------------------GESTION.HTML---------------------*/
 
@@ -545,7 +495,7 @@ footer {
     width: 100%;
     float: left;
     padding-top: 15px;
-    background-color: #2a2a2a;
+    /*background-color: #2a2a2a;*/
     color:white;
 }
 
@@ -562,7 +512,7 @@ footer p {
 
 .legal {
     text-align: center;
-   
+
 }
 
 .iconosocial {
@@ -570,18 +520,85 @@ footer p {
     margin: 0 40%;
     padding: 50px 0;
     float: left;
-    
+
 }
 .iconosocial img {
     width: 100%;
 }
+
+
+/* Footer en linea */
+.footer-bottom {
+    background-color: #333;
+    min-height: 30px;
+    width: 100%;
+}
+
+.copyright {
+    color: #fff;
+    line-height: 30px;
+    min-height: 30px;
+    padding: 7px 0;
+}
+
+.design {
+    color: #fff;
+    line-height: 30px;
+    min-height: 30px;
+    padding: 7px 0;
+    text-align: right;
+}
+
+.design a {
+    color: #fff;
+}
+
+.social-icons {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.social-icons > li {
+    display: inline-block;
+}
+
+.social-icons > li > a {
+    background: #f5f5f5;
+    display: block;
+    margin: 0 8px 8px 0;
+    text-align: center;
+    line-height: 32px;
+    font-size: 14px;
+    height: 32px;
+    width: 32px;
+    color: #777777;
+}
+
+.social-icons > li > a:hover,
+.social-icons > li > a:focus {
+    background: #7f8c8d;
+    color: #ffffff;
+}
+
+.social-icons-md > li > a {
+    line-height: 40px;
+    height: 40px;
+    width: 40px;
+}
+
+.social-icons-round > li > a {
+    border-radius: 2px;
+}
+/* Footer en linea */
+
 
 /* --------------------------------------------- FIN FOOTER ------------------------------------------ */
 
 
 /* ------------------------------------------- MEDIA QUERIS ------------------------------------------ */
 
-@media only screen 
+@media only screen
   and (max-device-width: 480px) {
     /* HEADER */
       .naming {
@@ -593,11 +610,11 @@ footer p {
         margin: 0 20%;
         float: left;
     }
-    
+
       .legal p{
           width: 100%;
       }
-      
+
     .iconosocial {
     width: 70%;
     margin: 0 15%;
@@ -609,28 +626,28 @@ footer p {
 
     }
 
-@media only screen 
+@media only screen
   and (min-device-width: 481px) and (max-device-width: 800px) {
-	
+
 }
 
 @media only screen and (min-device-width: 801px) {
-    
-    
+
+
     /* INDEX -------- */
     .block {
         width: 49%;
         margin-left: 0.5%;
         margin-right: 0.5%;
       }
-      
+
     .imagenesgalerias {
-        width: 50%;  
+        width: 50%;
       }
-   
-    
+
+
     /* SIGN IN---------- */
-    
+
     .vidgal {
     width: 50%;
     padding-top: 50px;
@@ -642,7 +659,7 @@ footer p {
     width: 95%;
     float: left;
     margin: 0 2.5%;
-    
+
 }
     .formsign {
     width: 40%;
@@ -662,19 +679,70 @@ footer p {
     padding-top: 10px;
     padding-bottom: 10px;
 }
-    /* FORMULARIO */
-    
+    /* FORMULARIOS */
+
     .formularioreg{
         padding: 20px 0 50px 0;
         width: 45%;
         margin: 0 5%;
         float: left;
     }
-    
+
+    .formulariogestion{
+        padding: 20px 0 50px 0;
+        width: 45%;
+        margin: 0 5%;
+        float: left;
+    }
+
+    /* VISTA DETALLE */
+
+.mediovg {
+    width: 50%;
+    float: left;
+}
+
+.descripcion  {
+    width: 95%;
+    float: left;
+    margin-top: 8%;
+}
+.nombreg{
+    max-width: 100%;
+}
+
+.colocarGal{
+    margin-top: 3%;
+}
+
+.centrar table {
+    margin-left: 25%;
+    margin-top: 5%;
+}
+.centrar ul {
+    margin-left: 4%;
+}
+
+.cuadro {
+    margin-top: 5%;
+}
+
+/* Comentarios */
+
+.mvTop {
+    width: 100%;
+}
+.mvImg img {
+    max-width: 50%;
+}
+
+.mvNomb {
+    float: left;
+}
    /* .medio{
         width: 48%;
         float:left;
-        margin-right: 2%;    
+        margin-right: 2%;
     }  */
 }
 

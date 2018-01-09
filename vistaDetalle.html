@@ -7,9 +7,49 @@
     <link rel="stylesheet" href="css/normalize.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="css/jquery.rateyo.css"/>
+
+    
 </head>
 <body>
    
+<!--   menu de navegacion-->
+   <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="index.html">Home</a></li>
+        
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Galerías más populares <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Madrid</a></li>
+            <li><a href="#">Barcelona</a></li>
+          </ul>
+        </li>
+        
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="Formulario.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href="signin.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+ 
+<!--  fin menu de navegacion-->
+
+
     <header>
        <div class="wrapper">
            <div class="logo">
@@ -46,29 +86,55 @@
    <div class="centrar fondocolor">
        <div class="wrapper">
           <div class="nombreg">
-           <h2>Galería Magda Bellotti</h2>
+           
+           <h1 class="funo">Galería Magda Bellotti</h1>
            </div>
        </div>
    </div>
    
    <!-- Valoración -->
-   <div class="centrar fondocolor valoracion">
-       <div class="wrapper">
-           <img src="img/Eva5estrellas.png" alt="Valoración" />
-       </div>
+   <div >
    </div>
    
    <!-- Descripción -->
-   <div class="centrar fondocolor">
+   <div class="centrar mediovg fondocolor">
       <div class="wrapper">
          <div class="descripcion">
-       <p>Fundada en 1980, Galería Magda Bellotti nace con el objetivo de dar a conocer el arte en el corazón de la capital española. Especializada en pinturas de los siglos XIX y XX. </p>
+       
+       <p class="fdos">Fundada en 1980, Galería Magda Bellotti nace con el objetivo de dar a conocer el arte en el corazón de la capital española. Especializada en pinturas de los siglos XIX y XX. </p>
+
+
+       <div class="ftres centrar">
+           <table>
+             <tr>
+               <td>Dirección:</td>
+               <td>Calle X nºx</td>
+             </tr>
+             <tr>
+               <td>Horario:</td>
+               <td>L-V 10:00-18:00</td>
+             </tr>
+              <tr>
+               <td>Teléfono</td>
+               <td>652254875</td>
+             </tr>
+              <tr>
+               <td>Mail:</td>
+               <td>ejemplo@mail.com</td>
+             </tr> 
+             <tr>
+               <td>Web:</td>
+               <td>ejemplo.com</td>
+             </tr>
+           </table>
+         </div>
+ 
          </div>
        </div>
    </div>
    
    <!-- Foto -->
-   <div class="centrar fondocolor">
+   <div class="centrar mediovg colocarGal fondocolor">
        <div class="wrapper">
           <div class="cuadro">
            <img src="img/galeriamagdamadrid.jpg" alt="cuadro"  />
@@ -79,7 +145,8 @@
    <!-- Localización -->
    <div class="centrar fondocolor">
       <div class="wrapper">
-       <h3>¿DÓNDE ESTAMOS?</h3>
+       
+       <h3 class="fdos">¿Dónde estamos?</h3>
        </div>
    </div>
    
@@ -87,150 +154,222 @@
    <div class="centrar fondocolor">
       <div class="wrapper">
           <div class="mapa" id="map">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2629.4054492199!2d-3.6981162512634294!3d40.41127211133353!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd422629ae4071a9%3A0x2c69d3aeb41daad!2sGaler%C3%ADa+Magda+Bellotti!5e0!3m2!1ses!2ses!4v1512059170955" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+              
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2629.4054492199!2d-3.6981162512634294!3d40.41127211133353!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd422629ae4071a9%3A0x2c69d3aeb41daad!2sGaler%C3%ADa+Magda+Bellotti!5e0!3m2!1ses!2ses!4v1512059170955"  frameborder="0" style="border:0" allowfullscreen></iframe>
           </div>
        </div>
    </div>
    
-   <!-- Comentarios -->
-   <div>
-    <div class="wrapper"> 
-     <div class="comentuse">
-      <h1>Comentarios de usuarios (3)</h1>
-      </div>
-       <div class="center"><img class="Strellitas" src="img/Eva5estrellas.png" alt="valoracion estrellas">
-         </div> 
-    </div>
-     
-   </div>
-   
-   <!-- Com1 -->
-   
-   <div class="blockcom">
-       <div class="wrapper"> 
-                <article>
-                <div class="userpic">
-               <img src="img/carnet1.jpg" alt="foto">
-               </div>
-                <div class="usercom">
-                    <p>Maria G.</p>
-                    <p>2 de Noviembre 2017</p> 
-                    <p>Mi experiencia en la galeria fue extraordinaria. la atención fue magnifica y me asesoraron e informaron acerca de los artistas cuyas obras estaban expuestas. Al final, terminé comprando dos obras y quiero volver a por mas muy pronto!.</p>
-                </div>
-
-                </article>
-                
-                <div class="hovcomon" id="mascom">
-                   <div class="center">
-                       <p>Más Comentarios</p>
-                   </div>
-                   </div>
-                
-                <div class="hovcom" id="restcom">
-               <article>
-                  
-                  
-                   
-                   
-            <div class="userpic">
-               <img src="img/carnet3.png" alt="foto">
-               </div>
-                <div class="usercom">
-                   <p>Marta K.</p>
-                   <p> 3 de Enero 2017</p>
-                    <p>Creo que la galería merece buena puntuación, sin embargo la zona no es muy buena, por eso ten cuidado cuando vayas porque suelen robar en los alrededores.</p>
-                </div>
-
-               </article>
-               <article>
-                   
-                   <div class="userpic">
-               <img src="img/carnet2.png" alt="foto">
-               </div>
-                <div class="usercom">
-                   <p>Alberto B</p>
-                   <p>6 de Febrero 2017</p>
-                    <p>Es una magnífica galería. Sin duda volvería a ir y la recomiendo 100%.</p>
-                </div>
-
-               </article>
-               </div>
-       </div>
-    
-   </div>
-   
-   
-   
-   
-   <!-- PRÓXIMOS EVENTOS -->
+<!-- PRÓXIMOS EVENTOS -->
    
    <div class="centrar fondocolor">
       <div class="wrapper"> 
-          <div class="desplegar">
-          <h3 class="texevent" id="evento">
+          <div >
+          
+          <h3 class="fdos" id="evento">
               Próximos eventos:
           </h3>
-          
-          <ul class="ordevent"  id="lista">
-             
+              <div class="centrar">      
+          <ul >
               <li>
-                  <p>15/12/2017-31/1/2018:     
+                <p class="ftres">15/12/2017-31/1/2018:     
                   </p>
-                  
-                   <p>Exposición de las obras de Juan Talavera.
+               <p class="ftres">Exposición de las obras de Juan Talavera.
                    </p>
               </li>
-              
-              
+                            
               <li>
-                  <p>15/1/2018-31/3/2018:     
+                 <p class="ftres">15/1/2018-31/3/2018:     
                   </p>
-                
-                <p>Exposición de las obras de Marisa Paredes.
-                   </p>
+                 <p class="ftres">Exposición de las obras de Marisa Paredes.
+                  </p>
               </li>
               
               <li>
-                 <p>15/4/2018-31/5/2018:     
+                 <p class="ftres">15/4/2018-31/5/2018:     
                   </p>
-                 <p>Impresionismo.
-                   </p>
-              
+                 <p class="ftres">Impresionismo.
+                  </p>
               </li>
           </ul>
-                    
+                </div>    
       </div>
       </div>
        
    </div>
    
    <!-- FIN PROXIMOS EVENTOS HOVER -->
-   
-     </main>
-   
-   <!-- Footer -->
-   
-   <footer>
-       <div class="wrapper">
-          <div class="fondofooter">
-               <div class="legal">
-            
-               <h6 class="fdos">ANDE ARTE Corp</h6>
-               <p class="fcuatro">Aviso legal</p>
-               <p class="fcuatro">Privacidad</p>
-               <p class="fcuatro">Contacto</p>
-               <p class="fcuatro">Listado de Galerías</p>
 
-           </div>
-           
-           <div class="iconosocial">
-               <a href=""><img src="img/iconosocial.png" alt="redes sociales" class="w3-opacity-max" /></a>
 
-           </div>
-           
-          </div>
+
+
+   <!-- Comentarios -->
+   <div class="centrar">
+    <div class="wrapper"> 
+     <div class="comentuse">
+      
+      <h3 class="fdos">Comentarios:</h3>
+      </div>
+       
+    </div>
+     
+   </div>
+   
+    <!-- Com movil -->
+  
+   <div class="blockcomMovil">
+ 
+     <div class="wrapper">
+ 
+       <div>
+ 
+         <form action="" method="post" class="">
+ 
+          <input type="submit" name="comentar" value="Comentar">
+ 
+          </form>
+  
        </div>
-   </footer>
+ 
+         <div>
+ 
+          <div class="mvTop">
+  
+            <div class="mvImg">
+ 
+              <img src="img/carnet1.jpg" alt="foto"/>
+                
+            </div>
+ 
+             <div class="mvNomb">
+ 
+              <p class="ftres">Maria G.</p>
+ 
+              <p class="fcuatro">2 de Noviembre 2017</p>
+ 
+             </div>
+               
+          </div>
+ 
+           <div class="mvDown">
+ 
+            <div>
+               
+              <p class="ftres">Mi experiencia en la galeria fue extraordinaria. la atención fue magnifica y me asesoraron e informaron acerca de los artistas cuyas obras estaban expuestas. Al final, terminé comprando dos obras y quiero volver a por mas muy pronto!.</p>
+ 
+            </div>
+ 
+           </div>
+ 
+          </div>
+ 
+ <hr>
+           <div>
+ 
+          <div class="mvTop">
+  
+            <div class="mvImg">
+ 
+              <img src="img/carnet3.png" alt="foto"/>
+                
+            </div>
+ 
+             <div class="mvNomb">
+ 
+              <p class="ftres">Marta K.</p>
+ 
+              <p class="fcuatro">3 de Enero 2017</p>
+ 
+             </div>
+              
+           </div>
+ 
+           <div class="mvDown">
+              
+            <div>
+               
+               <p class="ftres">Creo que la galería merece buena puntuación, sin embargo la zona no es muy buena, por eso ten cuidado cuando vayas porque suelen robar en los alrededores.</p>
+ 
+            </div>
+ 
+           </div>
+ 
+          </div>
+ <hr>
+           <div>
+ 
+          <div class="mvTop">
+ 
+             <div class="mvImg">
+ 
+              <img src="img/carnet2.png" alt="foto"/>
+               
+             </div>
+ 
+             <div class="mvNomb">
+ 
+              <p class="ftres">Alberto B</p>
+ 
+              <p class="fcuatro">6 de Febrero 2017</p>
+ 
+             </div>
+              
+           </div>
+ 
+           <div class="mvDown">
+             
+             <div>
+              
+              <p class="ftres">Es una magnífica galería. Sin duda volvería a ir y la recomiendo 100%. Además la atención es inmejorable.</p>
+ 
+            </div>
+ 
+          </div>
+ 
+          </div>
+       
+       </div>
+         
+   </div>
+         
+   </main>
    
+   <!-- Footer en linea -->
+<footer>
+  <div class="footer-bottom">
+      <div class="container">
+          <div class="row">
+              <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                  <div class="copyright">
+                      © 2018, AndeArte Corp.
+            <ul class="social-icons social-icons-round ">
+              <li><a href="https://github.com/missmay4/AndeArte_Proyect"><i class="fa fa-github"></i></a></li>
+              <li><a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="https://www.twitter.com/"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a></li>
+            </ul>
+                  </div>
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                  <div class="design">
+                      <a target="_blank" href="#">Aviso Legal </a> |
+            <a target="_blank" href="#">Privacidad</a> |
+            <a target="_blank" href="#">Contacto</a>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</footer>
+<!-- Fin footer en linea -->
+   
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   
+   <script src="js/jquery.min.js"></script>
+  <script src="js/jquery.rateyo.js"></script>
+
+  <script src="js/scripts.js"></script>
 </body>
 </html>
