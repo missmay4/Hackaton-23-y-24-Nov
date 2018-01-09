@@ -492,6 +492,7 @@ header {
 
 #myForm .error {
   color: #ff0000;
+  float: left;
 }
 
 .gestmedio{
