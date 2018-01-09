@@ -97,20 +97,22 @@ $(function() {
 });
 
 //--------------FIN GESTION
-*/
+
 
 // JS Vista Detalle VALORACIÓN Estrellas
 
-$(document).ready(function(){
-  $("#rateYo").rateYo({
-    rating: 3.6
-  });
-});
+$( document ).ready(
 
 	
 
 
+$(function () {
+ 
+  $("#rateYo").rateYo({
+    rating: 3.6
+  });
 
+}))
 
 
  
