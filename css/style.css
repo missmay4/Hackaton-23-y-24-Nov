@@ -176,25 +176,6 @@ header {
     height: 60px;
 }
 
-.nombreg {
-    font-size: 60px;
-}
-    width: 100%;
-    float: left;
-   }
-
-.nombreg h2 {
-    line-height: 0;
-}
-
-.valoracion {
-    float: left;
-    width: 100%;
-}
-
-.valoracion img {
-   max-width: 20%;
-}
 
 .descripcion {
     float: left;
@@ -202,10 +183,6 @@ header {
     margin-left: 20%;
     margin-right: 20%;
     text-align: center;
-}
-
-.descripcion p{
-    font-size: 25px;
 }
 
 .cuadro {
@@ -292,12 +269,6 @@ header {
 }
 
 
-.comentuse h3 {
-    text-align: center;
-    font-family: serif;
-
-}
-
 .ultcommierda {
     width: 100%;
     float: left;
@@ -310,14 +281,6 @@ header {
     align-content: center;
     text-align: center;
 }
-
-.Strellitas {
-    max-width: 20%;
-    max-width: 15%;
-    /*margin-left: 41%;*/
-}
-
-
 
 .comentuse > .fdos {
     font-size: 1.56em;
@@ -352,11 +315,8 @@ header {
 */
 /* ------------------------------------------ EVENTOS HOVER -------------------------------------------*/
 
-.desplegar {
-    font-size: 25px;
-}
 
-.textevent {
+/* .textevent {
     height: 70px;
     background-color: lightslategrey;
 }
@@ -372,7 +332,7 @@ header {
 
 .texevent#evento:hover + .ordevent#lista {
     display: inline-block;
-}
+} */
 
 /* --------------------------------------------- FIN EVENTOS HOVER ------------------------------------*/
 
