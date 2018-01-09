@@ -1,17 +1,13 @@
 
-
+$( document ).ready(
 //----------GESTION
 
-// Wait for the DOM to be ready
 $(function() {
-  // Initialize form validation on the registration form.
-  // It has the name attribute "registration"
+  
   $("form[name='formgestion']").validate({
-    // Specify validation rules
+    
     rules: {
-      // The key name on the left side is the name attribute
-      // of an input field. Validation rules are defined
-      // on the right side
+     
       galnombre: {
       	required: true,
       	rangelength: [3,20]
@@ -32,7 +28,6 @@ $(function() {
       },
 
       galphone: {
-      	
       	digits: true,
       	rangelength:[9, 9]
 
@@ -87,14 +82,30 @@ $(function() {
   });
 });
 
+//FUNCION JS PARA JAVASCRIPT
+
+function Checkfiles(){
+  var fup = document.getElementById('photo-1');
+  var fileName = fup.value;
+  var ext = fileName.substring(fileName.lastIndexOf('.') + 1);
+if(ext == "gif" || ext == "GIF" || ext == "JPEG" || ext == "jpeg" || ext == "jpg" || ext == "JPG" || ext == "doc"){
+return true;
+} 
+else{
+alert("Upload Gif or Jpg images only");
+fup.focus();
+return false;
+}
+
+}
+
+
+
 //--------------FIN GESTION
 
 
-// JS Vista Detalle VALORACIÓN Estrellas
-
-$( document ).ready(
-
-	
+//----- VISTA DETALLE
+// -----JS Vista Detalle VALORACIÓN Estrellas
 
 
 $(function () {
