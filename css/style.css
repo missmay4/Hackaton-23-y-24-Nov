@@ -165,6 +165,10 @@ header {
     margin-bottom: 0%;
 }
 
+.centrar table {
+    margin-left: 23%;
+}
+
 .centrar ul {
     margin-right: 8%;
 }
@@ -698,6 +702,11 @@ footer p {
     float: left;
 }
 
+.descripcion  {
+    width: 95%;
+    float: left;
+    margin-top: 8%;
+}
 .nombreg{
     max-width: 100%;
 }
@@ -707,10 +716,15 @@ footer p {
 }
 
 .centrar table {
-    margin-left: 22%;
+    margin-left: 25%;
+    margin-top: 5%;
 }
 .centrar ul {
     margin-left: 4%;
+}
+
+.cuadro {
+    margin-top: 5%;
 }
 
 /* Comentarios */

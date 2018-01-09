@@ -1,23 +1,31 @@
 
-//----------GESTION
+
 
 // Validacion JS gestion galeria
-
-
-// $.validate({
-//   lang: 'es'
-// });
-jQuery.validator.setDefaults({
-  debug: true,
-  success: "valid"
+/*$.validate({
+  lang: 'es'
 });
-$( "#mailReg" ).validate({
-  rules: {
-    field: {
-      required: true,
-      email: true
-    }
-  }
-});
+*/
 
-//--------------FIN GESTION
+
+
+
+
+
+// JS Vista Detalle VALORACIÓN Estrellas
+
+$( document ).ready(
+
+	
+
+
+$(function () {
+ 
+  $("#rateYo").rateYo({
+    rating: 3.6
+  });
+
+}))
+
+
+ 
