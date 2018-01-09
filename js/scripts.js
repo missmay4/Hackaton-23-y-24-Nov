@@ -1,5 +1,24 @@
+// Ventana emergente comentarios 
+
+/* $(document).ready(function() {
+  $(function() {
+    $("#dialog").dialog({
+      autoOpen: false
+    });
+    $("#emergente").on("click", function() {
+      $("#dialog").dialog("open");
+    });
+  });
+  // Validating Form Fields.....
+  $("#submit").click(function(e) {
+    var comentario = $("#comentario").val();
+
+  });
+}); */
+
 
 $( document ).ready(
+
 //----------GESTION
 
 $(function() {
@@ -82,7 +101,9 @@ $(function() {
   });
 });
 
+
 //FUNCION JS PARA JAVASCRIPT
+
 
 function Checkfiles(){
   var fup = document.getElementById('photo-1');
@@ -102,6 +123,7 @@ return false;
 
 
 //--------------FIN GESTION
+
 
 
 //----- VISTA DETALLE
