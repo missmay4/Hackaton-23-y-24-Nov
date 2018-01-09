@@ -171,16 +171,16 @@ header {
     margin-left: 23%;
 }
 
+.valoEstr { 
+    position: relative; 
+    top:305px; 
+    left:38%; 
+     
+} 
 .centrar ul {
     margin-right: 8%;
 }
 
-.valoEstr {
-    position: relative;
-    top:305px;
-    left:38%;
-    
-}
 .search {
     float: left;
     width: 100%;
@@ -519,6 +519,9 @@ footer p {
     margin:5px 0;
 }
 
+footer a{
+    color: white ;
+}
 .fondofooter{
     width: 50%;
     margin: 0 25%;
@@ -709,8 +712,16 @@ footer p {
         float: left;
     }
 
+
     /* VISTA DETALLE */
 
+
+.valoEstr { 
+    position: fixed; 
+    top:320px; 
+    left:42%; 
+     
+} 
 .mediovg {
     width: 50%;
     float: left;
@@ -723,13 +734,6 @@ footer p {
 }
 .nombreg{
     max-width: 100%;
-}
-
-.valoEstr {
-    position: fixed;
-    top:320px;
-    left:42%;
-    
 }
 
 .colocarGal{
