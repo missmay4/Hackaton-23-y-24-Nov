@@ -18,7 +18,7 @@
 
 // Fin ventana emergente
 
-
+/*
 //----------GESTION
 
 // Wait for the DOM to be ready
@@ -34,85 +34,77 @@ $(function() {
       galnombre: {
       	required: true,
       	rangelength: [3,20]
-      }
-      galdescripcion:{
-
-      	rangelength:[10,150]
-      }
-
-      galaddress{
+      },
+      galdescripcion: {
       	required: true,
       	rangelength:[10,150]
-      }
+      },
 
-      openingTimes{
+      galaddress: {
+      	required: true,
+      	rangelength:[10,150]
+      },
+
+      openingTimes: {
+      	required: true,
       	rangelength:[5, 25]
-      }
+      },
 
-      galphone{
+      galphone: {
       	required: true,
       	digits: true,
       	rangelength:[9, 9]
 
-      }
-
-      galweb{
-      	
-      }
-
-
-
-      lastname: "required",
-      email: {
-        required: true,
-        // Specify that email should be validated
-        // by the built-in "email" rule
-        email: true
       },
-      password: {
-        required: true,
-        minlength: 5
-      }
+
+      galweb: {
+      	required: true,
+      	url: true
+      },
+
     },
-
-
-
 
     // Specify validation error messages
     messages: {
-      firstname: "Please enter your firstname",
-      lastname: "Please enter your lastname",
-      password: {
-        required: "Please provide a password",
-        minlength: "Your password must be at least 5 characters long"
-      },
-      email: "Please enter a valid email address"
+
+    	// galnombre:"ehhh tu nombre",
+    	
+
+    	// // galdescripcion:
+    	// // galaddress:
+    	// // galphone:{
+
+    	// // }
+    	// galweb:"ehh tu web",
+
+
+  
+      // lastname: "Please enter your lastname",
+      // password: {
+      //   required: "Please provide a password",
+      //   minlength: "Your password must be at least 5 characters long"
+      // },
+      // email: "Please enter a valid email address"
     },
     // Make sure the form is submitted to the destination defined
     // in the "action" attribute of the form when valid
-    submitHandler: function(form) {
-      form.submit();
-    }
+    // submitHandler: function(form) {
+    //   form.submit();
+    // }
   });
 });
 
+*/
 //--------------FIN GESTION
 
 
 // JS Vista Detalle VALORACIÓN Estrellas
 
-$( document ).ready(
-
-	
-
-
-$(function () {
- 
-  $("#rateYo").rateYo({
-    rating: 3.6
-  });
-
-}))
+$(document).ready(function(){ 
+  $("#rateYo").rateYo({ 
+    rating: 3.6 
+  }); 
+}); 
 
 
  
