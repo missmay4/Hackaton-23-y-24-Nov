@@ -70,7 +70,7 @@
 
        <form id="myForm" action="gestion.php" method="post" class="formulariogestion">
          <!-- Nombre galeria -->
-         <label for="nombre" class="etiq fcuatro">Nombre</label>
+         <label for="nombre" class="etiq fcuatro">Nombre de la Galería</label>
          <input data-validation="length alphanumeric" data-validation-length="min30" class="campo" id="nombre" name="nombre" placeholder="Escriba aquí el nombre de su galería" />
          <!-- Descripcion galeria -->
          <label for="nombre" class="etiq fcuatro">Descripción</label>
@@ -88,20 +88,19 @@
         <label for="openingTimes" class="etiq fcuatro">Horario</label>
         <input type="text" class="campo" id="openingTimes" name="openingTimes" maxlength="60" placeholder="Escriba aquí el horario de su galería" />
         <!-- Telefono -->
-        <label for="phone" class="etiq fcuatro">Horario</label>
+        <label for="phone" class="etiq fcuatro">Teléfono</label>
         <input type="number" class="campo" id="phone" name="phone" maxlength="9" placeholder="Escriba aquí el teléfono de su galería" />
         <!-- Web -->
         <label for="web" class="etiq fcuatro">Sitio web</label>
         <input data-validation="url" type="text" class="campo" id="web" name="web" maxlength="60" placeholder="Escriba aquí la dirección de la página web de su galería" />
         <!-- E-mail -->
         <label for="mail" class="etiq fcuatro">Correo electrónico</label>
-        <input type="text" class="campo" id="mail" name="mail" maxlength="60" placeholder="Escriba aquí la dirección de correo de su galería" />
+        <input type="text" class="campo" id="mailReg" name="mail" maxlength="60" placeholder="Escriba aquí la dirección de correo de su galería" />
         <!-- Eventos galeria -->
         <label for="gesteventos" class="etiq fcuatro">Añadir próximos eventos:</label>
-          <div class="campo">Nombre: <input type="text" /></div>
+          <div class="campo">Nombre del evento: <input type="text" /></div>
           <div class="campo">Fecha: <input data-validation="date" data-validation-format="mm-dd-yyyy" type="date" name="date"/></div>
-          <div class="campo">Fecha: <input data-validation="date" data-validation-format="mm-dd-yyyy" type="date" name="date"/></div>
-          <div class="campo">Fecha: <input type="date" name="date"/></div>
+          
           <!-- Submit -->
           <div class="campo"><input type="submit" name="guarcambios" value="Guardar cambios">
           </div>
