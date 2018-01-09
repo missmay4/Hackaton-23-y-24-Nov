@@ -1,4 +1,4 @@
-// Ventana emergente comentarios
+// Ventana emergente comentarios 
 
 /* $(document).ready(function() {
   $(function() {
@@ -19,6 +19,7 @@
 
 /*
 //----------GESTION
+
 // Wait for the DOM to be ready
 $(function() {
   // Initialize form validation on the registration form.
@@ -37,34 +38,46 @@ $(function() {
       	required: true,
       	rangelength:[10,150]
       },
+
       galaddress: {
       	required: true,
       	rangelength:[10,150]
       },
+
       openingTimes: {
       	required: true,
       	rangelength:[5, 25]
       },
+
       galphone: {
       	required: true,
       	digits: true,
       	rangelength:[9, 9]
+
       },
+
       galweb: {
       	required: true,
       	url: true
       },
+
     },
+
     // Specify validation error messages
     messages: {
+
     	// galnombre:"ehhh tu nombre",
+    	
 
     	// // galdescripcion:
     	// // galaddress:
     	// // galphone:{
+
     	// // }
     	// galweb:"ehh tu web",
 
+
+  
       // lastname: "Please enter your lastname",
       // password: {
       //   required: "Please provide a password",
@@ -79,14 +92,19 @@ $(function() {
     // }
   });
 });
+
 */
 //--------------FIN GESTION
 
 
 // JS Vista Detalle VALORACIÓN Estrellas
 
-$(document).ready(function() {
-  $("#rateYo").rateYo({
-    rating: 3.6
-  });
-});
+$(document).ready(function(){ 
+  $("#rateYo").rateYo({ 
+    rating: 3.6 
+  }); 
+}); 
+
+
+ 
+
