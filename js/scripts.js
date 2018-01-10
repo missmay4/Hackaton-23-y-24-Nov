@@ -17,12 +17,15 @@
 }); */
 
 
-$( document ).ready(
+$( document ).ready(function() {
 
 //----------GESTION
-
+/*
 $(function() {
-  
+*/  
+
+  var galeria = {};
+
   $("form[name='formgestion']").validate({
     
     rules: {
@@ -56,23 +59,24 @@ $(function() {
       	url: true
       },
 
-      galemail{
+      galemail: {
         required: true,
         email: true
-      }
+      },
 
-      evento{
+      evento: {
         rangelength:[5, 25]
-      }
+      },
 
-      date{
+      date: {
         digits: true,
-      }
+      },
 
     },
 
     // Specify validation error messages
     messages: {
+      
 
     	// galnombre:"ehhh tu nombre",
     	
@@ -83,8 +87,6 @@ $(function() {
 
     	// // }
     	// galweb:"ehh tu web",
-
-
   
       // lastname: "Please enter your lastname",
       // password: {
@@ -95,11 +97,17 @@ $(function() {
     },
     // Make sure the form is submitted to the destination defined
     // in the "action" attribute of the form when valid
-    // submitHandler: function(form) {
-    //   form.submit();
-    // }
+    submitHandler: function(form) {
+      // form.submit();
+
+      galeria.nombre = ""; // Capturar el value del input correspondiente
+      // ...
+    }
   });
-});
+
+/* }); */
+
+console.log("El nombre introducido es..." + galeria.nombre);
 
 
 //FUNCION JS PARA JAVASCRIPT
@@ -130,14 +138,13 @@ return false;
 // -----JS Vista Detalle VALORACIÓN Estrellas
 
 
-$(function () {
- 
-  $("#rateYo").rateYo({
-    rating: 3.6
+  $(function () {
+   
+    $("#rateYo").rateYo({
+      rating: 3.6
+    });
+
   });
 
-}))
-
-
- 
+});
 
