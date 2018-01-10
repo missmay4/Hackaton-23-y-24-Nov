@@ -489,7 +489,12 @@ header {
 
 
 /*--------------------------GESTION.HTML---------------------*/
-
+.formulariogestion{
+        padding: 20px 0 50px 0;
+        width: 80%;
+        margin: 0 10%;
+        float: left;
+    }
 #myForm .error {
   color: #ff0000;
   float: left;
@@ -505,50 +510,13 @@ header {
 
 /* ---------------------------------------------- FOOTER --------------------------------------------- */
 
-footer {
-    width: 100%;
-    float: left;
-    padding-top: 15px;
-    /*background-color: #2a2a2a;*/
-    color:white;
-}
 
-footer p {
-    width: 25%;
-    float: left;
-    margin:5px 0;
-}
-
-footer a{
-    color: white ;
-}
-.fondofooter{
-    width: 50%;
-    margin: 0 25%;
-}
-
-.legal {
-    text-align: center;
-
-}
-
-.iconosocial {
-    width: 20%;
-    margin: 0 40%;
-    padding: 50px 0;
-    float: left;
-
-}
-.iconosocial img {
-    width: 100%;
-}
-
-
-/* Footer en linea */
 .footer-bottom {
-    background-color: #333;
+
     min-height: 30px;
     width: 100%;
+    float: left;
+    background-color: #333;
 }
 
 .copyright {
@@ -705,12 +673,7 @@ footer a{
         float: left;
     }
 
-    .formulariogestion{
-        padding: 20px 0 50px 0;
-        width: 45%;
-        margin: 0 5%;
-        float: left;
-    }
+    
 
 
     /* VISTA DETALLE */

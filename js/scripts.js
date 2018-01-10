@@ -16,15 +16,10 @@
   });
 }); */
 
-
-$( document ).ready(function() {
+$( document ).ready(
 
 //----------GESTION
-/*
 $(function() {
-*/  
-
-  var galeria = {};
 
   $("form[name='formgestion']").validate({
     
@@ -97,17 +92,50 @@ $(function() {
     },
     // Make sure the form is submitted to the destination defined
     // in the "action" attribute of the form when valid
-    submitHandler: function(form) {
+    //submitHandler: function(form) {
       // form.submit();
-
-      galeria.nombre = ""; // Capturar el value del input correspondiente
-      // ...
-    }
+    //}
   });
+}));
 
-/* }); */
+/* ---------------- SAVE DATA INTO JSON ---------------- */
 
-console.log("El nombre introducido es..." + galeria.nombre);
+//document.myform.submit()
+
+
+//JSON vacío:
+var galeria = {};
+
+function saveData() {
+  galeria.nombre = document.getElementById('nombre').value; // Capturar el value del input correspondiente
+  // ...
+  galeria.descripcion = document.getElementById('descripcion').value;
+  //¿imágenes cargadas?
+  galeria.direccion = document.getElementById('address').value;
+  galeria.horario = document.getElementById('openingTimes').value;
+  galeria.telefono = document.getElementById('phone').value;
+  galeria.web = document.getElementById('web').value;
+  galeria.email = document.getElementById('mailReg').value;
+  galeria.evento = {};
+  galeria.evento.nomEvento = document.getElementById('nomEvento').value;
+  galeria.evento.fechaEvento = document.getElementById('fechaEvento').value;
+  //¿evento + fecha evento?
+
+  console.log("El nombre introducido es..." + galeria.nombre);
+}
+
+//boton reset (pone los campos del formulario vacíos)
+function resetData(){
+  document.getElementById("myForm").reset();
+}
+
+//
+function loadData(){
+  document.getElementById('nombre').value = galeria.nombre;
+}
+
+
+
 
 
 //FUNCION JS PARA JAVASCRIPT
@@ -145,6 +173,4 @@ return false;
     });
 
   });
-
-});
 
