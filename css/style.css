@@ -168,15 +168,22 @@ header {
 }
 
 .centrar table {
-    margin-left: 23%;
+    margin-left: 6%;
+    margin-bottom: 3%;
 }
 
-.valoEstr { 
-    position: relative; 
-    top:305px; 
-    left:38%; 
-     
+ .cajaEst {
+    width: 100%;
+    float: left;    
 } 
+
+ .valoEstr { 
+    width: 100%;
+    float: left;
+    margin-left: 30%;
+    
+}  
+
 .centrar ul {
     margin-right: 8%;
 }
@@ -199,9 +206,12 @@ header {
     margin-left: 5%;
     margin-right: 5%;
     text-align: center;
-    margin-top: 6%;
+    
 }
 
+.descripcion p {
+    margin-top: 5%;
+}
 .cuadro {
     float: left;
     width: 100%;
@@ -267,7 +277,7 @@ header {
 }
 
 .mvNomb {
-    width: 50%;
+    /* width: 50%; */
     float: right;
 }
 
@@ -308,20 +318,20 @@ header {
 }
 
 .bloquep {
-    width: 40%;
-    padding: 0 5%;
+    width: 100%;
     float: left;
-    text-align: left;
+    text-align: center;
 }
 
 .bloquep img {
     border-radius: 50%;
-    max-width: 100%;
+    max-width: 30%;
+    
 }
 
 .bloquep.dat {
-    text-align: left;
-    width: 30%;
+    margin-top: 5%;
+    width: 100%;
     float: left;
 }
 
@@ -612,6 +622,80 @@ footer a{
 
 /* --------------------------------------------- FIN FOOTER ------------------------------------------ */
 
+ 
+/* Ventana emergente */
+input[type=text] {
+  margin-top:5px;
+  margin-bottom:20px;
+  width:96%;
+  border-radius:5px;
+  border:0;
+  padding:5px 0;
+}
+#comentario {
+  padding-left:10px;
+}
+
+.botonX {
+    display: inline-block;
+    width: 100%;
+    float: right;
+}
+
+
+
+input[type=button] {
+  width:13%;
+  border:1px solid #000000;
+  background:#7f8c8d;
+  color:#000000;
+  padding:3px 0;
+  border-radius:5px;
+  margin-left:44%;
+  cursor:pointer;
+  display: inline;
+
+}
+
+.movboton {
+    margin-right: -24%;
+}
+
+
+input[type=button]:hover {
+  border:1px solid #666;
+  background:#555;
+  color:#000000;
+}
+.ui-dialog .ui-dialog-content {
+  padding:2em
+}
+#myModal{
+  display: none;
+}
+div.emergenteContainer {
+  width:960px;
+  height:610px;
+  margin:50px auto;
+  position:fixed;
+  left: 500px;
+}
+div.emergenteMain {
+  margin-top:35px;
+  float:left;
+  padding:10px 10px 10px;
+  background-color:#ecf0f1;
+  border:1px solid #000000;
+  box-shadow:0 0 10px;
+  border-radius:2px;
+  /* font-size:13px; */
+  text-align:center
+}
+/* Fin ventana emergente */
+
+
+
+
 
 /* ------------------------------------------- MEDIA QUERIS ------------------------------------------ */
 
@@ -645,6 +729,39 @@ footer a{
 
 @media only screen
   and (min-device-width: 481px) and (max-device-width: 800px) {
+         
+
+/* Vista Detalle */
+
+.centrar table {
+    margin-left: 27%;
+    margin-bottom: 3%;
+}
+
+.valoEstr {
+    width: 100%;
+    float: left;
+    margin-left: 38%;
+}
+
+
+
+
+    /* Perfil User */
+
+    .edAcciones1 {
+        width: 50%;
+        float: left;
+        display: inline-block;
+    }
+
+    .edGaleria2 {
+        width: 50%;
+        left: left;
+        display: inline-block;
+    }
+
+
 
 }
 
@@ -715,11 +832,17 @@ footer a{
 
     /* VISTA DETALLE */
 
+.cajaEst {
+    width: 100%;
+    float: left;
+    text-align: center;
+}
 
 .valoEstr { 
-    position: fixed; 
-    top:320px; 
-    left:42%; 
+    width: 100%;
+    float: left;
+    margin-left: 44%;
+
      
 } 
 .mediovg {
@@ -730,18 +853,20 @@ footer a{
 .descripcion  {
     width: 95%;
     float: left;
-    margin-top: 8%;
+    margin-top: 3%;
+    
 }
 .nombreg{
     max-width: 100%;
+
 }
 
 .colocarGal{
-    margin-top: 3%;
+    
 }
 
 .centrar table {
-    margin-left: 25%;
+    margin-left: 23%;
     margin-top: 5%;
 }
 .centrar ul {
@@ -756,6 +881,7 @@ footer a{
 
 .mvTop {
     width: 100%;
+
 }
 .mvImg img {
     max-width: 50%;
@@ -763,12 +889,30 @@ footer a{
 
 .mvNomb {
     float: left;
+    margin-top: 2%;
 }
    /* .medio{
         width: 48%;
         float:left;
         margin-right: 2%;
     }  */
+
+     /* Perfil User */
+
+    .bloquep {
+        width: 50%;
+        float: left;
+    }
+
+    .descripcionuser {
+        width: 50%;
+        float: left;
+    }
+
+
+
+
 }
+
 
 /* --------------------------------------- FIN MEDIA QUERIS ------------------------------------------ */
