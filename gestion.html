@@ -77,9 +77,11 @@
          <input type="text" class="campo" id="description" name="description" cols= "30" rows="10" placeholder="Describa aquí su galería" />
          <!-- Añadir imagenes -->
          <label for="gestfotos" class="campo medio" >Añadir imagenes</label>
-          <input type="file" class="campo" id="gestfotos" name="gestfotos">
-          <input type="file" class="campo" id="gestfotos" name="gestfotos">
-          <input type="file" class="campo" id="gestfotos" name="gestfotos">
+          <input type="file" class="campo" id="photo-1" name="gestfotos">
+          <input type="file" class="campo" id="photo-2" name="gestfotos">
+          <input type="file" class="campo" id="photo-3" name="gestfotos">
+
+
         <!-- Contacto galeria -->
         <!-- Dirección -->
         <label for="address" class="etiq fcuatro">Dirección</label>
@@ -88,20 +90,24 @@
         <label for="openingTimes" class="etiq fcuatro">Horario</label>
         <input type="text" class="campo" id="openingTimes" name="openingTimes" maxlength="60" placeholder="Escriba aquí el horario de su galería" />
         <!-- Telefono -->
-        <label for="phone" class="etiq fcuatro">Horario</label>
-        <input type="number" class="campo" id="phone" name="phone" maxlength="9" placeholder="Escriba aquí el teléfono de su galería" />
+        <label for="phone" class="etiq fcuatro">Teléfono</label>
+        <input type="text" class="campo" id="phone" name="galphone"  placeholder="Escriba aquí el teléfono de su galería" />
+
         <!-- Web -->
         <label for="web" class="etiq fcuatro">Sitio web</label>
-        <input data-validation="url" type="text" class="campo" id="web" name="web" maxlength="60" placeholder="Escriba aquí la dirección de la página web de su galería" />
+        <input type="text" class="campo" id="web" name="galweb" placeholder="Escriba aquí la dirección de la página web de su galería" />
+
+
         <!-- E-mail -->
         <label for="mail" class="etiq fcuatro">Correo electrónico</label>
-        <input type="text" class="campo" id="mail" name="mail" maxlength="60" placeholder="Escriba aquí la dirección de correo de su galería" />
+        <input type="text" class="campo" id="mailReg" name="galemail"  placeholder="Escriba aquí la dirección de correo de su galería" />
+
         <!-- Eventos galeria -->
         <label for="gesteventos" class="etiq fcuatro">Añadir próximos eventos:</label>
-          <div class="campo">Nombre: <input type="text" /></div>
-          <div class="campo">Fecha: <input data-validation="date" data-validation-format="mm-dd-yyyy" type="date" name="date"/></div>
-          <div class="campo">Fecha: <input data-validation="date" data-validation-format="mm-dd-yyyy" type="date" name="date"/></div>
+          <div class="campo">Nombre del evento: <input type="text" name="evento" /></div>
           <div class="campo">Fecha: <input type="date" name="date"/></div>
+          
+
           <!-- Submit -->
           <div class="campo"><input type="submit" name="guarcambios" value="Guardar cambios">
           </div>
