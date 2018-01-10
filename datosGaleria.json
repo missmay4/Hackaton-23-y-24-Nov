@@ -12,6 +12,7 @@ var datosGaleria = {
     "phone": "913693717",
     "mail": "galeriamagdabellotti@gmail.com",
     "web": "www.magdabellotti.com"
+    
   },
   "events": ["event1, event2, event3"],
   "coments": ["coment1, coment2, coment3"] // Al actualizar con JS actualiza y añade más
