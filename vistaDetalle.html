@@ -112,23 +112,26 @@
            <table>
              <tr>
                <td>Dirección:</td>
-               <td>Calle X nºx</td>
+               <td>Calle Fúcar nº22 28014 Madrid</td>
              </tr>
              <tr>
                <td>Horario:</td>
-               <td>L-V 10:00-18:00</td>
+               <td>M-V 10:00-14:00 | 17:00-20:00
+                S 10:00-14:00 
+               </td> 
+               
              </tr>
               <tr>
                <td>Teléfono</td>
-               <td>652254875</td>
+               <td>913693717</td>
              </tr>
               <tr>
                <td>Mail:</td>
-               <td>ejemplo@mail.com</td>
+               <td>galeriamagdabellotti@gmail.com</td>
              </tr>
              <tr>
                <td>Web:</td>
-               <td>ejemplo.com</td>
+               <td>www.magdabellotti.com</td>
              </tr>
            </table>
          </div>
@@ -267,7 +270,7 @@
 
          <form action="" method="post" class="">
 
-          <button type="button" name="comentar">Comentar</button>
+          <input type="button" id="buttonComent" name="comentar" onclick="abrirVentana()" value="Comentar"></input>
 
           </form>
 
@@ -373,6 +376,27 @@
        </div>
 
    </div>
+
+<!-- Ventana emergente -->
+      <div class="emergenteContainer" id="myModal">
+        <div class="emergenteMain">
+          <div id="dialog" title="Dialog Form">
+            <form action="" method="post">
+              <div class="movboton">
+              <input type="button" id="myButton" onclick="cerrarModal()" class="botnX" value="&#10006"></input>
+              </div>
+              <textarea type="text" id="comentario" name="comentario" cols="30" rows="5" /></textarea>
+              <div class="movboton">
+              <input id="myButton" type="button" onclick="cerrarModal()" value="&#10004" ></input>
+              <input id="myButton" type="button" onclick="limpiarText()" value="Clean" ></input>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+   <!-- Ventana emergente -->
+
+
 
    </main>
 
