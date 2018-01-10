@@ -16,7 +16,7 @@
   });
 }); */
 
-
+/*
 $( document ).ready(
 
 //----------GESTION
@@ -124,7 +124,7 @@ return false;
 
 //--------------FIN GESTION
 
-
+*/
 
 //----- VISTA DETALLE
 // -----JS Vista Detalle VALORACIÓN Estrellas
@@ -136,7 +136,7 @@ $(function () {
     rating: 3.6
   });
 
-}))
+})
 
 
  

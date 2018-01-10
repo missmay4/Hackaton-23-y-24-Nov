@@ -171,12 +171,17 @@ header {
     margin-left: 23%;
 }
 
-.valoEstr { 
-    position: relative; 
-    top:305px; 
-    left:38%; 
-     
+ .cajaEst {
+    width: 100%;
+    float: left;    
 } 
+
+ .valoEstr { 
+    width: 100%;
+    float: left;
+    
+}  
+
 .centrar ul {
     margin-right: 8%;
 }
@@ -199,9 +204,12 @@ header {
     margin-left: 5%;
     margin-right: 5%;
     text-align: center;
-    margin-top: 6%;
+    
 }
 
+.descripcion p {
+    margin-top: 5%;
+}
 .cuadro {
     float: left;
     width: 100%;
@@ -756,6 +764,7 @@ footer a{
 
 .mvTop {
     width: 100%;
+
 }
 .mvImg img {
     max-width: 50%;
@@ -763,6 +772,7 @@ footer a{
 
 .mvNomb {
     float: left;
+    margin-top: 2%;
 }
    /* .medio{
         width: 48%;
