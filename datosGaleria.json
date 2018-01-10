@@ -10,7 +10,8 @@ var datosGaleria = {
     "address": "Calle Fúcar 22 28014 Madrid",
     "openingTimes": "Martes a viernes de 10-14 h y 17-20h Sábados de 10 a 14h Domingos cerrado",
     "phone": "913693717",
-    "mail": "galeriamagdabellotti@gmail.com"
+    "mail": "galeriamagdabellotti@gmail.com",
+    "web": "www.magdabellotti.com"
   },
   "events": ["event1, event2, event3"],
   "coments": ["coment1, coment2, coment3"] // Al actualizar con JS actualiza y añade más
