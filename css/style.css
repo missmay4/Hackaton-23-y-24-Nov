@@ -511,8 +511,6 @@ header {
     text-align: center;
 }
 
-/*--------------------------FINAL GESTION.HTML---------------------*/
-
 /* ---------------------------------------------- FOOTER --------------------------------------------- */
 
 footer {
@@ -529,9 +527,6 @@ footer p {
     margin:5px 0;
 }
 
-footer a{
-    color: white ;
-}
 .fondofooter{
     width: 50%;
     margin: 0 25%;
@@ -829,7 +824,6 @@ div.emergenteMain {
         float: left;
     }
 
-
     /* VISTA DETALLE */
 
 .cajaEst {
@@ -871,10 +865,6 @@ div.emergenteMain {
 }
 .centrar ul {
     margin-left: 4%;
-}
-
-.cuadro {
-    margin-top: 5%;
 }
 
 /* Comentarios */

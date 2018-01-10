@@ -34,7 +34,6 @@ function limpiarText() {
   // Validating Form Fields.....
   $("#submit").click(function(e) {
     var comentario = $("#comentario").val();
-
   });
 }); */
 
