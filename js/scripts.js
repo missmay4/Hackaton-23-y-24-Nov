@@ -33,9 +33,11 @@ $(function () {
     rating: 3.6
   });
 
+
 })
 */
 //----- fin VISTA DETALLE
+
 
 $( document ).ready(
 
@@ -117,6 +119,7 @@ $(function() {
       // form.submit();
     //}
   });
+
 })); 
 
 /* ---------------- SAVE DATA INTO JSON ---------------- */
@@ -180,6 +183,8 @@ return false;
 
 
 //--------------FIN GESTION
+
+
 
 
 

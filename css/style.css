@@ -500,12 +500,16 @@ header {
 
 /*--------------------------GESTION.HTML---------------------*/
 
+
+
 .formulariogestion{
         padding: 20px 0 50px 0;
         width: 80%;
         margin: 0 10%;
         float: left;
     }
+
+
 
 #myForm .error {
   color: #ff0000;
@@ -523,13 +527,17 @@ header {
 /* ---------------------------------------------- FOOTER --------------------------------------------- */
 
 
+
 /* Footer en linea */
 .footer-bottom {
+
     min-height: 30px;
     width: 100%;
     float: left;
     background-color: #333;
+
     
+
 
 }
 
@@ -794,6 +802,8 @@ div.emergenteMain {
     }
 
     
+
+
     /* VISTA DETALLE */
 
 .cajaEst {
