@@ -194,7 +194,7 @@
       <div class="wrapper">
           <div class="mapa" id="map">
 
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2629.4054492199!2d-3.6981162512634294!3d40.41127211133353!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd422629ae4071a9%3A0x2c69d3aeb41daad!2sGaler%C3%ADa+Magda+Bellotti!5e0!3m2!1ses!2ses!4v1512059170955"  frameborder="0" style="border:0" allowfullscreen></iframe>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2629.4054492199!2d-3.6981162512634294!3d40.41127211133353!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd422629ae4071a9%3A0x2c69d3aeb41daad!2sGaler%C3%ADa+Magda+Bellotti!5e0!3m2!1ses!2ses!4v1512059170955"  style="border:0" allowfullscreen></iframe>
           </div>
        </div>
    </div>
@@ -268,9 +268,9 @@
 
        <div >
 
-         <form action="" method="post" class="">
+         <form action="#" method="post">
 
-          <input type="button" id="buttonComent" name="comentar" onclick="abrirVentana()" value="Comentar" class="styleBoton"></input>
+          <input type="button" id="buttonComent" name="comentar" onclick="abrirVentana()" value="Comentar" class="styleBoton" />
 
           </form>
 
@@ -381,14 +381,14 @@
       <div class="emergenteContainer" id="myModal">
         <div class="emergenteMain">
           <div id="dialog" title="Dialog Form">
-            <form action="" method="post">
+            <form action="#" method="post">
               <div class="movboton">
-              <input type="button" id="myButton" onclick="cerrarModal()" class=" styleBoton botnX" value="&#10006" ></input>
+              <input type="button"  onclick="cerrarModal()" class=" styleBoton botnX myButton" value="&#10006;" />
               </div>
-              <textarea type="text" id="comentario" name="comentario" cols="30" rows="5" /></textarea>
+              <textarea id="comentario" name="comentario" cols="30" rows="5"></textarea>
               <div class="movboton">
-              <input id="myButton" type="button" onclick="cerrarModal()" value="&#10004" class="styleBoton" ></input>
-              <input id="myButton" type="button" onclick="limpiarText()" value="Clean" class="styleBoton" ></input>
+              <input type="button" onclick="cerrarModal()" value="&#10004;" class="myButton styleBoton"/>
+              <input type="button" onclick="limpiarText()" value="Clean" class="myButton styleBoton"/>
               </div>
             </form>
           </div>
@@ -400,34 +400,36 @@
 
    </main>
 
-   <!-- Footer en linea -->
+  <!-- FOTTER EN LINEA -->
 <footer>
   <div class="footer-bottom">
-      <div class="container">
-          <div class="row">
-              <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-                  <div class="copyright">
-                      © 2018, AndeArte Corp.
-            <ul class="social-icons social-icons-round ">
-              <li><a href="https://github.com/missmay4/AndeArte_Proyect"><i class="fa fa-github"></i></a></li>
-              <li><a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="https://www.twitter.com/"><i class="fa fa-twitter"></i></a></li>
-              <li><a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a></li>
-            </ul>
-                  </div>
-              </div>
-              <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-                  <div class="design">
-                      <a target="_blank" href="#">Aviso Legal </a> |
-            <a target="_blank" href="#">Privacidad</a> |
-            <a target="_blank" href="#">Contacto</a>
-                  </div>
-              </div>
+   <div class="container">
+     <div class="row">
+       <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+         <div class="copyright">
+           © 2018, AndeArte Corp. 
+           <div class="blockCorp">          
+          <a target="_blank" href="#">Aviso Legal </a> |
+          <a target="_blank" href="#">Privacidad</a> |
+          <a target="_blank" href="#">Contacto</a>
           </div>
+         </div>
+       </div>
+       <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+         <div class="design">
+           <ul class="social-icons social-icons-round ">
+             <li><a href="https://github.com/missmay4/AndeArte_Proyect"><i class="fa fa-github"></i></a></li>
+             <li><a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+             <li><a href="https://www.twitter.com/"><i class="fa fa-twitter"></i></a></li>
+             <li><a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a></li>
+           </ul>
+         </div>
+        </div>
       </div>
+    </div>
   </div>
 </footer>
-<!-- Fin footer en linea -->
+<!-- FIN DE FOTTER -->
 
 
 
