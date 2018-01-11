@@ -335,6 +335,15 @@ header {
     float: left;
 }
 
+a.botonGestion {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+
+    text-decoration: none;
+    color: initial;
+}
+
 .editargal {
     width: 100%;
     float: left;
@@ -399,6 +408,7 @@ header {
     margin: 0 1%;
     margin-top: 3px;
     height: 40px;
+
 }
 
 .botonsign {
@@ -488,9 +498,16 @@ header {
         width: 45%;
         display:inline-block;
         float: left;
+        /* position: fixed;
+        left: 600px;
+        top: 370px; */
+
     }
 .deco-1 img{
         max-width: 100%;
+        float: left;
+        
+
     }
 
 
@@ -535,10 +552,6 @@ header {
     width: 100%;
     float: left;
     background-color: #333;
-
-    
-
-
 }
 
 .copyright {
@@ -546,6 +559,13 @@ header {
     line-height: 30px;
     min-height: 30px;
     padding: 7px 0;
+
+}
+
+.blockCorp a{
+    color: #fff;
+
+
 }
 
 .design {
@@ -568,6 +588,7 @@ header {
 
 .social-icons > li {
     display: inline-block;
+    text-align: right;
 }
 
 .social-icons > li > a {
@@ -604,14 +625,14 @@ header {
 
  
 /* Ventana emergente */
-input[type=text] {
+ /* input[type=text] {
   margin-top:5px;
   margin-bottom:20px;
   width:96%;
   border-radius:5px;
   border:0;
   padding:5px 0;
-}
+ }  */
 #comentario {
   padding-left:10px;
 }
