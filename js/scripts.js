@@ -118,6 +118,17 @@ function resetData(){
 //
 function loadData(){
   document.getElementById('nombre').value = galeria.nombre;
+  document.getElementById('descripcion').value = galeria.descripcion;
+  //Â¿imÃ¡genes cargadas?
+  document.getElementById('address').value = galeria.direccion;
+  document.getElementById('openingTimes').value = galeria.horario;
+  document.getElementById('phone').value = galeria.telefono;
+  document.getElementById('web').value = galeria.web;
+  document.getElementById('mailReg').value = galeria.email;
+  galeria.evento = {};
+  document.getElementById('nomEvento').value = galeria.evento.nomEvento;
+  document.getElementById('fechaEvento').value = galeria.evento.fechaEvento;
+  //Â¿evento + fecha evento?
 }
 
 
