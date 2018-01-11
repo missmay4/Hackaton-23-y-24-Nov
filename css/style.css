@@ -21,10 +21,10 @@ body {
     margin: 0 2.5%;
 }
 
-.funo{ font-size: 2.81em;}
-.fdos{font-size: 1.56em;}
-.ftres{font-size:1.25em;}
-.fcuatro{font-size:1em;}
+.funo{ font-size: 2.81em; margin: 0px;}
+.fdos{font-size: 1.56em; margin: 0px;}
+.ftres{font-size:1.25em; margin: 0px;}
+.fcuatro{font-size:1em; margin: 0px;}
 
 @font-face {
 	font-family: 'caviardreams';
@@ -252,6 +252,8 @@ header {
 .comentuse {
     width: 100%;
     float: left;
+    background-color: #D9CED0;
+    padding: 10px 0;
 }
 
 
@@ -270,11 +272,15 @@ header {
     float: left;
 }
 
+
+
 .mvImg img{
     max-width: 100%;
+    max-height: 100px;
     border-radius: 50%;
 
 }
+
 
 .mvNomb {
     /* width: 50%; */

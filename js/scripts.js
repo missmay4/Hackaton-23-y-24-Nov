@@ -107,7 +107,7 @@ function saveData() {
   galeria.evento.fechaEvento = document.getElementById('fechaEvento').value;
   //Â¿evento + fecha evento?
 
-  console.log("El nombre introducido es..." + galeria.nombre);
+  //para comprobar JSON console.log("El nombre introducido es..." + galeria.nombre);
 }
 
 //boton reset (pone los campos del formulario vacÃ­os)
@@ -125,7 +125,7 @@ function loadData(){
   document.getElementById('phone').value = galeria.telefono;
   document.getElementById('web').value = galeria.web;
   document.getElementById('mailReg').value = galeria.email;
-  galeria.evento = {};
+  
   document.getElementById('nomEvento').value = galeria.evento.nomEvento;
   document.getElementById('fechaEvento').value = galeria.evento.fechaEvento;
   //Â¿evento + fecha evento?
