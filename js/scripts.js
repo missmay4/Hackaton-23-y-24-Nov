@@ -108,12 +108,7 @@ function saveData() {
   //Â¿evento + fecha evento?
 
   //para comprobar JSON console.log("El nombre introducido es..." + galeria.nombre);
-
-
-Checkfiles(photo);
-
 }
-
 
 //boton reset (pone los campos del formulario vacÃ­os)
 function resetData(){
@@ -138,23 +133,23 @@ function loadData(){
 
 
 
-//FUNCION JS PARA JAVASCRIPT
+/*//FUNCION JS PARA JAVASCRIPT
 
 
-function Checkfiles(photo){
-  var fup = document.getElementById(photo);
+function Checkfiles(){
+  var fup = document.getElementById('photo-1');
   var fileName = fup.value;
   var ext = fileName.substring(fileName.lastIndexOf('.') + 1);
 if(ext == "gif" || ext == "GIF" || ext == "JPEG" || ext == "jpeg" || ext == "jpg" || ext == "JPG" || ext == "doc"){
 return true;
 } 
 else{
-alert("Sólo se admiten archivos jpg o gifs");
+alert("Upload Gif or Jpg images only");
 fup.focus();
 return false;
 }
 
-} 
+} */
 
 
 
