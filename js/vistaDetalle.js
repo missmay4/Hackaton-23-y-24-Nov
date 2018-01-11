@@ -6,7 +6,7 @@ var modal = document.getElementById('myModal');
 // Coge el boton que esta en la vista detalle y abre la ventana modal
 var buttonOpen = document.getElementById("buttonComent");
 // Coge el boton que envia el comentario
-var buttonClose = document.getElementById("myButton");
+var buttonClose = document.getElementsByClassName("myButton");
 // When the user clicks on the button, open the modal
 function abrirVentana() {
   //console.log("Hola");
