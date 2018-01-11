@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
 
-<body>
+<body class="fondocolor">
   <!--   menu de navegacion-->
    <nav class="navbar navbar-inverse">
      <div class="container-fluid">
@@ -68,14 +68,14 @@
            <h1 class="funo">Panel de edición</h1>
          </div>
 
-       <form id="myForm" method="post" class="formulariogestion" name="formgestion">
+       <form id="myForm" method="post" class="formulariogestion" name="formgestion" action="#" onsubmit="return false;">
          <!-- Nombre galeria -->
          <label for="nombre" class="etiq fcuatro">Nombre de la Galería</label>
          <input class="campo" id="nombre" name="galnombre" placeholder="Escriba aquí el nombre de su galería" />
 
          <!-- Descripcion galeria -->
          <label for="nombre" class="etiq fcuatro">Descripción</label>
-         <input type="text" class="campo" name="galdescripcion" id="description" cols= "30" rows="10" placeholder="Describa aquí su galería" />
+         <input type="text" class="campo" name="galdescripcion" id="descripcion" cols= "30" rows="10" placeholder="Describa aquí su galería" />
 
 
          <!-- Añadir imagenes -->
@@ -109,12 +109,16 @@
 
         <!-- Eventos galeria -->
         <label for="gesteventos" class="etiq fcuatro">Añadir próximos eventos:</label>
-          <div class="campo">Nombre del evento: <input type="text" name="evento" /></div>
-          <div class="campo">Fecha: <input type="date" name="date"/></div>
+          <div class="campo">Nombre del evento: <input type="text" name="evento" id="nomEvento" /></div>
+          <div class="campo">Fecha: <input type="date" name="date" id="fechaEvento" /></div>
           
 
           <!-- Submit -->
-          <div class="campo"><input type="submit" name="guarcambios" value="Guardar cambios">
+          <div class="campo">
+            <input type="submit" name="guarcambios" value="Guardar cambios" onclick="saveData()">
+            <input type="button" name="resetButton" value="Reset Form" onclick="resetData()">
+          </div>
+          <div class="campo">
           </div>
       </form>
       </div>
@@ -126,28 +130,28 @@
 <!-- Footer en linea -->
 <footer>
   <div class="footer-bottom">
-  	<div class="container">
-  		<div class="row">
-  			<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-  				<div class="copyright">
-  					© 2018, AndeArte Corp.
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+          <div class="copyright">
+            © 2018, AndeArte Corp.
             <ul class="social-icons social-icons-round ">
               <li><a href="https://github.com/missmay4/AndeArte_Proyect"><i class="fa fa-github"></i></a></li>
               <li><a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
-							<li><a href="https://www.twitter.com/"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="https://www.twitter.com/"><i class="fa fa-twitter"></i></a></li>
               <li><a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a></li>
             </ul>
-  				</div>
-  			</div>
-  			<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-  				<div class="design">
-  					<a target="_blank" href="#">Aviso Legal </a> |
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+          <div class="design">
+            <a target="_blank" href="#">Aviso Legal </a> |
             <a target="_blank" href="#">Privacidad</a> |
             <a target="_blank" href="#">Contacto</a>
-  				</div>
-  			</div>
-  		</div>
-  	</div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </footer>
 
@@ -158,7 +162,7 @@
    <script type="text/javascript" src="js/jquery-1x.js"></script>
    <script type="text/javascript" src="js/jquery.validate.js"></script>
    
-   <script type="text/javascript" src="js/scripts.js"></script>	
+   <script type="text/javascript" src="js/scripts.js"></script> 
 
 
 </body>

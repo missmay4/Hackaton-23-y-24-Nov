@@ -1,4 +1,5 @@
-// Ventana emergente comentarios 
+
+/*// Ventana emergente comentarios 
 
 // Coge la ventana modal
 var modal = document.getElementById('myModal');
@@ -20,31 +21,27 @@ function limpiarText() {
   document.getElementById("comentario").value = "";
 }
 
-// Fin ventana emergente
+// Fin ventana emergente*/
 
-/* $(document).ready(function() {
-  $(function() {
-    $("#dialog").dialog({
-      autoOpen: false
-    });
-    $("#emergente").on("click", function() {
-      $("#dialog").dialog("open");
-    });
-  });
-  // Validating Form Fields.....
-  $("#submit").click(function(e) {
-    var comentario = $("#comentario").val();
-
-  });
-}); */
+//----- VISTA DETALLE
+// -----JS Vista Detalle VALORACIÃ“N Estrellas
 
 /*
+$(function () {
+ 
+  $("#rateYo").rateYo({
+    rating: 3.6
+  });
+
+})
+*/
+//----- fin VISTA DETALLE
+
 $( document ).ready(
 
 //----------GESTION
-
 $(function() {
-  
+
   $("form[name='formgestion']").validate({
     
     rules: {
@@ -78,23 +75,24 @@ $(function() {
       	url: true
       },
 
-      galemail{
+      galemail: {
         required: true,
         email: true
-      }
+      },
 
-      evento{
+      evento: {
         rangelength:[5, 25]
-      }
+      },
 
-      date{
+      date: {
         digits: true,
-      }
+      },
 
     },
 
     // Specify validation error messages
     messages: {
+      
 
     	// galnombre:"ehhh tu nombre",
     	
@@ -105,8 +103,6 @@ $(function() {
 
     	// // }
     	// galweb:"ehh tu web",
-
-
   
       // lastname: "Please enter your lastname",
       // password: {
@@ -117,14 +113,53 @@ $(function() {
     },
     // Make sure the form is submitted to the destination defined
     // in the "action" attribute of the form when valid
-    // submitHandler: function(form) {
-    //   form.submit();
-    // }
+    //submitHandler: function(form) {
+      // form.submit();
+    //}
   });
-});
+})); 
+
+/* ---------------- SAVE DATA INTO JSON ---------------- */
+
+//document.myform.submit()
 
 
-//FUNCION JS PARA JAVASCRIPT
+//JSON vacÃ­o:
+var galeria = {};
+
+function saveData() {
+  galeria.nombre = document.getElementById('nombre').value; // Capturar el value del input correspondiente
+  // ...
+  galeria.descripcion = document.getElementById('descripcion').value;
+  //Â¿imÃ¡genes cargadas?
+  galeria.direccion = document.getElementById('address').value;
+  galeria.horario = document.getElementById('openingTimes').value;
+  galeria.telefono = document.getElementById('phone').value;
+  galeria.web = document.getElementById('web').value;
+  galeria.email = document.getElementById('mailReg').value;
+  galeria.evento = {};
+  galeria.evento.nomEvento = document.getElementById('nomEvento').value;
+  galeria.evento.fechaEvento = document.getElementById('fechaEvento').value;
+  //Â¿evento + fecha evento?
+
+  console.log("El nombre introducido es..." + galeria.nombre);
+}
+
+//boton reset (pone los campos del formulario vacÃ­os)
+function resetData(){
+  document.getElementById("myForm").reset();
+}
+
+//
+function loadData(){
+  document.getElementById('nombre').value = galeria.nombre;
+}
+
+
+
+
+
+/*//FUNCION JS PARA JAVASCRIPT
 
 
 function Checkfiles(){
@@ -140,26 +175,13 @@ fup.focus();
 return false;
 }
 
-}
+} */
 
 
 
 //--------------FIN GESTION
 
-*/
-
-//----- VISTA DETALLE
-// -----JS Vista Detalle VALORACIÓN Estrellas
 
 
-$(function () {
- 
-  $("#rateYo").rateYo({
-    rating: 3.6
-  });
 
-})
-
-
- 
 
