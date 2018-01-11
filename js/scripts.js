@@ -184,9 +184,21 @@ return false;
 
 //--------------FIN GESTION
 
+<<<<<<< Updated upstream
+=======
+
+
+//----- VISTA DETALLE
+// -----JS Vista Detalle VALORACIÓN Estrellas
+
+>>>>>>> Stashed changes
 
 
 
 
 
+<<<<<<< Updated upstream
+=======
+  
+>>>>>>> Stashed changes
 
