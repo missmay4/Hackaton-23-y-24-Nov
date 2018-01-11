@@ -1,4 +1,5 @@
-// Ventana emergente comentarios 
+
+/*// Ventana emergente comentarios 
 
 // Coge la ventana modal
 var modal = document.getElementById('myModal');
@@ -20,23 +21,22 @@ function limpiarText() {
   document.getElementById("comentario").value = "";
 }
 
-// Fin ventana emergente
+// Fin ventana emergente*/
 
-/* $(document).ready(function() {
-  $(function() {
-    $("#dialog").dialog({
-      autoOpen: false
-    });
-    $("#emergente").on("click", function() {
-      $("#dialog").dialog("open");
-    });
-  });
-  // Validating Form Fields.....
-  $("#submit").click(function(e) {
-    var comentario = $("#comentario").val();
+//----- VISTA DETALLE
+// -----JS Vista Detalle VALORACIÃ“N Estrellas
 
+/*
+$(function () {
+ 
+  $("#rateYo").rateYo({
+    rating: 3.6
   });
-}); */
+
+
+})
+*/
+//----- fin VISTA DETALLE
 
 
 $( document ).ready(
@@ -119,21 +119,22 @@ $(function() {
       // form.submit();
     //}
   });
-}));
+
+})); 
 
 /* ---------------- SAVE DATA INTO JSON ---------------- */
 
 //document.myform.submit()
 
 
-//JSON vacío:
+//JSON vacÃ­o:
 var galeria = {};
 
 function saveData() {
   galeria.nombre = document.getElementById('nombre').value; // Capturar el value del input correspondiente
   // ...
   galeria.descripcion = document.getElementById('descripcion').value;
-  //¿imágenes cargadas?
+  //Â¿imÃ¡genes cargadas?
   galeria.direccion = document.getElementById('address').value;
   galeria.horario = document.getElementById('openingTimes').value;
   galeria.telefono = document.getElementById('phone').value;
@@ -142,12 +143,12 @@ function saveData() {
   galeria.evento = {};
   galeria.evento.nomEvento = document.getElementById('nomEvento').value;
   galeria.evento.fechaEvento = document.getElementById('fechaEvento').value;
-  //¿evento + fecha evento?
+  //Â¿evento + fecha evento?
 
   console.log("El nombre introducido es..." + galeria.nombre);
 }
 
-//boton reset (pone los campos del formulario vacíos)
+//boton reset (pone los campos del formulario vacÃ­os)
 function resetData(){
   document.getElementById("myForm").reset();
 }
@@ -161,7 +162,7 @@ function loadData(){
 
 
 
-//FUNCION JS PARA JAVASCRIPT
+/*//FUNCION JS PARA JAVASCRIPT
 
 
 function Checkfiles(){
@@ -177,27 +178,15 @@ fup.focus();
 return false;
 }
 
-}
+} */
 
 
 
 //--------------FIN GESTION
 
-*/
-
-//----- VISTA DETALLE
-// -----JS Vista Detalle VALORACIÓN Estrellas
 
 
 
-$(function () {
- 
-  $("#rateYo").rateYo({
-    rating: 3.6
-  });
-
-})
 
 
-  });
 

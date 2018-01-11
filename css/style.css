@@ -499,12 +499,18 @@ header {
 
 
 /*--------------------------GESTION.HTML---------------------*/
+
+
+
 .formulariogestion{
         padding: 20px 0 50px 0;
         width: 80%;
         margin: 0 10%;
         float: left;
     }
+
+
+
 #myForm .error {
   color: #ff0000;
   float: left;
@@ -521,12 +527,18 @@ header {
 /* ---------------------------------------------- FOOTER --------------------------------------------- */
 
 
+
+/* Footer en linea */
 .footer-bottom {
 
     min-height: 30px;
     width: 100%;
     float: left;
     background-color: #333;
+
+    
+
+
 }
 
 .copyright {
@@ -610,9 +622,9 @@ input[type=text] {
     float: right;
 }
 
+/* input[type=button] */
 
-
-input[type=button] {
+ .styleBoton  {
   width:13%;
   border:1px solid #000000;
   background:#7f8c8d;
@@ -630,7 +642,7 @@ input[type=button] {
 }
 
 
-input[type=button]:hover {
+.styleBoton:hover {
   border:1px solid #666;
   background:#555;
   color:#000000;
@@ -656,7 +668,6 @@ div.emergenteMain {
   border:1px solid #000000;
   box-shadow:0 0 10px;
   border-radius:2px;
-  /* font-size:13px; */
   text-align:center
 }
 /* Fin ventana emergente */
@@ -798,6 +809,7 @@ div.emergenteMain {
 .cajaEst {
     width: 100%;
     float: left;
+    height: 20px;
     text-align: center;
 }
 
@@ -822,10 +834,6 @@ div.emergenteMain {
 .nombreg{
     max-width: 100%;
 
-}
-
-.colocarGal{
-    
 }
 
 .centrar table {
@@ -854,12 +862,7 @@ div.emergenteMain {
     float: left;
     margin-top: 2%;
 }
-   /* .medio{
-        width: 48%;
-        float:left;
-        margin-right: 2%;
-    }  */
-
+   
      /* Perfil User */
 
     .bloquep {
