@@ -168,8 +168,10 @@ header {
 }
 
 .centrar table {
-    margin-left: 6%;
+    margin-left: 5%;
     margin-bottom: 3%;
+    text-align: left;
+    border: 1px solid;
 }
 
  .cajaEst {
@@ -287,6 +289,12 @@ header {
     float: right;
 }
 
+.recuadroCom{
+    border:1px solid;
+    padding: 1%;
+
+}
+
 .center {
     width: 100%;
     float: left;
@@ -339,6 +347,11 @@ header {
     margin-top: 5%;
     width: 100%;
     float: left;
+}
+
+.bloquep.dat button a{
+    text-decoration: none;
+    color: initial;
 }
 
 a.botonGestion {
@@ -740,8 +753,9 @@ div.emergenteMain {
 /* Vista Detalle */
 
 .centrar table {
-    margin-left: 27%;
+    margin-left: 25%;
     margin-bottom: 3%;
+    
 }
 
 .valoEstr {
@@ -767,7 +781,7 @@ div.emergenteMain {
         display: inline-block;
     }
 
-   
+
 }
 
 @media only screen and (min-device-width: 801px) {
