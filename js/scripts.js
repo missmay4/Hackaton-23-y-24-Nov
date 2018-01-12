@@ -133,23 +133,23 @@ function loadData(){
 
 
 
-/*//FUNCION JS PARA JAVASCRIPT
+//FUNCION JS PARA JAVASCRIPT
 
 
 function Checkfiles(){
-  var fup = document.getElementById('photo-1');
-  var fileName = fup.value;
-  var ext = fileName.substring(fileName.lastIndexOf('.') + 1);
-if(ext == "gif" || ext == "GIF" || ext == "JPEG" || ext == "jpeg" || ext == "jpg" || ext == "JPG" || ext == "doc"){
-return true;
-} 
-else{
-alert("Upload Gif or Jpg images only");
-fup.focus();
-return false;
-}
+    var fup = document.getElementById('photo-1');
+    var fileName = fup.value;
+    var ext = fileName.substring(fileName.lastIndexOf('.') + 1);
+  if(ext == "gif" || ext == "GIF" || ext == "JPEG" || ext == "jpeg" || ext == "jpg" || ext == "JPG" || ext == "doc"){
+  return true;
+  } 
+  else{
+  alert("Upload Gif or Jpg images only");
+  fup.focus();
+  return false;
+  }
 
-} */
+}
 
 
 
