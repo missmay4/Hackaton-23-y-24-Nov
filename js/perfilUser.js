@@ -25,8 +25,7 @@ footer = function(){
      {
          /* si el alto del contenido es menor que el alto del navegador es que
           * tenemos espacio vacio y le mandamos abajo*/
-         $("footer").css({"position":"fixed", "bottom":"0px", "marginTop":"20%"})
-         $("footer").createElement("<br>", "<br>", "<br>", "<br>" )
+         $("footer").css({"position":"fixed", "bottom":"0px", "marginTop":"30%"})
          console.log("fixed");
      } 
      
