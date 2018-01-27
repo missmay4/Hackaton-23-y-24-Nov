@@ -1,49 +1,11 @@
-// Ventana emergente comentarios 
 
-// Coge la ventana modal
-var modal = document.getElementById('myModal');
-// Coge el boton que esta en la vista detalle y abre la ventana modal
-var buttonOpen = document.getElementById("buttonComent");
-// Coge el boton que envia el comentario
-var buttonClose = document.getElementById("myButton");
-// When the user clicks on the button, open the modal
-function abrirVentana() {
-  //console.log("Hola");
-  modal.style.display = "block";
-}
-// Cuando pulse en aceptar, cerrar la ventana modal
-function cerrarModal() {
-  //console.log("Adios");
-  modal.style.display = "none";
-}
-function limpiarText() {
-  document.getElementById("comentario").value = "";
-}
 
-// Fin ventana emergente
 
-/* $(document).ready(function() {
-  $(function() {
-    $("#dialog").dialog({
-      autoOpen: false
-    });
-    $("#emergente").on("click", function() {
-      $("#dialog").dialog("open");
-    });
-  });
-  // Validating Form Fields.....
-  $("#submit").click(function(e) {
-    var comentario = $("#comentario").val();
-  });
-}); */
-
-/*
 $( document ).ready(
 
 //----------GESTION
-
 $(function() {
-  
+
   $("form[name='formgestion']").validate({
     
     rules: {
@@ -77,23 +39,24 @@ $(function() {
       	url: true
       },
 
-      galemail{
+      galemail: {
         required: true,
         email: true
-      }
+      },
 
-      evento{
+      evento: {
         rangelength:[5, 25]
-      }
+      },
 
-      date{
+      date: {
         digits: true,
-      }
+      },
 
     },
 
     // Specify validation error messages
     messages: {
+      
 
     	// galnombre:"ehhh tu nombre",
     	
@@ -104,8 +67,6 @@ $(function() {
 
     	// // }
     	// galweb:"ehh tu web",
-
-
   
       // lastname: "Please enter your lastname",
       // password: {
@@ -116,28 +77,77 @@ $(function() {
     },
     // Make sure the form is submitted to the destination defined
     // in the "action" attribute of the form when valid
-    // submitHandler: function(form) {
-    //   form.submit();
-    // }
+    //submitHandler: function(form) {
+      // form.submit();
+    //}
   });
-});
+
+})); 
+
+/* ---------------- SAVE DATA INTO JSON ---------------- */
+
+//document.myform.submit()
+
+
+//JSON vacÃ­o:
+var galeria = {};
+
+function saveData() {
+  galeria.nombre = document.getElementById('nombre').value; // Capturar el value del input correspondiente
+  // ...
+  galeria.descripcion = document.getElementById('descripcion').value;
+  //Â¿imÃ¡genes cargadas?
+  galeria.direccion = document.getElementById('address').value;
+  galeria.horario = document.getElementById('openingTimes').value;
+  galeria.telefono = document.getElementById('phone').value;
+  galeria.web = document.getElementById('web').value;
+  galeria.email = document.getElementById('mailReg').value;
+  galeria.evento = {};
+  galeria.evento.nomEvento = document.getElementById('nomEvento').value;
+  galeria.evento.fechaEvento = document.getElementById('fechaEvento').value;
+  //Â¿evento + fecha evento?
+
+  //para comprobar JSON console.log("El nombre introducido es..." + galeria.nombre);
+}
+
+//boton reset (pone los campos del formulario vacÃ­os)
+function resetData(){
+  document.getElementById("myForm").reset();
+}
+
+//
+function loadData(){
+  document.getElementById('nombre').value = galeria.nombre;
+  document.getElementById('descripcion').value = galeria.descripcion;
+  //Â¿imÃ¡genes cargadas?
+  document.getElementById('address').value = galeria.direccion;
+  document.getElementById('openingTimes').value = galeria.horario;
+  document.getElementById('phone').value = galeria.telefono;
+  document.getElementById('web').value = galeria.web;
+  document.getElementById('mailReg').value = galeria.email;
+  
+  document.getElementById('nomEvento').value = galeria.evento.nomEvento;
+  document.getElementById('fechaEvento').value = galeria.evento.fechaEvento;
+  //Â¿evento + fecha evento?
+}
+
 
 
 //FUNCION JS PARA JAVASCRIPT
 
 
 function Checkfiles(){
-  var fup = document.getElementById('photo-1');
-  var fileName = fup.value;
-  var ext = fileName.substring(fileName.lastIndexOf('.') + 1);
-if(ext == "gif" || ext == "GIF" || ext == "JPEG" || ext == "jpeg" || ext == "jpg" || ext == "JPG" || ext == "doc"){
-return true;
-} 
-else{
-alert("Upload Gif or Jpg images only");
-fup.focus();
-return false;
-}
+    var fup = document.getElementById('photo-1');
+    var fileName = fup.value;
+    var ext = fileName.substring(fileName.lastIndexOf('.') + 1);
+  if(ext == "gif" || ext == "GIF" || ext == "JPEG" || ext == "jpeg" || ext == "jpg" || ext == "JPG" || ext == "doc"){
+  return true;
+  } 
+  else{
+  alert("Upload Gif or Jpg images only");
+  fup.focus();
+  return false;
+  }
 
 }
 
@@ -145,20 +155,4 @@ return false;
 
 //--------------FIN GESTION
 
-*/
-
-//----- VISTA DETALLE
-// -----JS Vista Detalle VALORACIÓN Estrellas
-
-
-$(function () {
- 
-  $("#rateYo").rateYo({
-    rating: 3.6
-  });
-
-})
-
-
- 
 

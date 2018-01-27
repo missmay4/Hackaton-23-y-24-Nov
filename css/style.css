@@ -21,10 +21,10 @@ body {
     margin: 0 2.5%;
 }
 
-.funo{ font-size: 2.81em;}
-.fdos{font-size: 1.56em;}
-.ftres{font-size:1.25em;}
-.fcuatro{font-size:1em;}
+.funo{ font-size: 2.81em; margin: 0px;}
+.fdos{font-size: 1.56em; margin: 0px;}
+.ftres{font-size:1.25em; margin: 0px;}
+.fcuatro{font-size:1em; margin: 0px;}
 
 @font-face {
 	font-family: 'caviardreams';
@@ -168,8 +168,10 @@ header {
 }
 
 .centrar table {
-    margin-left: 6%;
+    margin-left: 5%;
     margin-bottom: 3%;
+    text-align: left;
+    border: 1px solid;
 }
 
  .cajaEst {
@@ -252,6 +254,8 @@ header {
 .comentuse {
     width: 100%;
     float: left;
+    background-color: #D9CED0;
+    padding: 10px 0;
 }
 
 
@@ -270,15 +274,25 @@ header {
     float: left;
 }
 
+
+
 .mvImg img{
     max-width: 100%;
+    max-height: 100px;
     border-radius: 50%;
 
 }
 
+
 .mvNomb {
     /* width: 50%; */
     float: right;
+}
+
+.recuadroCom{
+    border:1px solid;
+    padding: 1%;
+
 }
 
 .center {
@@ -333,6 +347,20 @@ header {
     margin-top: 5%;
     width: 100%;
     float: left;
+}
+
+.bloquep.dat button a{
+    text-decoration: none;
+    color: initial;
+}
+
+a.botonGestion {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+
+    text-decoration: none;
+    color: initial;
 }
 
 .editargal {
@@ -399,6 +427,7 @@ header {
     margin: 0 1%;
     margin-top: 3px;
     height: 40px;
+
 }
 
 .botonsign {
@@ -488,9 +517,16 @@ header {
         width: 45%;
         display:inline-block;
         float: left;
+        /* position: fixed;
+        left: 600px;
+        top: 370px; */
+
     }
 .deco-1 img{
         max-width: 100%;
+        float: left;
+        
+
     }
 
 
@@ -499,6 +535,17 @@ header {
 
 
 /*--------------------------GESTION.HTML---------------------*/
+
+
+
+.formulariogestion{
+        padding: 20px 0 50px 0;
+        width: 80%;
+        margin: 0 10%;
+        float: left;
+    }
+
+
 
 #myForm .error {
   color: #ff0000;
@@ -548,12 +595,13 @@ footer p {
     width: 100%;
 }
 
-
 /* Footer en linea */
 .footer-bottom {
-    background-color: #333;
+
     min-height: 30px;
     width: 100%;
+    float: left;
+    background-color: #333;
 }
 
 .copyright {
@@ -561,6 +609,13 @@ footer p {
     line-height: 30px;
     min-height: 30px;
     padding: 7px 0;
+
+}
+
+.blockCorp a{
+    color: #fff;
+
+
 }
 
 .design {
@@ -583,6 +638,7 @@ footer p {
 
 .social-icons > li {
     display: inline-block;
+    text-align: right;
 }
 
 .social-icons > li > a {
@@ -619,14 +675,14 @@ footer p {
 
  
 /* Ventana emergente */
-input[type=text] {
+ /* input[type=text] {
   margin-top:5px;
   margin-bottom:20px;
   width:96%;
   border-radius:5px;
   border:0;
   padding:5px 0;
-}
+ }  */
 #comentario {
   padding-left:10px;
 }
@@ -637,9 +693,9 @@ input[type=text] {
     float: right;
 }
 
+/* input[type=button] */
 
-
-input[type=button] {
+ .styleBoton  {
   width:13%;
   border:1px solid #000000;
   background:#7f8c8d;
@@ -657,7 +713,7 @@ input[type=button] {
 }
 
 
-input[type=button]:hover {
+.styleBoton:hover {
   border:1px solid #666;
   background:#555;
   color:#000000;
@@ -683,7 +739,6 @@ div.emergenteMain {
   border:1px solid #000000;
   box-shadow:0 0 10px;
   border-radius:2px;
-  /* font-size:13px; */
   text-align:center
 }
 /* Fin ventana emergente */
@@ -729,8 +784,9 @@ div.emergenteMain {
 /* Vista Detalle */
 
 .centrar table {
-    margin-left: 27%;
+    margin-left: 25%;
     margin-bottom: 3%;
+    
 }
 
 .valoEstr {
@@ -755,7 +811,6 @@ div.emergenteMain {
         left: left;
         display: inline-block;
     }
-
 
 
 }
@@ -817,18 +872,14 @@ div.emergenteMain {
         float: left;
     }
 
-    .formulariogestion{
-        padding: 20px 0 50px 0;
-        width: 45%;
-        margin: 0 5%;
-        float: left;
-    }
+    
 
     /* VISTA DETALLE */
 
 .cajaEst {
     width: 100%;
     float: left;
+    height: 20px;
     text-align: center;
 }
 
@@ -855,10 +906,6 @@ div.emergenteMain {
 
 }
 
-.colocarGal{
-    
-}
-
 .centrar table {
     margin-left: 23%;
     margin-top: 5%;
@@ -881,12 +928,7 @@ div.emergenteMain {
     float: left;
     margin-top: 2%;
 }
-   /* .medio{
-        width: 48%;
-        float:left;
-        margin-right: 2%;
-    }  */
-
+   
      /* Perfil User */
 
     .bloquep {
