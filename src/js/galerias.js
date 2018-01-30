@@ -1,36 +1,41 @@
+function Galeria(id, nombre, descripcion, direccion, horario, telefono, web, email) {
+  this.id = id;
+  this.nombre = nombre;
+  this.descripcion = descripcion;
+  this.imagenes = [];
+  this.direccion = direccion;
+  this.horario = horario;
+  this.telefono = telefono;
+  this.web = web;
+  this.email = email;
+  this.eventos = [];
+  this.comentarios = [];
+}
 
-var galerias = {
+Galeria.prototype.crearEvento = function(id, nombre, fecha) {
 
-	nombre:"",
-	descripcion: "",
-	imagenes:"",
-	direccion:"",
-	horario:"",
-	telefono: "",
-	web:"",
-	email:"",
-	eventos: {
-		nombre:"",
-		fecha:"",
-	}
+  var nuevoEvento = new Evento(id, nombre, fecha);
 
-	galerias: function() {
-		this.id = "";
-		this.eventos = [];
-		this.comentarios = [];
-	},
-
-	crearEvento: function() {
-
-	},
-
-	eliminarEvento: function() {
-
-	},
-
-	crearComentario: function() {
-
-	},
-
-
+  this.eventos.push(nuevoEvento);
 };
+
+Galeria.prototype.eliminarEvento = function(id) {
+
+  //this.eventos.pop(); Quita el ultimo elemento del array
+  // INCOMPLETO
+};
+
+Galeria.prototype.crearComentario = function(id, nombre, fecha, imagenperfil, texto) {
+
+  var nuevoComentario = new Comentario(id, nombre, fecha, imagenperfil, texto);
+
+  this.comentario.push(nuevoComentario);
+};
+
+// Crear galeria nueva
+//var miGaleria = new Galeria(1, );
+
+// Crear un evento DENTRO de miGaleria
+//miGaleria.crearEvento(1, "LOUVRE", "1231");
+
+//var myGaleria1 = new Evento(1, ...);
