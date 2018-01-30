@@ -82,7 +82,11 @@ $(function() {
     //}
   });
 
-})); 
+//----------------LOG IN
+
+
+
+//----------------FIN LOG IN
 
 /* ---------------- SAVE DATA INTO JSON ---------------- */
 
@@ -129,13 +133,14 @@ function loadData(){
   document.getElementById('nomEvento').value = galeria.evento.nomEvento;
   document.getElementById('fechaEvento').value = galeria.evento.fechaEvento;
   //Â¿evento + fecha evento?
-}
+};
 
 
 
 //FUNCION JS PARA JAVASCRIPT
 
 
+/*
 function Checkfiles(){
     var fup = document.getElementById('photo-1');
     var fileName = fup.value;
@@ -149,10 +154,11 @@ function Checkfiles(){
   return false;
   }
 
-}
+};
 
-
+*/
 
 //--------------FIN GESTION
+
 
 

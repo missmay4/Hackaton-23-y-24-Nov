@@ -52,11 +52,11 @@ body {
 
 /* ---------------------------------------------- HEADER --------------------------------------------- */
 
-main {
+/* main {
     font-family: 'coolvetica';
-}
+} */
 
-header, footer {
+nav, header, footer {
     font-family: 'caviardreams';
 }
 
