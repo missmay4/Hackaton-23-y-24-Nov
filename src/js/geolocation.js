@@ -1,18 +1,19 @@
-document.getElementById("geo").addEventListener("click", function(geolocalizar) {
+window.onload = function(geolocalizar) {
   if (navigator.geolocation) {
     var output = document.getElementById("data");
     document.getElementById("data").innerHTML = "La geolocalizacion HTML5 esta soportada en este navegador";
 
     navigator.geolocation.getCurrentPosition(updateLocation);
   }
-});
+
+};
 
 function updateLocation(position) {
   console.log('position:', position);
   var latitud = position.coords.latitude;
   var longitud = position.coords.longitude;
-  var precision = position.coords.accuracy;
-  var altitud = position.coords.altitude;
+  //var precision = position.coords.accuracy;
+  //var altitud = position.coords.altitude;
 
   if (latitud <= 40.4893538 && longitud >= -3.6827461) {
     document.getElementById("data").innerHTML = "Ubicación: Madrid";
