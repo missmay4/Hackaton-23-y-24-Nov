@@ -1,12 +1,14 @@
+function Comentario(id, nombre, fecha, imagenperfil, texto) {
+  this.id = id;
+  this.nombre = nombre;
+  this.fecha = fecha;
+  this.imagenperfil = imagenperfil;
+  this.texto = texto;
+}
 
-var comentarios = {
+/*Comentario.prototype.crearComentario = function(id, nombre, fecha, imagenperfil, texto) {
 
-	nombre:"",
-	fecha:"",
-	imagenperfil: "",
-	comentario:"",
+  var nuevoComentario = new Comentario(id, nombre, fecha, imagenperfil, texto);
 
-	comentarios: function() {
-		this.id = "";
-	},
-};
+  this.comentario.push(nuevoComentario);
+};*/
