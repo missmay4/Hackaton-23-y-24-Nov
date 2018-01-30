@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
     <meta charset="utf-8">
-    <title>Panel de creación</title>
+    <title>Panel de edición</title>
 
     <link rel="stylesheet" href="css/normalize.css" type="text/css" />
     <link rel="stylesheet" href="css/style.css" type="text/css" />
@@ -75,52 +75,52 @@
     <div class="hojaform">
       <div class="wrapper">
         <div class="title-1">
-           <h1 class="funo">Panel de creación</h1>
+           <h1 class="funo">Panel de edición</h1>
          </div>
 
        <form id="myForm" method="post" class="formulariogestion" name="formgestion" action="#" onsubmit="return false;">
          <!-- Nombre galeria -->
          <label for="nombre" class="etiq fcuatro">Nombre de la Galería</label>
-         <input class="campo" id="nombre" name="galnombre" placeholder="Escriba aquí el nombre de su galería" />
+         <input class="campo" id="editar_nombre" name="galnombre" placeholder="Escriba aquí el nombre de su galería" />
 
          <!-- Descripcion galeria -->
          <label for="nombre" class="etiq fcuatro">Descripción</label>
-         <input type="text" class="campo" name="galdescripcion" id="descripcion" placeholder="Describa aquí su galería" />
+         <input type="text" class="campo" name="galdescripcion" id="editar_descripcion" placeholder="Describa aquí su galería" />
 
 
          <!-- Añadir imagenes -->
          <label for="photo-1" class="campo medio" >Añadir imagenes</label>
-          <input type="file" class="campo" id="photo-1" name="gestfotos">
-          <input type="file" class="campo" id="photo-2" name="gestfotos">
-          <input type="file" class="campo" id="photo-3" name="gestfotos">
+          <input type="file" class="campo" id="editar_photo-1" name="gestfotos">
+          <input type="file" class="campo" id="editar_photo-2" name="gestfotos">
+          <input type="file" class="campo" id="editar_photo-3" name="gestfotos">
 
 
         <!-- Contacto galeria -->
         <!-- Dirección -->
         <label for="address" class="etiq fcuatro">Dirección</label>
-        <input type="text" class="campo" id="address" name="galaddress" placeholder="Escriba aquí la dirección de su galería" />
+        <input type="text" class="campo" id="editar_address" name="galaddress" placeholder="Escriba aquí la dirección de su galería" />
 
         <!-- Horario -->
         <label for="openingTimes" class="etiq fcuatro">Horario</label>
-        <input type="text" class="campo" id="openingTimes" name="openingTimes" maxlength="60" placeholder="Escriba aquí el horario de su galería" />
+        <input type="text" class="campo" id="editar_openingTimes" name="openingTimes" maxlength="60" placeholder="Escriba aquí el horario de su galería" />
 
         <!-- Telefono -->
         <label for="phone" class="etiq fcuatro">Teléfono</label>
-        <input type="text" class="campo" id="phone" name="galphone"  placeholder="Escriba aquí el teléfono de su galería" />
+        <input type="text" class="campo" id="editar_phone" name="galphone"  placeholder="Escriba aquí el teléfono de su galería" />
 
         <!-- Web -->
         <label for="web" class="etiq fcuatro">Sitio web</label>
-        <input type="text" class="campo" id="web" name="galweb" placeholder="Escriba aquí la dirección de la página web de su galería" />
+        <input type="text" class="campo" id="editar_web" name="galweb" placeholder="Escriba aquí la dirección de la página web de su galería" />
 
 
         <!-- E-mail -->
         <label for="mailReg" class="etiq fcuatro">Correo electrónico</label>
-        <input type="text" class="campo" id="mailReg" name="galemail"  placeholder="Escriba aquí la dirección de correo de su galería" />
+        <input type="text" class="campo" id="editar_mailReg" name="galemail"  placeholder="Escriba aquí la dirección de correo de su galería" />
 
         <!-- Eventos galeria -->
         <label for="nomEvento" class="etiq fcuatro">Añadir próximos eventos:</label>
-          <div class="campo">Nombre del evento: <input type="text" name="evento" id="nomEvento" /></div>
-          <div class="campo">Fecha: <input type="date" name="date" id="fechaEvento" /></div>
+          <div class="campo">Nombre del evento: <input type="text" name="evento" id="editar_nomEvento" /></div>
+          <div class="campo">Fecha: <input type="date" name="date" id="editar_fechaEvento" /></div>
 
 
           <!-- Submit -->
@@ -173,14 +173,11 @@
 
   <!-- SCRIPTS -->
 
-   <!--<script type="text/javascript" src="js/jquery-1x.js"></script>
-   <script type="text/javascript" src="js/jquery.validate.js"></script> -->
-
   <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
   <script type="text/javascript" src="js/eventos.js"></script>
   <script type="text/javascript" src="js/galerias.js"></script>
   <script type="text/javascript" src="js/usuarios.js"></script>
-   <!--<script type="text/javascript" src="js/scripts.js"></script> -->
+   <script type="text/javascript" src="js/scripts2.js"></script>
 
 
 </body>
