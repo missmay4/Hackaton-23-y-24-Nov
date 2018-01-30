@@ -15,9 +15,16 @@ function Galeria(id, nombre, descripcion, direccion, horario, telefono, web, ema
 Galeria.prototype.crearEvento = function(id, nombre, fecha) {
 
   var nuevoEvento = new Evento(id, nombre, fecha);
+  nuevoEvento.nombre = document.getElementById("editar_nomEvento").value;
+  nuevoEvento.fecha = document.getElementById("editar_fechaEvento").value;
+
 
   this.eventos.push(nuevoEvento);
 };
+
+/*Galeria.prototype.loadData = function(id, nombre, descripcion, direccion, horario, telefono, web, email){
+
+}*/
 
 Galeria.prototype.eliminarEvento = function(id) {
 
