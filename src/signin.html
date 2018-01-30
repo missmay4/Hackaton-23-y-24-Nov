@@ -87,7 +87,7 @@
 
     <div class="formsign">
 
-       <form name="formulario" action="signin.php" method="post" onsubmit="return validar()">
+       <form action="signin.php" method="post">
 
           <div class="etiq">
               <label for="username" class="fcuatro">Email/Usuario</label>
@@ -95,7 +95,7 @@
           </div>
 
           <div class="campoformulario">
-              <input type="text"  class="campo-1" id="username" name="username" maxlength="20" placeholder="Escribe tu email o usuario"  />
+              <input type="text"  class="campo-1" id="username" name="username" maxlength="20" placeholder="Escribe tu email o usuario" required />
 
           </div>
 
@@ -104,11 +104,11 @@
 
           </div>
           <div class="campoformulario">
-              <input type="password" class="campo-1" name="userpass"  id="userpass" maxlength="20" placeholder="Escribe tu contraseña"  />
+              <input type="password" class="campo-1" name="userpass"  id="userpass" maxlength="20" placeholder="Escribe tu contraseña" required />
 
           </div>
           <div class="botonsign">
-              <input id="enviar" type="submit" value="ENVIAR" />
+              <input type="submit" value="ENVIAR" />
 
           </div>
 
@@ -156,6 +156,6 @@
   </div>
 </footer>
 <!-- FIN DE FOTTER -->
-  <script src="js/signin.js"></script>
+
 </body>
 </html>
