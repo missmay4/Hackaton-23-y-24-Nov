@@ -1,12 +1,11 @@
-/*describe('', function(){
+describe('Valida formulario', function(){
 
-	it('', function(){
+	it('valida campo vacio', function(){
 		// expect (mi funcion al testear).operador(salida);
-		expect();
+		expect(validar(true).toEqual(false));
 	});
 
-	it('', function(){
-		expect();
+	it('valida muchos caracteres', function(){
+		expect(validar(true).toEqual(false));
 	});
 });
-*/
