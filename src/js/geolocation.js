@@ -20,6 +20,12 @@ function updateLocation(position) {
     document.getElementById("data").innerHTML = "No se donde estás";
   }
 
+  if (Latidud <= 41.3850379 && longitud >= 2.1733563) {
+    document.getElementById("data").innerHTML = "Ubicación: Barcelona";
+  } else {
+    document.getElementById("data").innerHTML = "No se donde estás";
+  }
+
   //document.getElementById("data").innerHTML = "Latidud: " + latitud + " Longitud: " + longitud + " Precision: " + precision;
   //document.getElementById("data").innerHTML = "Madrid";
 
