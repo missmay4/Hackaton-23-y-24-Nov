@@ -1,6 +1,3 @@
-//$(document).ready(
-//  $(function() {
-// AJAX
 
 
 //Plantilla
@@ -22,7 +19,7 @@ var galeriaMagda = {
 
 };
 
-//console.log(galeriaMagda);
+function loadData(){
 
 document.getElementById("editar_nombre").value = galeriaMagda.nombre;
 document.getElementById("editar_descripcion").value = galeriaMagda.descripcion;
@@ -32,23 +29,7 @@ document.getElementById("editar_phone").value = galeriaMagda.telefono;
 document.getElementById("editar_mailReg").value = galeriaMagda.mail;
 document.getElementById("editar_web").value = galeriaMagda.web;
 
+};
 
-//$(document).ready(
 
-//----------GESTION
-//$(function() {
-
-//function loadData(galeriaMagda) {
-/*document.getElementById("editar_nombre").value = galeriaMagda.nombre;
-document.getElementById("editar_nombre").value = galeriaMagda.nombre;
-document.getElementById("editar_descripcion").value = galeriaMagda.descripcion;
-document.getElementById("editar_address").value = galeriaMagda.direccion;
-document.getElementById("editar_openingTimes").value = galeriaMagda.horario;
-document.getElementById("editar_phone").value = galeriaMagda.telefono;
-document.getElementById("editar_mailReg").value = galeriaMagda.mail;
-document.getElementById("editar_web").value = galeriaMagda.web;*/
-
-// ...
-//}
-
-//}));
+loadData();
