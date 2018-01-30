@@ -120,13 +120,13 @@ function validar(){
 
 		correcto = false;
 
-		 alert("Rellene los campos.");
+		 //alert("Rellene los campos.");
    	};
 
 	if (document.getElementById('username').value.length >= 15 || document.getElementById('userpass').value.length >= 15) {
 
 		correcto = false;
-		 alert("No se admiten usuarios/password superiores a 15 caracteres.");
+		 //alert("No se admiten usuarios/password superiores a 15 caracteres.");
    	};
 
 	return correcto;
