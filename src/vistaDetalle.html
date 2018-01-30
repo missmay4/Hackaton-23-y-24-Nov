@@ -99,7 +99,7 @@
            </div>
        </div>
    </div> -->
-
+<script id="plantilla" type="text/x-handlebars/template">
      <main class="fondocolor">
 
          <!-- Body -->
@@ -110,7 +110,7 @@
        <div class="wrapper">
           <div class="nombreg">
 
-           <h1 class="funo">Galería Magda Bellotti</h1>
+           <h1 class="funo">Galería {{nombre}}</h1>
            </div>
        </div>
    </div>
@@ -129,34 +129,33 @@
       <div class="wrapper">
          <div class="descripcion">
 
-       <p class="fdos">Fundada en 1980, Galería Magda Bellotti nace con el objetivo de dar a conocer el arte en el corazón de la capital española. Especializada en pinturas de los siglos XIX y XX. </p>
+       <p class="fdos">{{descripcion}} </p>
 
 
        <div class="ftres centrar">
            <table>
              <tr>
                <td>Dirección:</td>
-               <td>Calle Fúcar nº22 28014 Madrid
+               <td>{{direccion}}
                </td>
              </tr>
              <tr>
                <td>Horario:</td>
-               <td>M-V 10:00-14:00 | 17:00-20:00
-                S 10:00-14:00
+               <td>{{horario}}
                </td>
 
              </tr>
               <tr>
                <td>Teléfono:</td>
-               <td>913693717</td>
+               <td>{{telefono}}</td>
              </tr>
               <tr>
                <td>Mail:</td>
-               <td>galeriamagdabellotti@gmail.com</td>
+               <td>{{mail}}</td>
              </tr>
              <tr>
                <td>Web:</td>
-               <td>www.magdabellotti.com</td>
+               <td>{{web}}</td>
              </tr>
            </table>
          </div>
@@ -239,28 +238,28 @@
           <ul >
               <li>
 
-                <p class="ftres">15/12/2017-31/1/2018:
+                <p class="ftres">{{fecha1}}
                   </p>
 
-               <p class="ftres">Exposición de las obras de Juan Talavera.
+               <p class="ftres">{{event1}}
                    </p>
               </li>
 
               <li>
 
-                 <p class="ftres">15/1/2018-31/3/2018:
+                 <p class="ftres">{{fecha2}}
                   </p>
 
-                 <p class="ftres">Exposición de las obras de Marisa Paredes.
+                 <p class="ftres">{{event2}}
                   </p>
               </li>
 
               <li>
 
-                <p class="ftres">15/4/2018-31/5/2018:
+                <p class="ftres">{{fecha3}}
                   </p>
 
-                 <p class="ftres">Impresionismo.
+                 <p class="ftres">{{event3}}
                   </p>
               </li>
           </ul>
@@ -454,6 +453,7 @@
     </div>
   </div>
 </footer>
+</script> 
 <!-- FIN DE FOTTER -->
 
 
@@ -469,6 +469,9 @@
    <script src="js/jquery.min.js"></script>
 
   <script src="js/jquery.rateyo.js"></script>
+  <script src="js/handlebars-v4.0.11.js"></script>
+
+  <script src="js/scriptHandlebars.js"></script>
   <script src="js/vistaDetalle.js"></script>
 </body>
 </html>
