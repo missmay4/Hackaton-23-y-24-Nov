@@ -1,4 +1,4 @@
-function Galeria(id, nombre, descripcion, direccion, horario, telefono, web, email) {
+function Galeria(id, nombre, descripcion, direccion, horario, telefono, web, email, idUsuario) {
   this.id = id;
   this.nombre = nombre;
   this.descripcion = descripcion;
@@ -10,6 +10,7 @@ function Galeria(id, nombre, descripcion, direccion, horario, telefono, web, ema
   this.email = email;
   this.eventos = [];
   this.comentarios = [];
+  this.idUsuario = idUsuario;
 }
 
 Galeria.prototype.crearEvento = function(id, nombre, fecha) {

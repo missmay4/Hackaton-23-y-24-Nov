@@ -13,6 +13,7 @@ var peticion = {
 
 $( document ).ready(
 $(function() {
+
 $("#buttonTw").click( function recibirAJAX() {
   exito = $.ajax(peticion);
   console.log(exito);
@@ -112,24 +113,29 @@ function validar(e) {
 
 
 
-function validar(){
+function validar(user,pass){
 
 	var correcto = true;
 
-	if (document.getElementById('username').value.length == "" || document.getElementById('userpass').value.length == "") {
+	if (user == "" || pass == "") {
 
 		correcto = false;
 
 		 //alert("Rellene los campos.");
    	};
 
-	if (document.getElementById('username').value.length >= 15 || document.getElementById('userpass').value.length >= 15) {
+	if (user >= 15 || pass >= 15) {
 
 		correcto = false;
-		 //alert("No se admiten usuarios/password superiores a 15 caracteres.");
+		 alert("No se admiten usuarios/password superiores a 15 caracteres.");
    	};
 
 	return correcto;
 };
 
-console.log(validar());
+validar(user,pass);
+
+console.log(validar(
+    document.getElementById('username').value.length,
+    document.getElementById('userpass').value.length)
+);
