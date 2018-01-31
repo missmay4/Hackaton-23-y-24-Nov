@@ -19,13 +19,13 @@ function Usuarios(id, nombre, username, galerianame, email, birthdate, password,
 Usuarios.prototype.crearGaleria = function(id, nombre, descripcion, direccion, horario, telefono, web, email) {
   // CREAMOS GALERIA
   var nuevaGaleria = new Galeria(id, nombre, descripcion, direccion, horario, telefono, web, email);
-  nuevaGaleria.nombre = document.getElementById("nombre").value;
-  nuevaGaleria.descripcion = document.getElementById("descripcion").value;
-  nuevaGaleria.direccion = document.getElementById("address").value;
-  nuevaGaleria.horario = document.getElementById("openingTimes").value;
-  nuevaGaleria.telefono = document.getElementById("phone").value;
-  nuevaGaleria.web = document.getElementById("web").value;
-  nuevaGaleria.email = document.getElementById("mailReg").value;
+  nuevaGaleria.nombre = document.getElementById("crear_nombre").value;
+  nuevaGaleria.descripcion = document.getElementById("crear_descripcion").value;
+  nuevaGaleria.direccion = document.getElementById("crear_address").value;
+  nuevaGaleria.horario = document.getElementById("crear_openingTimes").value;
+  nuevaGaleria.telefono = document.getElementById("crear_phone").value;
+  nuevaGaleria.web = document.getElementById("crear_web").value;
+  nuevaGaleria.email = document.getElementById("crear_mailReg").value;
 
 
 
