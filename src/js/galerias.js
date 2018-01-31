@@ -13,14 +13,15 @@ function Galeria(id, nombre, descripcion, direccion, horario, telefono, web, ema
   this.idUsuario = idUsuario;
 }
 
-Galeria.prototype.crearEvento = function(id, nombre, fecha) {
+Galeria.prototype.crearEvento = function() {
 
-  var nuevoEvento = new Evento(id, nombre, fecha);
-  nuevoEvento.nombre = document.getElementById("editar_nomEvento").value;
-  nuevoEvento.fecha = document.getElementById("editar_fechaEvento").value;
-
-
+  var nuevoEvento = new Evento(1, 
+                    document.getElementById("editar_nomEvento").value, 
+                    document.getElementById("editar_fechaEvento").value, 
+                    this.id );
+ 
   this.eventos.push(nuevoEvento);
+  //return nuevoEvento;
 };
 
 /*Galeria.prototype.loadData = function(id, nombre, descripcion, direccion, horario, telefono, web, email){
@@ -28,6 +29,12 @@ Galeria.prototype.crearEvento = function(id, nombre, fecha) {
 }*/
 
 Galeria.prototype.eliminarEvento = function(id) {
+
+  /* 
+    1-Entrar en el array de Eventos, y conseguir los id (esto seria un método
+     en eventos.js)
+    2-Eliminar el evento asociado al id 
+  */
 
   //this.eventos.pop(); Quita el ultimo elemento del array
   // INCOMPLETO

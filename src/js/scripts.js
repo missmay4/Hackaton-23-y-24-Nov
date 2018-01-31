@@ -1,3 +1,18 @@
+// --------------------------- EVENT HANDLERS ---------------------------
+
+// Usuarios(id, nombre, username, galerianame, email, birthdate, password, repitpassword, imagenperfil)
+var usuario = new Usuarios(1, "Antígona Sanchez", "antígona", "Galeria Magda Bellotti", "antigonasnchz@gmail.com", "31/01/1990", "password","password", "usuaria.jpg");
+
+
+document.getElementById("button_creargal").addEventListener("click", function (){
+
+ var laGaleria = Usuarios.crearGaleria();
+// Cuando haya que crear galeria... (click en el boton que genera una galeria)
+
+});
+
+
+
 $(document).ready(
 
   //----------GESTION

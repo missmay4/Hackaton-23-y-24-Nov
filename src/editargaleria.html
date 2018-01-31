@@ -117,23 +117,30 @@
         <label for="mailReg" class="etiq fcuatro">Correo electrónico</label>
         <input type="text" class="campo" id="editar_mailReg" name="galemail"  placeholder="Escriba aquí la dirección de correo de su galería" />
 
-        <!-- Eventos galeria -->
-        <label for="nomEvento" class="etiq fcuatro">Añadir próximos eventos:</label>
-          <div class="campo">Nombre del evento: <input type="text" name="evento" id="editar_nomEvento" /></div>
-          <div class="campo">Fecha: <input type="date" name="date" id="editar_fechaEvento" /></div>
-
-
           <!-- Submit -->
           <div class="campo">
-            <input type="submit" name="guarcambios" value="Guardar cambios" onclick="saveData()">
-            <input type="button" name="resetButton" value="Reset Form" onclick="resetData()">
-            <input type="button" name="loadButton" value="Load Data" onclick="loadData()">
-
+            <input type="submit" name="guarcambios" value="Guardar cambios">
+            
 
           </div>
-          <div class="campo">
-          </div>
+          
       </form>
+
+      <form id="FormEvento" method="post" class="formulariogestion" name="formEventos" action="#" onsubmit="return false;">
+
+      <!-- Eventos galeria -->
+        <label for="new_nomEvento" class="etiq fcuatro">Añadir próximos eventos:</label>
+          <div class="campo">Nombre del evento: <input type="text" name="evento" id="new_nomEvento" /></div>
+          <div class="campo">Fecha: <input type="date" name="date" id="new_fechaEvento" /></div>
+
+          <div class="campo">
+            <input type="submit" name="guarcambios" value="Guardar Evento"  id="saveEvent">
+            
+
+          </div>
+
+      </form>
+
       </div>
     </div>
     <!-- Fin formulario gestion galeria -->
