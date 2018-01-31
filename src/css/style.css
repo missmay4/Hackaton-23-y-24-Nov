@@ -16,6 +16,10 @@ body {
     background-color: #f7f1e3;
 }
 
+/*.fondocolor {
+    background-color: #ecf0f1;
+} */
+
 .subtitulosM {
     width: 95%;
     margin: 0 2.5%;
@@ -164,9 +168,7 @@ header {
 /* -------------------------------------- INICIO VISTA DETALLE --------------------------------------- */
 
 
-/*.fondocolor {
-    background-color: #ecf0f1;
-} */
+
 
 .centrar {
     float: left;
@@ -353,56 +355,43 @@ header {
     width: 100%;
     float: left;
     text-align: center;
+    margin: 30px 0 30px 0;
 }
 
 .bloquep {
-    width: 100%;
+    width: 50%;
     float: left;
-    text-align: center;
+    margin: 30px 0 30px 0;
+    /*text-align: center;*/
+}
+
+.dat {
+    margin:50px 0 50px 0;
 }
 
 .bloquep img {
     border-radius: 50%;
-    max-width: 30%;
-
+    max-width: 50%;
+}
+.bloquep p {
+    margin:5px 0 5px 0;
 }
 
-.bloquep.dat {
-    margin-top: 5%;
-    width: 100%;
-    float: left;
-}
 
 .bloquep.dat button a{
     text-decoration: none;
     color: initial;
 }
 
-a.botonGestion {
+/*a.botonGestion {
     -webkit-appearance: button;
     -moz-appearance: button;
     appearance: button;
 
     text-decoration: none;
     color: initial;
-}
+}*/
 
-.editargal {
-    width: 100%;
-    float: left;
-}
-.dropdown-toggle{
-    width: 100%;
-}
-.dropdown-menu{
-    display: none;
-    width: 100%;
-    height: 100px;
-}
-
-.dropdown-toggle:hover + .dropdown-menu{
-    display: inline-block;
-}
 /* --------------------------------------------- FIN PERFIL -------------------------------------------*/
 
 /* ---------------------------------------- INICIO SIGN IN ----------------------------------*/
@@ -559,7 +548,7 @@ a.botonGestion {
 /* -------------------------------------- GESTION----------------------------------------------- */
 
 
-/*--------------------------GESTION.HTML---------------------*/
+/*--------------------------CREARGALERIA.HTML Y EDITARGALERIA---------------------*/
 
 
 
@@ -569,8 +558,6 @@ a.botonGestion {
         margin: 0 10%;
         float: left;
     }
-
-
 
 #myForm .error {
   color: #ff0000;
@@ -790,23 +777,6 @@ div.emergenteMain {
 }
 
 
-
-
-    /* Perfil User */
-
-    .edAcciones1 {
-        width: 50%;
-        float: left;
-        display: inline-block;
-    }
-
-    .edGaleria2 {
-        width: 50%;
-        left: left;
-        display: inline-block;
-    }
-
-
 }
 
 @media only screen and (min-device-width: 801px) {
@@ -931,11 +901,6 @@ div.emergenteMain {
      /* Perfil User */
 
     .bloquep {
-        width: 50%;
-        float: left;
-    }
-
-    .descripcionuser {
         width: 50%;
         float: left;
     }
