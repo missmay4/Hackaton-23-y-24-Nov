@@ -14,7 +14,4 @@ describe('Valida formulario', function(){
 		// expect (mi funcion al testear).operador(salida);
 		expect(validar("a","a")).toEqual(true);
 	});
-
-
-
 });

@@ -30,7 +30,7 @@ Usuarios.prototype.crearGaleria = function() { // Metodo
                             document.getElementById("crear_phone").value,
                             document.getElementById("crear_web").value,
                             document.getElementById("crear_mailReg").value,
-                            /* ... */
+                            
                             this.id
                         );
 
@@ -52,14 +52,3 @@ Usuarios.prototype.eliminarGaleria = function(id) {
 
 // --------------------------- OBJECTS INSTANCES ---------------------------
 
-// Usuarios(id, nombre, username, galerianame, email, birthdate, password, repitpassword, imagenperfil)
-var usuario = new Usuarios(1, "david", ...);
-
-
-
-// --------------------------- EVENT HANDLERS ---------------------------
-
-var laGaleria;
-
-// Cuando haya que crear galeria... (click en el boton que genera una galeria)
-laGaleria = usuario.crearGaleria();
