@@ -71,12 +71,8 @@ $(document).ready(
         //   minlength: "Your password must be at least 5 characters long"
         // },
         // email: "Please enter a valid email address"
-      },
-      // Make sure the form is submitted to the destination defined
-      // in the "action" attribute of the form when valid
-      //submitHandler: function(form) {
-      // form.submit();
-      //}
+      }
+      
     });
 
     //----------------LOG IN
@@ -87,14 +83,21 @@ $(document).ready(
 
     /* ---------------- SAVE DATA INTO JSON ---------------- */
 
-    //document.myform.submit()
+    /*------ARQUITECTURA----- el form para crear galeria esta relacionado con
+
+    galeria.js y usuarios.js.
+
+    El usuario tiene el método crearGaleria, al cual hemos linkado el form
+
+     */
 
 
-    //JSON vacÃ­o:
-    //var galeria = {};
-    //var galeria2;
+    //JSON para guardar datos introducidos en "crear formulario" para
+    //que el 3er boton devuelva
+    var galeria = {};
+   
 
-    /*
+    
     function saveData() {
       galeria.nombre = document.getElementById('nombre').value; // Capturar el value del input correspondiente
       // ...
@@ -111,10 +114,8 @@ $(document).ready(
       //Â¿evento + fecha evento?
 
       //para comprobar JSON console.log("El nombre introducido es..." + galeria.nombre);
-
-
     }
-    */
+    
 
     /*function saveData2() {
       galeria2 = new Galeria(
@@ -143,8 +144,8 @@ $(document).ready(
 
     //
     function loadData() {
-      document.getElementById('nombre').value = galeria.nombre;
-      document.getElementById('descripcion').value = galeria.descripcion;
+      document.getElementById('crear_nombre').value = galeria.nombre;
+      document.getElementById('crear_descripcion').value = galeria.descripcion;
       //Â¿imÃ¡genes cargadas?
       document.getElementById('address').value = galeria.direccion;
       document.getElementById('openingTimes').value = galeria.horario;
