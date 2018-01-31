@@ -1,3 +1,6 @@
+
+// --------------------------- CLASS DEFINITION ---------------------------
+
 //CREAMOS USUARIO
 function Usuarios(id, nombre, username, galerianame, email, birthdate, password, repitpassword, imagenperfil) {
   this.id = id;
@@ -16,19 +19,22 @@ function Usuarios(id, nombre, username, galerianame, email, birthdate, password,
 }
 
 
-Usuarios.prototype.crearGaleria = function(id, nombre, descripcion, direccion, horario, telefono, web, email) {
+Usuarios.prototype.crearGaleria = function() { // Metodo 
+
   // CREAMOS GALERIA
-  var nuevaGaleria = new Galeria(id, nombre, descripcion, direccion, horario, telefono, web, email);
-  nuevaGaleria.nombre = document.getElementById("crear_nombre").value;
-  nuevaGaleria.descripcion = document.getElementById("crear_descripcion").value;
-  nuevaGaleria.direccion = document.getElementById("crear_address").value;
-  nuevaGaleria.horario = document.getElementById("crear_openingTimes").value;
-  nuevaGaleria.telefono = document.getElementById("crear_phone").value;
-  nuevaGaleria.web = document.getElementById("crear_web").value;
-  nuevaGaleria.email = document.getElementById("crear_mailReg").value;
+  var nuevaGaleria = new Galeria(1,
+                            document.getElementById("crear_nombre").value,
+                            document.getElementById("crear_descripcion").value,
+                            document.getElementById("crear_address").value,
+                            document.getElementById("crear_openingTimes").value,
+                            document.getElementById("crear_phone").value,
+                            document.getElementById("crear_web").value,
+                            document.getElementById("crear_mailReg").value,
+                            /* ... */
+                            this.id
+                        );
 
-
-
+  return nuevaGaleria;
 
   /*
   this.nombre = document.getElementById("crear_nombre");
@@ -42,3 +48,18 @@ Usuarios.prototype.eliminarGaleria = function(id) {
   // INCOMPLETO
 
 };
+
+
+// --------------------------- OBJECTS INSTANCES ---------------------------
+
+// Usuarios(id, nombre, username, galerianame, email, birthdate, password, repitpassword, imagenperfil)
+var usuario = new Usuarios(1, "david", ...);
+
+
+
+// --------------------------- EVENT HANDLERS ---------------------------
+
+var laGaleria;
+
+// Cuando haya que crear galeria... (click en el boton que genera una galeria)
+laGaleria = usuario.crearGaleria();

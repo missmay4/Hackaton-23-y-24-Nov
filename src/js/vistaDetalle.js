@@ -28,7 +28,7 @@ $(document).ready(function(){
     var comTemplate = Handlebars.compile(template);
     var datos = {
         //Nombre Galeria
-        "nombre": "Magda Bellotti",
+        "nombre": "Magda Bellotti fghhf",
 
         // Descripción y datos
         "descripcion": "Fundada en 1980, Galería Magda Bellotti nace con el objetivo de dar a conocer el arte en el corazón de la capital española. Especializada en pinturas de los siglos XIX y XX.",
