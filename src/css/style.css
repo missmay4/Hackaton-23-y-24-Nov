@@ -1,6 +1,8 @@
 a {
     text-decoration: none;
 }
+
+
 ul {
     list-style-type: none;
     color: black;
@@ -25,10 +27,10 @@ body {
     margin: 0 2.5%;
 }
 
-.funo{ font-size: 2.81em; margin: 0px;}
-.fdos{font-size: 1.56em; margin: 0px;}
-.ftres{font-size:1.25em; margin: 0px;}
-.fcuatro{font-size:1em; margin: 0px;}
+.funo{ font-size: 2.81em;}
+.fdos{font-size: 1.56em;}
+.ftres{font-size:1.25em;}
+.fcuatro{font-size:1em;}
 
 @font-face {
 	font-family: 'caviardreams';
@@ -66,21 +68,21 @@ nav, header, footer {
 
 header {
     width: 100%;
-    /*float: left; */
+    float:left;
     background-color: #ffffff;
-    margin-bottom: 40px;
+    margin: 50px 0 50px 0;
 }
 
 .logo {
-    width: 20%;
+    float: left;
+    width: 21%;
     margin-left: 2%;
     padding-top: 20px;
-    /* height: 100px; */
-    float: left;
+    /* height: 100px; */  
 }
 
 .logo img {
-    width: 40%;
+    max-width: 60%;
 }
 
 .naming {
@@ -94,12 +96,12 @@ header {
     text-align: center;
     width: 21%;
     float: left;
-    margin-right: 1%;
+    margin-right: 2%;
 }
 
 .fotouser img {
     border-radius: 50%;
-    width: 40%;
+    max-width: 60%;
 }
 
 .colorheader {
@@ -466,10 +468,18 @@ header {
 /* --------------------------------------------- INICIO FORMULARIO ------------------------------------*/
 
 .title-1{
-    width: 100%;
+    width: 50%;
     float: left;
     margin-left: 5%;
     /*text-align: center;*/
+}
+.buttonatras{
+    width: 25%;
+    float: left;
+    text-decoration: none;
+    margin: 0 15% 0 5%;
+    
+
 }
 .campo {
     width: 100%;
