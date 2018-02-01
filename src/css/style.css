@@ -740,7 +740,11 @@ div.emergenteMain {
         display: none;
     }
 
-    }
+/* PERFIL USER*/
+.bloquep{
+    width: 100%;
+}
+}
 
 @media only screen
   and (min-device-width: 481px) and (max-device-width: 800px) {
@@ -888,10 +892,6 @@ div.emergenteMain {
         width: 50%;
         float: left;
     }
-
-
-
-
 }
 
 
