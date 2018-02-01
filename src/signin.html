@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="css/normalize.css" type="text/css" />
     <link rel="stylesheet" href="css/style.css" type="text/css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.1.1/bootstrap-social.css" type="text/css" />
-    <!--<link rel="stylesheet" href="css/font-awesome.css" type="text/css" /> -->
+    
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
@@ -16,14 +16,12 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 </head>
-<body>
+<body class="fondocolor">
   <!--   menu de navegacion-->
      <nav class="navbar navbar-fixed-top colorheader">
     <div class="container-fluid">
       <div class="navbar-header">
-        <!-- <a class="navbar-brand" href="#"> Logo en header -->
-          <!-- <a href="index.html"> <img src="img/logogaleria.png" style="width: 60px; filter: invert(100%)"alt="Logo" /></a> Logo en header -->
-        <!-- </a> -->
+      
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
@@ -76,8 +74,11 @@
 
 
    <main>
-     <div class="wrapper">
-         <div class="fondoblue">
+     <div class="wrapper fondocolor">
+      <div class="title-1">
+                 <h1 class="funo">Inicia sesión</h1>
+             </div>
+         <div class="fondocolor">
             <div class="vidgal">
                 <video autoplay muted>
                     <source src="media/grito.mp4" type="video/mp4" />
@@ -113,24 +114,21 @@
               <input id="enviar" type="submit" value="ENVIAR" />
 
           </div>
+          
+          <a class="btn btn-block btn-social btn-twitter botonsign" id="buttonTw">
+              <span class="fa fa-twitter"></span> Inicia sesión con Twitter
+             </a>
 
+          <a href="Formulario.html"><button type="button" class="btn btn-default btn-md botonsign">REGISTRATE</button> </a>
+              
         </form>
 
     </div>
 
 
 
-    <div class="registrate">
-      <!-- <input type="button" id="buttonTw" value="TWITTER" /> -->
-      <a class="btn btn-block btn-social btn-twitter" id="buttonTw">
-        <span class="fa fa-twitter"></span> Inicia sesión con Twitter
-      </a>
+    
 
-        <div id="botreg">
-            <a href="Formulario.html" class="fdos">REGÍSTRATE</a>
-
-        </div>
-    </div>
          </div>
      </div>
    </main>
