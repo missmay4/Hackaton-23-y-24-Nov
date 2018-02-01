@@ -49,7 +49,45 @@ $(document).ready(function() {
   };
   var html = comTemplate(datos);
   $(document.body).append(html);
-});
+
+
+
+      function initMap() {
+        var madrid = {lat: 40.4110494, lng: -3.697864};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: madrid
+        });
+        var marker = new google.maps.Marker({
+          position: madrid,
+          map: map
+        });
+      }
+  });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 //----- VISTA DETALLE
