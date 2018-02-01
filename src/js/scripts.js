@@ -6,7 +6,7 @@ var usuario = new Usuarios(1, "Antígona Sanchez", "antígona", "Galeria Magda B
 
 document.getElementById("button_creargal").addEventListener("click", function (){
 
- var laGaleria = Usuarios.crearGaleria();
+ var laGaleria = usuario.crearGaleria();
 // Cuando haya que crear galeria... (click en el boton que genera una galeria)
 
 });

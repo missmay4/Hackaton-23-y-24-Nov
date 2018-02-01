@@ -51,11 +51,11 @@ $(document).ready(function() {
   $(document.body).append(html);
 
 
-
-      function initMap() {
+ /*function initMap() {}*/
+  window.initMap = function () {
         var madrid = {lat: 40.4110494, lng: -3.697864};
         var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 4,
+          zoom: 16,
           center: madrid
         });
         var marker = new google.maps.Marker({
