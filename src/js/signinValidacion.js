@@ -119,9 +119,7 @@ function validar(user,pass){
 
 	if (user == "" || pass == "") {
 
-    document.getElementById('username').placeholder ='Campo vacío. Escriba su usuario.';
-    document.getElementById('userpass').placeholder ='Campo vacío. Escriba su contraseña.';
-		correcto = false;
+    correcto = false;
    	};
 
 	if (user >= 15 || pass >= 15) {
