@@ -1,5 +1,5 @@
 # AndeArte_Proyect
-> Plataforma para acercar galerías de arte al público general. Buscador de galerias de arte mediante geolocalización.
+> Plataforma para acercar galerías de arte al público general y especializado. Buscador de galerias de arte mediante geolocalización.
 
 **Proyecto Curso Front End 2017**
 **Collaborators: _@missmay4, @DavidSigRod & @pilarlb_**
